@@ -31,8 +31,8 @@ const Header = ({ toggleMenu }) => {
                 <Link to="https://www.facebook.com/">
                   <i className="fab fa-facebook-f"></i>
                 </Link>
-                <Link to="https://www.twitter.com/">
-                  <i className="fab fa-twitter"></i>
+                <Link to="https://www.whatsapp.com/">
+                  <i className="fab fa-whatsapp"></i>
                 </Link>
                 <Link to="https://www.linkedin.com/">
                   <i className="fab fa-linkedin-in"></i>
@@ -157,10 +157,16 @@ const Header = ({ toggleMenu }) => {
               </div>
               <div className="col-auto d-none d-lg-block">
                 <div className="header-button">
-                  <button type="button" className="icon-btn searchBoxToggler d-none">
+                  <button
+                    type="button"
+                    className="icon-btn searchBoxToggler d-none"
+                  >
                     <i className="far fa-search"></i>
                   </button>
-                  <button type="button" className="icon-btn sideMenuToggler d-none">
+                  <button
+                    type="button"
+                    className="icon-btn sideMenuToggler d-none"
+                  >
                     <i className="far fa-shopping-cart"></i>
                     <span className="badge">5</span>
                   </button>

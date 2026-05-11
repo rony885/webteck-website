@@ -23,6 +23,7 @@ import Projects from "./pages/Projects/Projects";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import { useEffect, useState } from "react";
+import Pricing from "./pages/Pricing/Pricing";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +67,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/project-details" element={<ProjectDetails />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
