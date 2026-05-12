@@ -34,6 +34,7 @@ const Header = ({ toggleMenu }) => {
                 <Link to="https://www.whatsapp.com/">
                   <i className="fab fa-whatsapp"></i>
                 </Link>
+
                 <Link to="https://www.linkedin.com/">
                   <i className="fab fa-linkedin-in"></i>
                 </Link>
@@ -78,48 +79,23 @@ const Header = ({ toggleMenu }) => {
                     <li className="">
                       <Link to="/services">Services</Link>
                     </li>
-                    <li className="">
-                      <Link to="/project">Portfolio</Link>
+                    <li>
+                      <Link to="/Portfolio">Portfolio</Link>
                     </li>
-
                     <li className="">
                       <Link to="/blog">Blog</Link>
                     </li>
+
                     <li className="menu-item-has-children">
                       <Link to="#">Pages</Link>
                       <ul className="sub-menu">
-                        <li className="menu-item-has-children">
-                          <Link to="#">Shop</Link>
-                          <ul className="sub-menu">
-                            <li>
-                              <Link to="/shop">Shop</Link>
-                            </li>
-                            <li>
-                              <Link to="/shop-details">Shop Details</Link>
-                            </li>
-                            <li>
-                              <Link to="/cart">Cart Page</Link>
-                            </li>
-                            <li>
-                              <Link to="/checkout">Checkout</Link>
-                            </li>
-                            <li>
-                              <Link to="/wishlist">Wishlist</Link>
-                            </li>
-                          </ul>
-                        </li>
                         <li>
                           <Link to="/team">Team</Link>
                         </li>
                         <li>
                           <Link to="/team-details">Team Details</Link>
                         </li>
-                        <li>
-                          <Link to="/project">Project</Link>
-                        </li>
-                        <li>
-                          <Link to="/project-details">Project Details</Link>
-                        </li>
+
                         <li>
                           <Link to="/gallery">Gallery</Link>
                         </li>
@@ -131,9 +107,6 @@ const Header = ({ toggleMenu }) => {
                         </li>
                       </ul>
                     </li>
-                    {/* <li>
-                      <Link to="/contact">Contact</Link>
-                    </li> */}
                   </ul>
                 </nav>
                 <div className="header-button">
@@ -144,8 +117,7 @@ const Header = ({ toggleMenu }) => {
                     <i className="far fa-shopping-cart"></i>
                     <span className="badge">5</span>
                   </button>
-
-                  {/* ===== Bar Menu ===== */}
+                  {/* ==== Bar button ==== */}
                   <button
                     onClick={toggleMenu}
                     type="button"
@@ -170,7 +142,7 @@ const Header = ({ toggleMenu }) => {
                     <i className="far fa-shopping-cart"></i>
                     <span className="badge">5</span>
                   </button>
-                  <Link to="contact" className="th-btn shadow-none">
+                  <Link to="/contact" className="th-btn shadow-none">
                     Contact<i className="fas fa-arrow-right ms-2"></i>
                   </Link>
                 </div>

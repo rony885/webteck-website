@@ -36,25 +36,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p1"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Rayan Athels</a>
+//                       <Link to="team-details.html">Rayan Athels</Link>
 //                     </h3>
 //                     <span class="team-desig">Founder & CEO</span>
 //                   </div>
@@ -69,25 +69,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p2"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Alex Furnandes</a>
+//                       <Link to="team-details.html">Alex Furnandes</Link>
 //                     </h3>
 //                     <span class="team-desig">Project Manager</span>
 //                   </div>
@@ -102,25 +102,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p3"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Mary Crispy</a>
+//                       <Link to="team-details.html">Mary Crispy</Link>
 //                     </h3>
 //                     <span class="team-desig">Cheif Expert</span>
 //                   </div>
@@ -135,25 +135,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p4"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Henry Joshep</a>
+//                       <Link to="team-details.html">Henry Joshep</Link>
 //                     </h3>
 //                     <span class="team-desig">Product Manager</span>
 //                   </div>
@@ -168,25 +168,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p5"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Sanjida Carlose</a>
+//                       <Link to="team-details.html">Sanjida Carlose</Link>
 //                     </h3>
 //                     <span class="team-desig">IT Consultant</span>
 //                   </div>
@@ -201,25 +201,25 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <Link target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
-//                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
-//                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
-//                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         </Link>
+//                         <Link target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
-//                         </a>
+//                         </Link>
 //                       </div>
 //                     </div>
 //                   </div>
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p1"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Rayan Athels</a>
+//                       <Link to="team-details.html">Rayan Athels</Link>
 //                     </h3>
 //                     <span class="team-desig">Founder & CEO</span>
 //                   </div>
@@ -234,16 +234,16 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <a target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
 //                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         <a target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
 //                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         <a target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
 //                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         <a target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
 //                         </a>
 //                       </div>
@@ -252,7 +252,7 @@
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p2"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Alex Furnandes</a>
+//                       <a to="team-details.html">Alex Furnandes</a>
 //                     </h3>
 //                     <span class="team-desig">Project Manager</span>
 //                   </div>
@@ -267,16 +267,16 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <a target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
 //                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         <a target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
 //                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         <a target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
 //                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         <a target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
 //                         </a>
 //                       </div>
@@ -285,7 +285,7 @@
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p3"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Mary Crispy</a>
+//                       <a to="team-details.html">Mary Crispy</a>
 //                     </h3>
 //                     <span class="team-desig">Cheif Expert</span>
 //                   </div>
@@ -300,16 +300,16 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <a target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
 //                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         <a target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
 //                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         <a target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
 //                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         <a target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
 //                         </a>
 //                       </div>
@@ -318,7 +318,7 @@
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p4"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Henry Joshep</a>
+//                       <a to="team-details.html">Henry Joshep</a>
 //                     </h3>
 //                     <span class="team-desig">Product Manager</span>
 //                   </div>
@@ -333,16 +333,16 @@
 //                         <i class="far fa-plus"></i>
 //                       </div>
 //                       <div class="th-social">
-//                         <a target="_blank" href="https://facebook.com/">
+//                         <a target="_blank" to="https://facebook.com/">
 //                           <i class="fab fa-facebook-f"></i>
 //                         </a>
-//                         <a target="_blank" href="https://twitter.com/">
+//                         <a target="_blank" to="https://twitter.com/">
 //                           <i class="fab fa-twitter"></i>
 //                         </a>
-//                         <a target="_blank" href="https://instagram.com/">
+//                         <a target="_blank" to="https://instagram.com/">
 //                           <i class="fab fa-instagram"></i>
 //                         </a>
-//                         <a target="_blank" href="https://linkedin.com/">
+//                         <a target="_blank" to="https://linkedin.com/">
 //                           <i class="fab fa-linkedin-in"></i>
 //                         </a>
 //                       </div>
@@ -351,7 +351,7 @@
 //                   <div class="team-content">
 //                     <div class="box-particle" id="team-p5"></div>
 //                     <h3 class="box-title">
-//                       <a href="team-details.html">Sanjida Carlose</a>
+//                       <a to="team-details.html">Sanjida Carlose</a>
 //                     </h3>
 //                     <span class="team-desig">IT Consultant</span>
 //                   </div>
@@ -379,7 +379,6 @@
 
 // export default Team;
 
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -392,31 +391,31 @@ import "swiper/css/navigation";
 const teamData = [
   {
     id: 1,
-    img: "assets/img/team/team_2_1.jpg",
+    img: "/assets/img/team/team_2_1.jpg",
     name: "Rayan Athels",
     role: "Founder & CEO",
   },
   {
     id: 2,
-    img: "assets/img/team/team_2_2.jpg",
+    img: "/assets/img/team/team_2_2.jpg",
     name: "Alex Furnandes",
     role: "Project Manager",
   },
   {
     id: 3,
-    img: "assets/img/team/team_2_3.jpg",
+    img: "/assets/img/team/team_2_3.jpg",
     name: "Mary Crispy",
     role: "Chief Expert",
   },
   {
     id: 4,
-    img: "assets/img/team/team_2_4.jpg",
+    img: "/assets/img/team/team_2_4.jpg",
     name: "Henry Joshep",
     role: "Product Manager",
   },
   {
     id: 5,
-    img: "assets/img/team/team_2_5.jpg",
+    img: "/assets/img/team/team_2_5.jpg",
     name: "Sanjida Carlose",
     role: "IT Consultant",
   },
@@ -427,7 +426,7 @@ const Team = () => {
     <section
       className="bg-smoke space"
       style={{
-        backgroundImage: "url(assets/img/bg/team_bg_2.png)",
+        backgroundImage: "url(/assets/img/bg/team_bg_2.png)",
       }}
     >
       <div className="container">
@@ -440,14 +439,10 @@ const Team = () => {
                 style={{
                   WebkitMaskImage:
                     "url(/assets/img/theme-img/title_shape_2.svg)",
-                  maskImage:
-                    "url(/assets/img/theme-img/title_shape_2.svg)",
+                  maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
                 }}
               ></span>
-              <img
-                src="assets/img/theme-img/title_shape_2.svg"
-                alt="shape"
-              />
+              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
             </div>
             GREAT TEAM
           </span>
@@ -492,10 +487,18 @@ const Team = () => {
                       </div>
 
                       <div className="th-social">
-                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
-                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                        <Link to="#">
+                          <i className="fab fa-facebook-f"></i>
+                        </Link>
+                        <Link to="#">
+                          <i className="fab fa-twitter"></i>
+                        </Link>
+                        <Link to="#">
+                          <i className="fab fa-instagram"></i>
+                        </Link>
+                        <Link to="#">
+                          <i className="fab fa-linkedin-in"></i>
+                        </Link>
                       </div>
                     </div>
                   </div>

@@ -237,6 +237,7 @@ const ServicesDetails = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-xxl-4 col-lg-4">
               <aside className="sidebar-area">
                 <div className="widget widget_nav_menu">
@@ -264,7 +265,8 @@ const ServicesDetails = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="widget widget_download">
+
+                <div className="widget widget_download d-none">
                   <h4 className="widget_title">Download Brochure</h4>
                   <div className="download-widget-wrap">
                     <a href="service-details.html" className="th-btn">
@@ -276,9 +278,12 @@ const ServicesDetails = () => {
                     </a>
                   </div>
                 </div>
+
                 <div
                   className="widget widget_banner"
-                  data-bg-src="assets/img/bg/widget_banner.jpg"
+                  style={{
+                    backgroundImage: "url(/assets/img/bg/widget_banner.jpg)",
+                  }}
                 >
                   <div className="widget-banner">
                     <span className="text">CONTACT US NOW</span>

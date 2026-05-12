@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WorkProcess = () => {
   return (
@@ -39,9 +40,9 @@ const WorkProcess = () => {
                   <span className="text-theme fw-normal">Your Business?</span>
                 </h2>
               </div>
-              <a href="contact.html" className="th-btn style3">
+              <Link to="/contact" className="th-btn style3">
                 Get In Touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ const WorkProcess = () => {
           </div>
           <div className="process-card-area">
             <div className="process-line">
-              <img src="assets/img/bg/process_line.svg" alt="line" />
+              <img src="/assets/img/bg/process_line.svg" alt="line" />
             </div>
             <div className="row gy-40">
               <div className="col-sm-6 col-xl-3 process-card-wrap">
@@ -84,7 +85,7 @@ const WorkProcess = () => {
                   <div className="process-card_icon">
                     <img src="assets/img/icon/process_card_1.svg" alt="icon" />
                   </div>
-                  <h2 className="box-title">Select a project</h2>
+                  <h2 className="box-title">Select Link project</h2>
                   <p className="process-card_text">
                     Continua scale empowered metrics with cost effective
                     innovation.

@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <>
-      <div
+      {/* <div
+        className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
         }}
@@ -20,11 +21,19 @@ const NotFound = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <section className="space">
+      </div> */}
+
+      <section
+        className="space"
+        style={{ paddingTop: "20px", paddingBottom: "40px" }}
+      >
         <div className="container">
           <div className="error-img">
-            <img src="/assets/img/theme-img/error.svg" alt="404 imagee" />
+            <img
+              src="/assets/img/theme-img/error.svg"
+              alt="404 imagee"
+              style={{ width: "500px", height: "500px" }}
+            />
           </div>
           <div className="error-content">
             <h2 className="error-title">

@@ -287,10 +287,10 @@ const FrequentlyQuestion = () => {
                     maskImage: "url(/assets/img/normal/about_3_1-shape.png)",
                   }}
                 ></span>
-                <img src="assets/img/normal/about_3_1-shape.png" alt="img" />
+                <img src="/assets/img/normal/about_3_1-shape.png" alt="img" />
               </div>
 
-              <img src="assets/img/normal/faq_1_1.png" alt="Faq" />
+              <img src="/assets/img/normal/faq_1_1.png" alt="Faq" />
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@ const FrequentlyQuestion = () => {
 
       {/* Shape */}
       <div className="shape-mockup jump" style={{ bottom: 0, left: 0 }}>
-        <img src="assets/img/shape/tech_shape_5.png" alt="shape" />
+        <img src="/assets/img/shape/tech_shape_5.png" alt="shape" />
       </div>
     </div>
   );

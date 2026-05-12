@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 const PopupSearchBox = () => {
@@ -7,7 +6,7 @@ const PopupSearchBox = () => {
       <button className="searchClose">
         <i className="fal fa-times"></i>
       </button>
-      <form action="#">
+      <form>
         <input type="text" placeholder="What are you looking for?" />
         <button type="submit">
           <i className="fal fa-search"></i>

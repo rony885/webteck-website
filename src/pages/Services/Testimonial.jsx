@@ -46,7 +46,7 @@ const Testimonial = () => {
     <section
       className="bg-auto space"
       style={{
-        backgroundImage: "url(assets/img/bg/testi_bg_2.png)",
+        backgroundImage: "url(/assets/img/bg/testi_bg_2.png)",
       }}
     >
       <div className="container">
@@ -58,8 +58,8 @@ const Testimonial = () => {
                 className="mask-icon"
                 style={{
                   WebkitMaskImage:
-                    "url(assets/img/theme-img/title_shape_2.svg)",
-                  maskImage: "url(assets/img/theme-img/title_shape_2.svg)",
+                    "url(/assets/img/theme-img/title_shape_2.svg)",
+                  maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
                 }}
               ></span>
               <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
@@ -124,14 +124,14 @@ const Testimonial = () => {
         className="shape-mockup moving d-none d-xl-block"
         style={{ bottom: "0%", left: "10%" }}
       >
-        <img src="assets/img/shape/line_1.png" alt="shape" />
+        <img src="/assets/img/shape/line_1.png" alt="shape" />
       </div>
 
       <div
         className="shape-mockup jump d-none d-xl-block"
         style={{ top: "20%", right: "2%" }}
       >
-        <img src="assets/img/shape/line_2.png" alt="shape" />
+        <img src="/assets/img/shape/line_2.png" alt="shape" />
       </div>
     </section>
   );

@@ -39,16 +39,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>15 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>15 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>2 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>2 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Unsatiable entreaties may collecting Power.</a
+//                       <Link to="blog-details.html"
+//                         >Unsatiable entreaties may collecting Power.</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -56,16 +56,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -77,16 +77,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>16 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>16 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>3 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>3 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Regional Manager & limited time management.</a
+//                       <Link to="blog-details.html"
+//                         >Regional Manager & limited time management.</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -94,16 +94,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -115,16 +115,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>17 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>17 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>2 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>2 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >What’s the Holding Back the It Solution Industry?</a
+//                       <Link to="blog-details.html"
+//                         >What’s the Holding Back the It Solution Industry?</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -132,16 +132,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -153,16 +153,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>19 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>19 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>4 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>4 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Latin derived from Cicero's 1st-century BC</a
+//                       <Link to="blog-details.html"
+//                         >Latin derived from Cicero's 1st-century BC</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -170,16 +170,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -191,16 +191,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>15 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>15 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>2 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>2 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Unsatiable entreaties may collecting Power.</a
+//                       <Link to="blog-details.html"
+//                         >Unsatiable entreaties may collecting Power.</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -208,16 +208,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -229,16 +229,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>16 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>16 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>3 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>3 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Regional Manager & limited time management.</a
+//                       <Link to="blog-details.html"
+//                         >Regional Manager & limited time management.</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -246,16 +246,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -267,16 +267,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>17 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>17 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>2 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>2 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >What’s the Holding Back the It Solution Industry?</a
+//                       <Link to="blog-details.html"
+//                         >What’s the Holding Back the It Solution Industry?</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -284,16 +284,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -305,16 +305,16 @@
 //                   </div>
 //                   <div class="blog-content">
 //                     <div class="blog-meta">
-//                       <a href="blog.html"
-//                         ><i class="fal fa-calendar-days"></i>19 Jan, 2025</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-calendar-days"></i>19 Jan, 2025</Link
 //                       >
-//                       <a href="blog.html"
-//                         ><i class="fal fa-comments"></i>4 Comments</a
+//                       <Link to="blog.html"
+//                         ><i class="fal fa-comments"></i>4 Comments</Link
 //                       >
 //                     </div>
 //                     <h3 class="box-title">
-//                       <a href="blog-details.html"
-//                         >Latin derived from Cicero's 1st-century BC</a
+//                       <Link to="blog-details.html"
+//                         >Latin derived from Cicero's 1st-century BC</Link
 //                       >
 //                     </h3>
 //                     <p class="blog-text">
@@ -322,16 +322,16 @@
 //                       data. Assertively. Holisticly leverage existing magnetic.
 //                     </p>
 //                     <div class="blog-bottom">
-//                       <a href="blog.html" class="author"
+//                       <Link to="blog.html" class="author"
 //                         ><img
 //                           src="assets/img/blog/author-1-1.png"
 //                           alt="avater"
 //                         />
-//                         By Themeholy</a
+//                         By Themeholy</Link
 //                       >
-//                       <a href="blog-details.html" class="line-btn"
+//                       <Link to="blog-details.html" class="line-btn"
 //                         >Read More<i class="fas fa-arrow-right"></i
-//                       ></a>
+//                       ></Link>
 //                     </div>
 //                   </div>
 //                 </div>
@@ -367,6 +367,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const blogs = [
   {
@@ -472,7 +473,7 @@ const Blog = () => {
                     </div>
 
                     <h3 className="box-title">
-                      <a href="#">{item.title}</a>
+                      <Link to="#">{item.title}</Link>
                     </h3>
 
                     <p className="blog-text">
@@ -481,18 +482,18 @@ const Blog = () => {
                     </p>
 
                     <div className="blog-bottom">
-                      <a href="#" className="author">
+                      <Link to="#" className="author">
                         <img
                           src="assets/img/blog/author-1-1.png"
                           alt="author"
                         />
                         By Themeholy
-                      </a>
+                      </Link>
 
-                      <a href="#" className="line-btn">
+                      <Link to="#" className="line-btn">
                         Read More
                         <i className="fas fa-arrow-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

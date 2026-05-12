@@ -341,19 +341,19 @@ import "swiper/css/autoplay";
 const services = [
   {
     id: 1,
-    img: "assets/img/service/service_box_1.jpg",
+    img: "/assets/img/service/service_box_1.jpg",
     icon: "assets/img/icon/service_box_1.svg",
     title: "Web Development",
   },
   {
     id: 2,
-    img: "assets/img/service/service_box_2.jpg",
+    img: "/assets/img/service/service_box_2.jpg",
     icon: "assets/img/icon/service_box_2.svg",
     title: "UI/UX Design",
   },
   {
     id: 3,
-    img: "assets/img/service/service_box_3.jpg",
+    img: "/assets/img/service/service_box_3.jpg",
     icon: "assets/img/icon/service_box_3.svg",
     title: "Digital Marketing",
   },
@@ -459,7 +459,7 @@ const Service = () => {
                     </Link>
 
                     <div className="bg-shape">
-                      <img src="assets/img/bg/service_box_bg.png" alt="bg" />
+                      <img src="/assets/img/bg/service_box_bg.png" alt="bg" />
                     </div>
                   </div>
                 </div>

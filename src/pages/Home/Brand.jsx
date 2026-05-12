@@ -101,12 +101,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const brands = [
-  "assets/img/brand/brand_2_1.png",
-  "assets/img/brand/brand_2_2.png",
-  "assets/img/brand/brand_2_3.png",
-  "assets/img/brand/brand_2_4.png",
-  "assets/img/brand/brand_2_5.png",
-  "assets/img/brand/brand_2_6.png",
+  "/assets/img/brand/brand_2_1.png",
+  "/assets/img/brand/brand_2_2.png",
+  "/assets/img/brand/brand_2_3.png",
+  "/assets/img/brand/brand_2_4.png",
+  "/assets/img/brand/brand_2_5.png",
+  "/assets/img/brand/brand_2_6.png",
 ];
 
 const Brand = () => {

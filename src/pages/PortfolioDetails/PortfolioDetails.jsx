@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProjectDetails = () => {
+const PortfolioDetails = () => {
   return (
     <>
       <div
@@ -22,6 +22,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
+
       <section class="space-top space-extra-bottom">
         <div class="container">
           <div class="row">
@@ -208,4 +209,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default PortfolioDetails;
