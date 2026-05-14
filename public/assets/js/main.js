@@ -189,36 +189,37 @@
     t(".onepage-nav"),
     t(".scroll-down"),
     e(".scroll-top"))
-  ) {
-    var n = document.querySelector(".scroll-top"),
-      a = document.querySelector(".scroll-top path"),
-      s = a.getTotalLength();
-    ((a.style.transition = a.style.WebkitTransition = "none"),
-      (a.style.strokeDasharray = s + " " + s),
-      (a.style.strokeDashoffset = s),
-      a.getBoundingClientRect(),
-      (a.style.transition = a.style.WebkitTransition =
-        "stroke-dashoffset 10ms linear"));
-    var i = function () {
-      var t = e(window).scrollTop(),
-        n = e(document).height() - e(window).height(),
-        i = s - (t * s) / n;
-      a.style.strokeDashoffset = i;
-    };
-    (i(), e(window).scroll(i));
-    (jQuery(window).on("scroll", function () {
-      jQuery(this).scrollTop() > 50
-        ? jQuery(n).addClass("show")
-        : jQuery(n).removeClass("show");
-    }),
-      jQuery(n).on("click", function (e) {
-        return (
-          e.preventDefault(),
-          jQuery("html, body").animate({ scrollTop: 0 }, 750),
-          !1
-        );
-      }));
-  }
+  )
+  //  {
+  //   var n = document.querySelector(".scroll-top"),
+  //     a = document.querySelector(".scroll-top path"),
+  //     s = a.getTotalLength();
+  //   ((a.style.transition = a.style.WebkitTransition = "none"),
+  //     (a.style.strokeDasharray = s + " " + s),
+  //     (a.style.strokeDashoffset = s),
+  //     a.getBoundingClientRect(),
+  //     (a.style.transition = a.style.WebkitTransition =
+  //       "stroke-dashoffset 10ms linear"));
+  //   var i = function () {
+  //     var t = e(window).scrollTop(),
+  //       n = e(document).height() - e(window).height(),
+  //       i = s - (t * s) / n;
+  //     a.style.strokeDashoffset = i;
+  //   };
+  //   (i(), e(window).scroll(i));
+  //   (jQuery(window).on("scroll", function () {
+  //     jQuery(this).scrollTop() > 50
+  //       ? jQuery(n).addClass("show")
+  //       : jQuery(n).removeClass("show");
+  //   }),
+  //     jQuery(n).on("click", function (e) {
+  //       return (
+  //         e.preventDefault(),
+  //         jQuery("html, body").animate({ scrollTop: 0 }, 750),
+  //         !1
+  //       );
+  //     }));
+  // }
   (e("[data-bg-src]").length > 0 &&
     e("[data-bg-src]").each(function () {
       var t = e(this).attr("data-bg-src");
@@ -802,37 +803,37 @@
     C = 0,
     w = 0,
     k = 0;
-  (TweenMax.to({}, 0.016, {
-    repeat: -1,
-    onRepeat: function () {
-      ((y += (w - y) / 9),
-        (C += (k - C) / 9),
-        TweenMax.set(b, { css: { left: y - 12, top: C - 12 } }),
-        TweenMax.set(v, { css: { left: w, top: k } }));
-    },
-  }),
-    e(document).on("mousemove", function (e) {
-      ((w = e.clientX), (k = e.clientY));
-    }),
-    e(".btn").on("mouseenter", function () {
-      (v.addClass("active"), b.addClass("active"));
-    }),
-    e(".btn").on("mouseleave", function () {
-      (v.removeClass("active"), b.removeClass("active"));
-    }),
-    window.gsap.registerPlugin(window.TweenMax),
-    e(".color-switch-btns button").each(function () {
-      const t = e(this),
-        n = t.data("color");
-      (t.css("--theme-color", n),
-        t.on("click", function () {
-          const t = e(this).data("color");
-          e("body").css("--theme-color", t);
-        }));
-    }),
-    e(document).on("click", ".switchIcon", function () {
-      e(".color-scheme-wrap").toggleClass("active");
-    }));
+  // (TweenMax.to({}, 0.016, {
+  //   repeat: -1,
+  //   onRepeat: function () {
+  //     ((y += (w - y) / 9),
+  //       (C += (k - C) / 9),
+  //       TweenMax.set(b, { css: { left: y - 12, top: C - 12 } }),
+  //       TweenMax.set(v, { css: { left: w, top: k } }));
+  //   },
+  // }),
+  //   e(document).on("mousemove", function (e) {
+  //     ((w = e.clientX), (k = e.clientY));
+  //   }),
+  //   e(".btn").on("mouseenter", function () {
+  //     (v.addClass("active"), b.addClass("active"));
+  //   }),
+  //   e(".btn").on("mouseleave", function () {
+  //     (v.removeClass("active"), b.removeClass("active"));
+  //   }),
+  //   window.gsap.registerPlugin(window.TweenMax),
+  //   e(".color-switch-btns button").each(function () {
+  //     const t = e(this),
+  //       n = t.data("color");
+  //     (t.css("--theme-color", n),
+  //       t.on("click", function () {
+  //         const t = e(this).data("color");
+  //         e("body").css("--theme-color", t);
+  //       }));
+  //   }),
+  //   e(document).on("click", ".switchIcon", function () {
+  //     e(".color-scheme-wrap").toggleClass("active");
+  //   }));
   var x = document.getElementById("filt-monthly"),
     T = document.getElementById("filt-yearly"),
     M = document.getElementById("switcher"),

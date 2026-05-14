@@ -30,6 +30,7 @@ import TeamDetails from "./pages/TeamDetails/TeamDetails";
 import Gallery from "./pages/Gallery/Gallery";
 import Pricing from "./pages/Pricing/Pricing";
 import Faq from "./pages/Faq/Faq";
+// import gsap from "gsap";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,6 +51,14 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  
+// useEffect(() => {
+//   gsap.to(".box", {
+//     x: 100,
+//     duration: 1,
+//   });
+// }, []);
 
   return (
     <div className="App">
