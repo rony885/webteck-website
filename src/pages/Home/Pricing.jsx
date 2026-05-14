@@ -165,11 +165,11 @@ const Pricing = () => {
 
       {/* Shapes */}
       <div className="shape-mockup" style={{ top: 0, right: 0 }}>
-        <img src="assets/img/shape/tech_shape_1.png" alt="shape" />
+        <img src="/assets/img/shape/tech_shape_1.png" alt="shape" />
       </div>
 
       <div className="shape-mockup" style={{ top: "0%", left: 0 }}>
-        <img src="assets/img/shape/square_1.png" alt="shape" />
+        <img src="/assets/img/shape/square_1.png" alt="shape" />
       </div>
     </section>
   );

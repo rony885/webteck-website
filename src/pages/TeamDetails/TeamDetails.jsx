@@ -28,7 +28,7 @@ const TeamDetails = () => {
             <div className="about-card_img">
               <img
                 className="w-100"
-                src="assets/img/team/team_details.jpg"
+                src="/assets/img/team/team_details.jpg"
                 alt="team imagee"
               />
             </div>

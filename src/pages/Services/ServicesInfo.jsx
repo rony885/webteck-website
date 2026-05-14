@@ -51,7 +51,7 @@ const ServicesInfo = () => {
                       <i className="fa-regular fa-arrow-right ms-2"></i>
                     </Link>
                     <div className="bg-shape">
-                      <img src="assets/img/bg/service_card_bg.png" alt="bg" />
+                      <img src="/assets/img/bg/service_card_bg.png" alt="bg" />
                     </div>
                   </div>
                 </div>

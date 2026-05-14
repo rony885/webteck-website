@@ -83,7 +83,7 @@ const WorkProcess = () => {
                 <div className="process-card">
                   <div className="process-card_number">01</div>
                   <div className="process-card_icon">
-                    <img src="assets/img/icon/process_card_1.svg" alt="icon" />
+                    <img src="/assets/img/icon/process_card_1.svg" alt="icon" />
                   </div>
                   <h2 className="box-title">Select Link project</h2>
                   <p className="process-card_text">
@@ -109,7 +109,7 @@ const WorkProcess = () => {
                 <div className="process-card">
                   <div className="process-card_number">03</div>
                   <div className="process-card_icon">
-                    <img src="assets/img/icon/process_card_3.svg" alt="icon" />
+                    <img src="/assets/img/icon/process_card_3.svg" alt="icon" />
                   </div>
                   <h2 className="box-title">Plan Execute</h2>
                   <p className="process-card_text">
@@ -122,7 +122,7 @@ const WorkProcess = () => {
                 <div className="process-card">
                   <div className="process-card_number">04</div>
                   <div className="process-card_icon">
-                    <img src="assets/img/icon/process_card_4.svg" alt="icon" />
+                    <img src="/assets/img/icon/process_card_4.svg" alt="icon" />
                   </div>
                   <h2 className="box-title">Deliver result</h2>
                   <p className="process-card_text">

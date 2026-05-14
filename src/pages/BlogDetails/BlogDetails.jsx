@@ -39,7 +39,7 @@ const BlogDetails = () => {
                     <Link to="blog.html">
                       <i className="fa-light fa-calendar-days"></i>21 June, 2025
                     </Link>
-                    <Link to="blog-details.html">
+                    <Link to="/blog-details">
                       <i className="fa-regular fa-comments"></i>Comments (3)
                     </Link>
                   </div>
@@ -205,7 +205,7 @@ const BlogDetails = () => {
                           and play markets.
                         </p>
                         <div className="reply_and_edit">
-                          <Link to="blog-details.html" className="reply-btn">
+                          <Link to="/blog-details" className="reply-btn">
                             <i className="fas fa-reply"></i>Reply
                           </Link>
                         </div>
@@ -230,7 +230,7 @@ const BlogDetails = () => {
                               methods of empowerment without sticky models.
                             </p>
                             <div className="reply_and_edit">
-                              <Link to="blog-details.html" className="reply-btn">
+                              <Link to="/blog-details" className="reply-btn">
                                 <i className="fas fa-reply"></i>Reply
                               </Link>
                             </div>
@@ -258,7 +258,7 @@ const BlogDetails = () => {
                           and play markets.
                         </p>
                         <div className="reply_and_edit">
-                          <Link to="blog-details.html" className="reply-btn">
+                          <Link to="/blog-details" className="reply-btn">
                             <i className="fas fa-reply"></i>Reply
                           </Link>
                         </div>
@@ -430,7 +430,7 @@ const BlogDetails = () => {
                   <div className="recent-post-wrap">
                     <div className="recent-post">
                       <div className="media-img">
-                        <Link to="blog-details.html">
+                        <Link to="/blog-details">
                           <img
                             src="assets/img/blog/recent-post-1-1.jpg"
                             alt="Blog Imagee"
@@ -439,7 +439,7 @@ const BlogDetails = () => {
                       </div>
                       <div className="media-body">
                         <h4 className="post-title">
-                          <Link className="text-inherit" to="blog-details.html">
+                          <Link className="text-inherit" to="/blog-details">
                             Unsatiable entreaties may collecting Power.
                           </Link>
                         </h4>
@@ -452,7 +452,7 @@ const BlogDetails = () => {
                     </div>
                     <div className="recent-post">
                       <div className="media-img">
-                        <Link to="blog-details.html">
+                        <Link to="/blog-details">
                           <img
                             src="assets/img/blog/recent-post-1-2.jpg"
                             alt="Blog Imagee"
@@ -461,7 +461,7 @@ const BlogDetails = () => {
                       </div>
                       <div className="media-body">
                         <h4 className="post-title">
-                          <Link className="text-inherit" to="blog-details.html">
+                          <Link className="text-inherit" to="/blog-details">
                             Regional Manager limited time management.
                           </Link>
                         </h4>
@@ -474,7 +474,7 @@ const BlogDetails = () => {
                     </div>
                     <div className="recent-post">
                       <div className="media-img">
-                        <Link to="blog-details.html">
+                        <Link to="/blog-details">
                           <img
                             src="assets/img/blog/recent-post-1-3.jpg"
                             alt="Blog Imagee"
@@ -483,7 +483,7 @@ const BlogDetails = () => {
                       </div>
                       <div className="media-body">
                         <h4 className="post-title">
-                          <Link className="text-inherit" to="blog-details.html">
+                          <Link className="text-inherit" to="/blog-details">
                             What’s the Holding Back It Solution Industry?
                           </Link>
                         </h4>

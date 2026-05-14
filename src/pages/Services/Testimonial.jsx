@@ -5,37 +5,37 @@ import "swiper/css";
 const testimonialData = [
   {
     id: 1,
-    img: "assets/img/testimonial/testi_2_1.jpg",
+    img: "/assets/img/testimonial/testi_2_1.jpg",
     name: "David Farnandes",
     role: "CEO at Anaton",
   },
   {
     id: 2,
-    img: "assets/img/testimonial/testi_2_2.jpg",
+    img: "/assets/img/testimonial/testi_2_2.jpg",
     name: "Jackline Techie",
     role: "CEO at Kormola",
   },
   {
     id: 3,
-    img: "assets/img/testimonial/testi_2_3.jpg",
+    img: "/assets/img/testimonial/testi_2_3.jpg",
     name: "Abraham Khalil",
     role: "CEO at Rimasu",
   },
   {
     id: 4,
-    img: "assets/img/testimonial/testi_2_1.jpg",
+    img: "/assets/img/testimonial/testi_2_1.jpg",
     name: "David Farnandes",
     role: "CEO at Anaton",
   },
   {
     id: 5,
-    img: "assets/img/testimonial/testi_2_2.jpg",
+    img: "/assets/img/testimonial/testi_2_2.jpg",
     name: "Jackline Techie",
     role: "CEO at Kormola",
   },
   {
     id: 6,
-    img: "assets/img/testimonial/testi_2_3.jpg",
+    img: "/assets/img/testimonial/testi_2_3.jpg",
     name: "Abraham Khalil",
     role: "CEO at Rimasu",
   },
@@ -86,35 +86,39 @@ const Testimonial = () => {
               1200: { slidesPerView: 2 },
             }}
           >
-            {testimonialData.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="testi-box">
-                  <div className="testi-box_img">
-                    <img src={item.img} alt="Avater" />
-                    <div className="testi-box_quote">
-                      <img src="assets/img/icon/quote_left_2.svg" alt="quote" />
-                    </div>
-                  </div>
-
-                  <div className="testi-box_content">
-                    <p className="testi-box_text">
-                      Objectively visualize error-free technology for B2B
-                      alignment. Monotonectally harness an expanded array of
-                      models via effective collaboration.
-                    </p>
-
-                    <div className="testi-box_review">
-                      {[...Array(5)].map((_, i) => (
-                        <i key={i} className="fa-solid fa-star-sharp"></i>
-                      ))}
+            {testimonialData &&
+              testimonialData.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="testi-box">
+                    <div className="testi-box_img">
+                      <img src={item.img} alt="Avater" />
+                      <div className="testi-box_quote">
+                        <img
+                          src="assets/img/icon/quote_left_2.svg"
+                          alt="quote"
+                        />
+                      </div>
                     </div>
 
-                    <h3 className="box-title">{item.name}</h3>
-                    <p className="testi-box_desig">{item.role}</p>
+                    <div className="testi-box_content">
+                      <p className="testi-box_text">
+                        Objectively visualize error-free technology for B2B
+                        alignment. Monotonectally harness an expanded array of
+                        models via effective collaboration.
+                      </p>
+
+                      <div className="testi-box_review">
+                        {[...Array(5)].map((_, i) => (
+                          <i key={i} className="fa-solid fa-star-sharp"></i>
+                        ))}
+                      </div>
+
+                      <h3 className="box-title">{item.name}</h3>
+                      <p className="testi-box_desig">{item.role}</p>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>

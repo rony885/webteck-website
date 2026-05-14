@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const blogData = [
   {
@@ -100,12 +101,12 @@ const Blog = () => {
 
                   <div className="blog-content">
                     <div className="blog-meta">
-                      <a href="#">
+                      <Link to="#">
                         <i className="fal fa-calendar-days"></i> {item.date}
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link to="#">
                         <i className="fal fa-comments"></i> {item.comments}
-                      </a>
+                      </Link>
                     </div>
 
                     <h3 className="box-title">{item.title}</h3>

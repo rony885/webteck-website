@@ -135,41 +135,42 @@ const Testimonial = () => {
                 1200: { slidesPerView: 2 },
               }}
             >
-              {testimonials.map((item, index) => (
-                <SwiperSlide key={item.id}>
-                  <div className="testi-box">
-                    <div className="testi-box_img">
-                      <img src={item.img} alt={item.name} />
+              {testimonials &&
+                testimonials.map((item, index) => (
+                  <SwiperSlide key={item.id}>
+                    <div className="testi-box">
+                      <div className="testi-box_img">
+                        <img src={item.img} alt={item.name} />
 
-                      <div className="testi-box_quote">
-                        <img
-                          src="/assets/img/icon/quote_left_2.svg"
-                          alt="quote"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="testi-box_content">
-                      <p className="testi-box_text">
-                        Objectively visualize error-free technology for B2B
-                        alignment. Monotonectally harness an expanded array of
-                        models via effective collaboration.
-                      </p>
-
-                      <div className="testi-box_review">
-                        <i className="fa-solid fa-star-sharp"></i>
-                        <i className="fa-solid fa-star-sharp"></i>
-                        <i className="fa-solid fa-star-sharp"></i>
-                        <i className="fa-solid fa-star-sharp"></i>
-                        <i className="fa-solid fa-star-sharp"></i>
+                        <div className="testi-box_quote">
+                          <img
+                            src="/assets/img/icon/quote_left_2.svg"
+                            alt="quote"
+                          />
+                        </div>
                       </div>
 
-                      <h3 className="box-title">{item.name}</h3>
-                      <p className="testi-box_desig">{item.role}</p>
+                      <div className="testi-box_content">
+                        <p className="testi-box_text">
+                          Objectively visualize error-free technology for B2B
+                          alignment. Monotonectally harness an expanded array of
+                          models via effective collaboration.
+                        </p>
+
+                        <div className="testi-box_review">
+                          <i className="fa-solid fa-star-sharp"></i>
+                          <i className="fa-solid fa-star-sharp"></i>
+                          <i className="fa-solid fa-star-sharp"></i>
+                          <i className="fa-solid fa-star-sharp"></i>
+                          <i className="fa-solid fa-star-sharp"></i>
+                        </div>
+
+                        <h3 className="box-title">{item.name}</h3>
+                        <p className="testi-box_desig">{item.role}</p>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                ))}
             </Swiper>
 
             {/* Navigation Buttons */}

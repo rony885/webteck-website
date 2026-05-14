@@ -42,7 +42,7 @@ const ServicesDetails = () => {
                     internal or "organic" sources for virtual e-business.
                     Phosfluorescently re-engineer enterprise markets via
                     value-added networks. Seamlessly restore inexpensive
-                    e-markets vis-a-vis corporate intellectual capital.
+                    e-markets vis-Link-vis corporate intellectual capital.
                     Holisticly reinvent compelling niche markets via scalable
                     strategic.
                   </p>
@@ -61,12 +61,12 @@ const ServicesDetails = () => {
                           src="assets/img/service/service_inner_1.jpg"
                           alt="service"
                         />
-                        <a
-                          href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                        <Link
+                          to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
                           className="play-btn popup-video"
                         >
                           <i className="fas fa-play"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-md-6 mb-30">
@@ -183,7 +183,7 @@ const ServicesDetails = () => {
                           aria-expanded="false"
                           aria-controls="collapse-2"
                         >
-                          How long should a business plan be?
+                          How long should Link business plan be?
                         </button>
                       </div>
                       <div
@@ -245,22 +245,22 @@ const ServicesDetails = () => {
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <a href="service-details.html">Web Development</a>
+                        <Link to="service-details.html">Web Development</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">UI/UX Design</a>
+                        <Link to="service-details.html">UI/UX Design</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">Digital Marketing</a>
+                        <Link to="service-details.html">Digital Marketing</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">Business Analysis</a>
+                        <Link to="service-details.html">Business Analysis</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">Softwer Services</a>
+                        <Link to="service-details.html">Softwer Services</Link>
                       </li>
                       <li>
-                        <a href="service-details.html">Mechine Learning</a>
+                        <Link to="service-details.html">Mechine Learning</Link>
                       </li>
                     </ul>
                   </div>
@@ -269,13 +269,13 @@ const ServicesDetails = () => {
                 <div className="widget widget_download d-none">
                   <h4 className="widget_title">Download Brochure</h4>
                   <div className="download-widget-wrap">
-                    <a href="service-details.html" className="th-btn">
+                    <Link to="service-details.html" className="th-btn">
                       <i className="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF
-                    </a>
-                    <a href="service-details.html" className="th-btn style5">
+                    </Link>
+                    <Link to="service-details.html" className="th-btn style5">
                       <i className="fa-light fa-file-lines me-2"></i>DOWNLOAD
                       DOC
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -288,9 +288,9 @@ const ServicesDetails = () => {
                   <div className="widget-banner">
                     <span className="text">CONTACT US NOW</span>
                     <h2 className="title">You Need Help?</h2>
-                    <a href="contact.html" className="th-btn style3">
+                    <Link to="/contact" className="th-btn style3">
                       GET A QUOTE<i className="fas fa-arrow-right ms-2"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </aside>

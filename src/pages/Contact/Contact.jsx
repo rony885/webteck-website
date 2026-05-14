@@ -114,11 +114,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <form
-                action="https://html.themeholy.com/webteck/demo/mail.php"
-                method="POST"
-                className="contact-form ajax-contact"
-              >
+              <form className="contact-form ajax-contact">
                 <div className="row">
                   <div className="form-group col-md-6">
                     <input
