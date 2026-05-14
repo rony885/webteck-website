@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
@@ -7,40 +7,15 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 
-const teamData = [
-  {
-    id: 1,
-    img: "assets/img/team/team_2_1.jpg",
-    name: "Rayan Athels",
-    role: "Founder & CEO",
-  },
-  {
-    id: 2,
-    img: "assets/img/team/team_2_2.jpg",
-    name: "Alex Furnandes",
-    role: "Project Manager",
-  },
-  {
-    id: 3,
-    img: "assets/img/team/team_2_3.jpg",
-    name: "Mary Crispy",
-    role: "Chief Expert",
-  },
-  {
-    id: 4,
-    img: "assets/img/team/team_2_4.jpg",
-    name: "Henry Joshep",
-    role: "Product Manager",
-  },
-  {
-    id: 5,
-    img: "assets/img/team/team_2_5.jpg",
-    name: "Sanjida Carlose",
-    role: "IT Consultant",
-  },
-];
+import teamArray from "../../DataJs/team.js";
 
 const Team = () => {
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    setTeams(teamArray);
+  }, []);
+
   return (
     <section
       className="bg-smoke space"
@@ -94,7 +69,7 @@ const Team = () => {
               1200: { slidesPerView: 4 },
             }}
           >
-            {teamData.map((team) => (
+            {teams.map((team) => (
               <SwiperSlide key={team.id}>
                 <div className="th-team team-box">
                   <div className="team-img">
@@ -106,18 +81,18 @@ const Team = () => {
                       </div>
 
                       <div className="th-social">
-                        <a href="#">
+                        <Link to="#">
                           <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                           <i className="fab fa-linkedin-in"></i>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

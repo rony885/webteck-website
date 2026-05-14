@@ -1,159 +1,178 @@
-// import React from "react";
-// import styled from "styled-components";
-// import { Link } from "react-router-dom";
-
-// const Mobilemenu = ({ menuOpen, closeMenu }) => {
-//   return (
-//     <Wrapper>
-//       <div className={`th-menu-wrapper ${menuOpen ? "th-body-visible" : ""}`}>
-//         <div className="th-menu-area text-center">
-//           <button className="th-menu-toggle" onClick={closeMenu}>
-//             <i className="fal fa-times"></i>
-//           </button>
-//           <div className="mobile-logo">
-//             <Link className="icon-masking" to="/">
-//               <span
-//                 // data-mask-src="assets/img/logo.svg"
-//                 style={{
-//                   backgroundImage: `url(/assets/img/logo.svg)`,
-//                 }}
-//                 className="mask-icon"
-//               ></span>
-//               <img src="/assets/img/logo.svg" alt="Webteck" />
-//             </Link>
-//           </div>
-//           <div className="th-mobile-menu">
-//             <ul>
-//               <li className="menu-item-has-children mega-menu-wrap">
-//                 <Link to="/">Home</Link>
-//               </li>
-//               <li>
-//                 <Link to="/about">About Us</Link>
-//               </li>
-//               <li className="menu-item-has-children">
-//                 <Link to="/services">Services</Link>
-//               </li>
-//               <li className="menu-item-has-children">
-//                 <Link to="/portfolio">Portfolio</Link>
-//               </li>
-//               <li className="menu-item-has-children">
-//                 <Link to="#">Pages</Link>
-//                 <ul className="sub-menu">
-//                   <li>
-//                     <Link to="/team">Team</Link>
-//                   </li>
-//                   <li>
-//                     <Link to="/team-details">Team Details</Link>
-//                   </li>
-
-//                   <li>
-//                     <Link to="/gallery">Gallery</Link>
-//                   </li>
-//                   <li>
-//                     <Link to="/pricing">Pricing</Link>
-//                   </li>
-//                   <li>
-//                     <Link to="/faq">Faq Page</Link>
-//                   </li>
-//                 </ul>
-//               </li>
-//               <li className="menu-item-has-children">
-//                 <Link to="/blog">Blog</Link>
-//               </li>
-//               <li>
-//                 <Link to="/contact">Contact</Link>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </div>
-//     </Wrapper>
-//   );
-// };
-
-// const Wrapper = styled.section``;
-
-// export default Mobilemenu;
-
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Mobilemenu = ({ menuOpen, closeMenu }) => {
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const location = useLocation();
+
+  const toggleMenu = (menu) => {
+    setActiveMenu(activeMenu === menu ? null : menu);
+  };
+
+  // Pages menu active
+  const isPagesActive = [
+    "/team",
+    "/team-details",
+    "/gallery",
+    "/pricing",
+    "/faq",
+  ].includes(location.pathname);
+
   return (
-    <>
+    <Wrapper>
       <div className={`th-menu-wrapper ${menuOpen ? "th-body-visible" : ""}`}>
-        <div class="th-menu-area text-center">
-          <button class="th-menu-toggle" onClick={closeMenu}>
-            <i class="fal fa-times"></i>
+        <div className="th-menu-area text-center">
+          {/* Close Button */}
+          <button className="th-menu-toggle" onClick={closeMenu}>
+            <i className="fal fa-times"></i>
           </button>
-          <div class="mobile-logo">
-            <Link class="icon-masking" to="index-2">
+
+          {/* Logo */}
+          <div className="mobile-logo">
+            <Link className="icon-masking" to="/" onClick={closeMenu}>
               <span
-                class="mask-icon bg-mask"
+                className="mask-icon bg-mask"
                 style={{
                   maskImage: 'url("/assets/img/logo.svg")',
                   WebkitMaskImage: 'url("/assets/img/logo.svg")',
                 }}
               ></span>
+
               <img src="/assets/img/logo.svg" alt="Webteck" />
             </Link>
           </div>
-          <div class="th-mobile-menu">
+
+          {/* Mobile Menu */}
+          <div className="th-mobile-menu">
             <ul>
+              {/* Home */}
               <li>
-                <Link to="#">
-                  Home<span class="th-mean-expand"></span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="#">
-                  Services<span class="th-mean-expand"></span>
-                </Link>
-              </li>
-              <li class="menu-item-has-children th-item-has-children open">
-                <Link to="#">
-                  Pages<span class="th-mean-expand"></span>
-                </Link>
-                <ul
-                  class="sub-menu th-submenu"
-                  // style="max-height: 430px; display: none;"
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={closeMenu}
                 >
-                  <li class="menu-item-has-children th-item-has-children"></li>
+                  Home
+                </NavLink>
+              </li>
+
+              {/* About */}
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={closeMenu}
+                >
+                  About Us
+                </NavLink>
+              </li>
+
+              {/* Services */}
+              <li>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={closeMenu}
+                >
+                  Services
+                </NavLink>
+              </li>
+
+              {/* Pages Dropdown */}
+              <li
+                className={`menu-item-has-children th-item-has-children ${
+                  activeMenu === "pages" ? "open th-active" : ""
+                }`}
+              >
+                <Link
+                  to="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toggleMenu("pages");
+                  }}
+                  className={isPagesActive ? "active" : ""}
+                >
+                  Pages
+                  <span className="th-mean-expand"></span>
+                </Link>
+
+                <ul
+                  className="sub-menu th-submenu"
+                  style={{
+                    display: activeMenu === "pages" ? "block" : "none",
+                  }}
+                >
                   <li>
-                    <Link to="/team">Team</Link>
-                  </li>
-                  <li>
-                    <Link to="/team-details">Team Details</Link>
+                    <NavLink to="/team" onClick={closeMenu}>
+                      Team
+                    </NavLink>
                   </li>
 
                   <li>
-                    <Link to="/gallery">Gallery</Link>
+                    <NavLink to="/team-details" onClick={closeMenu}>
+                      Team Details
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link to="/pricing">Pricing</Link>
+                    <NavLink to="/gallery" onClick={closeMenu}>
+                      Gallery
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link to="/faq">Faq Page</Link>
+                    <NavLink to="/pricing" onClick={closeMenu}>
+                      Pricing
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink to="/faq" onClick={closeMenu}>
+                      Faq Page
+                    </NavLink>
                   </li>
                 </ul>
               </li>
+
+              {/* Blog */}
               <li>
-                <Link to="/blog">
-                  Blog<span class="th-mean-expand"></span>
-                </Link>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={closeMenu}
+                >
+                  Blog
+                </NavLink>
               </li>
+
+              {/* Contact */}
               <li>
-                <Link to="contact">Contact</Link>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={closeMenu}
+                >
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.section`
+  .th-mobile-menu a.active {
+    color: #684df4 !important;
+  }
+
+  .th-mobile-menu a:hover {
+    color: #684df4;
+  }
+`;
 
 export default Mobilemenu;

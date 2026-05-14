@@ -38,11 +38,11 @@ const Blog = () => {
                 </div>
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
+                    <Link className="author" to="/blog">
                       <img src="assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>21 June, 2025
                     </Link>
                     <Link to="/blog-details">
@@ -88,11 +88,11 @@ const Blog = () => {
                 </div>
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
+                    <Link className="author" to="/blog">
                       <img src="assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>22 June, 2025
                     </Link>
                     <Link to="/blog-details">
@@ -119,11 +119,11 @@ const Blog = () => {
               <div className="th-blog blog-single">
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
+                    <Link className="author" to="/blog">
                       <img src="assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>24 June, 2025
                     </Link>
                     <Link to="/blog-details">
@@ -164,11 +164,11 @@ const Blog = () => {
                 </div>
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
+                    <Link className="author" to="/blog">
                       <img src="assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>24 June, 2025
                     </Link>
                     <Link to="/blog-details">
@@ -201,11 +201,11 @@ const Blog = () => {
                 </div>
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
+                    <Link className="author" to="/blog">
                       <img src="assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>25 June, 2025
                     </Link>
                     <Link to="/blog-details">
@@ -232,16 +232,16 @@ const Blog = () => {
               <div className="th-pagination text-center">
                 <ul>
                   <li>
-                    <Link to="blog.html">1</Link>
+                    <Link to="/blog">1</Link>
                   </li>
                   <li>
-                    <Link to="blog.html">2</Link>
+                    <Link to="/blog">2</Link>
                   </li>
                   <li>
-                    <Link to="blog.html">3</Link>
+                    <Link to="/blog">3</Link>
                   </li>
                   <li>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="far fa-arrow-right"></i>
                     </Link>
                   </li>
@@ -262,22 +262,22 @@ const Blog = () => {
                   <h3 className="widget_title">Categories</h3>
                   <ul>
                     <li>
-                      <Link to="blog.html">IT Solution</Link>
+                      <Link to="/blog">IT Solution</Link>
                     </li>
                     <li>
-                      <Link to="blog.html">SEO Marketing</Link>
+                      <Link to="/blog">SEO Marketing</Link>
                     </li>
                     <li>
-                      <Link to="blog.html">Web Development</Link>
+                      <Link to="/blog">Web Development</Link>
                     </li>
                     <li>
-                      <Link to="blog.html">Cloud Solution</Link>
+                      <Link to="/blog">Cloud Solution</Link>
                     </li>
                     <li>
-                      <Link to="blog.html">Network Marketing</Link>
+                      <Link to="/blog">Network Marketing</Link>
                     </li>
                     <li>
-                      <Link to="blog.html">UI/UX Design</Link>
+                      <Link to="/blog">UI/UX Design</Link>
                     </li>
                   </ul>
                 </div>
@@ -300,7 +300,7 @@ const Blog = () => {
                           </Link>
                         </h4>
                         <div className="recent-post-meta">
-                          <Link to="blog.html">
+                          <Link to="/blog">
                             <i className="fal fa-calendar-days"></i>21 June,
                             2025
                           </Link>
@@ -323,7 +323,7 @@ const Blog = () => {
                           </Link>
                         </h4>
                         <div className="recent-post-meta">
-                          <Link to="blog.html">
+                          <Link to="/blog">
                             <i className="fal fa-calendar-days"></i>22 June,
                             2025
                           </Link>
@@ -346,7 +346,7 @@ const Blog = () => {
                           </Link>
                         </h4>
                         <div className="recent-post-meta">
-                          <Link to="blog.html">
+                          <Link to="/blog">
                             <i className="fal fa-calendar-days"></i>23 June,
                             2025
                           </Link>
@@ -435,15 +435,15 @@ const Blog = () => {
                 <div className="widget widget_tag_cloud">
                   <h3 className="widget_title">Popular Tags</h3>
                   <div className="tagcloud">
-                    <Link to="blog.html">Technology</Link>
-                    <Link to="blog.html">Advice</Link>
-                    <Link to="blog.html">Solution</Link>
-                    <Link to="blog.html">Consultion</Link>
-                    <Link to="blog.html">Business</Link>
-                    <Link to="blog.html">Services</Link>
-                    <Link to="blog.html">Start Up</Link>
-                    <Link to="blog.html">Agency</Link>
-                    <Link to="blog.html">Software</Link>
+                    <Link to="/blog">Technology</Link>
+                    <Link to="/blog">Advice</Link>
+                    <Link to="/blog">Solution</Link>
+                    <Link to="/blog">Consultion</Link>
+                    <Link to="/blog">Business</Link>
+                    <Link to="/blog">Services</Link>
+                    <Link to="/blog">Start Up</Link>
+                    <Link to="/blog">Agency</Link>
+                    <Link to="/blog">Software</Link>
                   </div>
                 </div>
               </aside>

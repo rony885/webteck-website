@@ -5,15 +5,15 @@ const PortfolioDetails = () => {
   return (
     <>
       <div
-        class="breadcumb-wrapper"
+        className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
         }}
       >
-        <div class="container">
-          <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Project Details</h1>
-            <ul class="breadcumb-menu">
+        <div className="container">
+          <div className="breadcumb-content">
+            <h1 className="breadcumb-title">Project Details</h1>
+            <ul className="breadcumb-menu">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -23,20 +23,20 @@ const PortfolioDetails = () => {
         </div>
       </div>
 
-      <section class="space-top space-extra-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-xxl-8 col-lg-8">
-              <div class="page-single">
-                <div class="page-img">
+      <section className="space-top space-extra-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-8 col-lg-8">
+              <div className="page-single">
+                <div className="page-img">
                   <img
                     src="assets/img/project/project_details.jpg"
                     alt="Project Imagee"
                   />
                 </div>
-                <div class="page-content">
-                  <h2 class="h3 page-title">IT Consultency</h2>
-                  <p class="">
+                <div className="page-content">
+                  <h2 className="h3 page-title">IT Consultency</h2>
+                  <p className="">
                     Interactively implement top-line ROI vis-Link-vis 24/7
                     e-markets. Assertively communicate web-enabled catalysts for
                     change through low-risk high-yield functionalities. Quickly
@@ -45,48 +45,48 @@ const PortfolioDetails = () => {
                     leveraged sources. Holisticly envisioneer technically sound
                     imperatives without just in time networks.
                   </p>
-                  <div class="project-inner-box mb-40">
-                    <h3 class="box-title">The challenge of project</h3>
-                    <p class="">
+                  <div className="project-inner-box mb-40">
+                    <h3 className="box-title">The challenge of project</h3>
+                    <p className="">
                       Authoritatively scale business meta-services before
                       client-based technologies. Collaboratively strategize
                       synergistic scenarios rather than flexible action items.
                       Continually deliver market positioning convergence and
                       mission-critical infrastructures.
                     </p>
-                    <div class="row gy-4 align-items-center">
-                      <div class="col-md-5">
+                    <div className="row gy-4 align-items-center">
+                      <div className="col-md-5">
                         <img
-                          class="w-100 rounded-3"
+                          className="w-100 rounded-3"
                           src="assets/img/project/project_inner_1.jpg"
                           alt="project"
                         />
                       </div>
-                      <div class="col-md-7">
-                        <div class="checklist">
+                      <div className="col-md-7">
+                        <div className="checklist">
                           <ul>
                             <li>
-                              <i class="fas fa-badge-check"></i> It is Link long
+                              <i className="fas fa-badge-check"></i> It is Link long
                               established fact that reader will
                             </li>
                             <li>
-                              <i class="fas fa-badge-check"></i> There are many
+                              <i className="fas fa-badge-check"></i> There are many
                               variations of passages
                             </li>
                             <li>
-                              <i class="fas fa-badge-check"></i> All the Lorem
+                              <i className="fas fa-badge-check"></i> All the Lorem
                               Ipsum generators
                             </li>
                             <li>
-                              <i class="fas fa-badge-check"></i> Asearch for
+                              <i className="fas fa-badge-check"></i> Asearch for
                               'lorem ipsum' will uncover many
                             </li>
                             <li>
-                              <i class="fas fa-badge-check"></i> injected humour
+                              <i className="fas fa-badge-check"></i> injected humour
                               words which
                             </li>
                             <li>
-                              <i class="fas fa-badge-check"></i> There are many
+                              <i className="fas fa-badge-check"></i> There are many
                               variations of passages of
                             </li>
                           </ul>
@@ -94,9 +94,9 @@ const PortfolioDetails = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="project-inner-box">
-                    <h3 class="box-title">The result of project</h3>
-                    <p class="mb-3">
+                  <div className="project-inner-box">
+                    <h3 className="box-title">The result of project</h3>
+                    <p className="mb-3">
                       Objectively utilize client-based e-service after corporate
                       niche markets. Dynamically morph compelling channels
                       vis-Link-vis multifunctional interfaces. Credibly
@@ -105,17 +105,17 @@ const PortfolioDetails = () => {
                       thinking through process-centric web services.
                       Progressively target multidisciplinary.
                     </p>
-                    <div class="row gy-4 align-items-center">
-                      <div class="col-md-6">
+                    <div className="row gy-4 align-items-center">
+                      <div className="col-md-6">
                         <img
-                          class="w-100 rounded-3"
+                          className="w-100 rounded-3"
                           src="assets/img/project/project_inner_2.jpg"
                           alt="project"
                         />
                       </div>
-                      <div class="col-md-6">
+                      <div className="col-md-6">
                         <img
-                          class="w-100 rounded-3"
+                          className="w-100 rounded-3"
                           src="assets/img/project/project_inner_3.jpg"
                           alt="project"
                         />
@@ -125,78 +125,78 @@ const PortfolioDetails = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xxl-4 col-lg-4">
-              <aside class="sidebar-area">
-                <div class="widget widget_info">
-                  <h3 class="widget_title">Project Information</h3>
-                  <div class="project-info-list">
-                    <div class="contact-feature">
-                      <div class="icon-btn">
-                        <i class="fa-solid fa-user"></i>
+            <div className="col-xxl-4 col-lg-4">
+              <aside className="sidebar-area">
+                <div className="widget widget_info">
+                  <h3 className="widget_title">Project Information</h3>
+                  <div className="project-info-list">
+                    <div className="contact-feature">
+                      <div className="icon-btn">
+                        <i className="fa-solid fa-user"></i>
                       </div>
-                      <div class="media-body">
-                        <p class="contact-feature_label">Clients:</p>
+                      <div className="media-body">
+                        <p className="contact-feature_label">Clients:</p>
                         <Link
                           to="https://www.trustpilot.com/"
-                          class="contact-feature_link"
+                          className="contact-feature_link"
                         >
                           David Jackson
                         </Link>
                       </div>
                     </div>
-                    <div class="contact-feature">
-                      <div class="icon-btn">
-                        <i class="fa-solid fa-folder-open"></i>
+                    <div className="contact-feature">
+                      <div className="icon-btn">
+                        <i className="fa-solid fa-folder-open"></i>
                       </div>
-                      <div class="media-body">
-                        <p class="contact-feature_label">Category:</p>
-                        <Link to="project.html" class="contact-feature_link">
+                      <div className="media-body">
+                        <p className="contact-feature_label">Category:</p>
+                        <Link to="project.html" className="contact-feature_link">
                           IT Technology
                         </Link>
                       </div>
                     </div>
-                    <div class="contact-feature">
-                      <div class="icon-btn">
-                        <i class="fa-solid fa-calendar-days"></i>
+                    <div className="contact-feature">
+                      <div className="icon-btn">
+                        <i className="fa-solid fa-calendar-days"></i>
                       </div>
-                      <div class="media-body">
-                        <p class="contact-feature_label">Date</p>
-                        <span class="contact-feature_link">20 Sep, 2024</span>
+                      <div className="media-body">
+                        <p className="contact-feature_label">Date</p>
+                        <span className="contact-feature_link">20 Sep, 2024</span>
                       </div>
                     </div>
-                    <div class="contact-feature">
-                      <div class="icon-btn">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <div className="contact-feature">
+                      <div className="icon-btn">
+                        <i className="fa-solid fa-location-dot"></i>
                       </div>
-                      <div class="media-body">
-                        <p class="contact-feature_label">Address:</p>
-                        <Link to="project.html" class="contact-feature_link">
+                      <div className="media-body">
+                        <p className="contact-feature_label">Address:</p>
+                        <Link to="project.html" className="contact-feature_link">
                           55 Main Address, USA
                         </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="widget widget_download">
-                  <h4 class="widget_title">Download Brochure</h4>
-                  <div class="download-widget-wrap">
-                    <Link to="service-details.html" class="th-btn">
-                      <i class="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF
+                <div className="widget widget_download">
+                  <h4 className="widget_title">Download Brochure</h4>
+                  <div className="download-widget-wrap">
+                    <Link to="service-details.html" className="th-btn">
+                      <i className="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF
                     </Link>
-                    <Link to="service-details.html" class="th-btn style5">
-                      <i class="fa-light fa-file-lines me-2"></i>DOWNLOAD DOC
+                    <Link to="service-details.html" className="th-btn style5">
+                      <i className="fa-light fa-file-lines me-2"></i>DOWNLOAD DOC
                     </Link>
                   </div>
                 </div>
                 <div
-                  class="widget widget_banner"
+                  className="widget widget_banner"
                   data-bg-src="assets/img/bg/widget_banner.jpg"
                 >
-                  <div class="widget-banner">
-                    <span class="text">CONTACT US NOW</span>
-                    <h2 class="title">You Need Help?</h2>
-                    <Link to="contact.html" class="th-btn style3">
-                      GET A QUOTE<i class="fas fa-arrow-right ms-2"></i>
+                  <div className="widget-banner">
+                    <span className="text">CONTACT US NOW</span>
+                    <h2 className="title">You Need Help?</h2>
+                    <Link to="contact.html" className="th-btn style3">
+                      GET A QUOTE<i className="fas fa-arrow-right ms-2"></i>
                     </Link>
                   </div>
                 </div>
