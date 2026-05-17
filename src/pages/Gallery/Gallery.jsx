@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const galleryImages = [
-  "/assets/img/gallery/gallery_1_1.jpg",
-  "/assets/img/gallery/gallery_1_2.jpg",
-  "/assets/img/gallery/gallery_1_3.jpg",
-  "/assets/img/gallery/gallery_1_4.jpg",
-  "/assets/img/gallery/gallery_1_5.jpg",
-  "/assets/img/gallery/gallery_1_6.jpg",
-  "/assets/img/gallery/gallery_1_7.jpg",
-  "/assets/img/gallery/gallery_1_8.jpg",
-  "/assets/img/gallery/gallery_1_9.jpg",
-];
+import galleriesArray from "../../DataJs/gallery.js";
 
 const Gallery = () => {
+  const [galleries, setGalleries] = useState([]);
+
+  useEffect(() => {
+    setGalleries(galleriesArray);
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,17 +26,13 @@ const Gallery = () => {
   const nextImage = (e) => {
     e.stopPropagation();
 
-    setCurrentIndex((prev) =>
-      prev === galleryImages.length - 1 ? 0 : prev + 1,
-    );
+    setCurrentIndex((prev) => (prev === galleries.length - 1 ? 0 : prev + 1));
   };
 
   const prevImage = (e) => {
     e.stopPropagation();
 
-    setCurrentIndex((prev) =>
-      prev === 0 ? galleryImages.length - 1 : prev - 1,
-    );
+    setCurrentIndex((prev) => (prev === 0 ? galleries.length - 1 : prev - 1));
   };
 
   return (
@@ -69,7 +61,7 @@ const Gallery = () => {
       <div className="space-top space-extra-bottom">
         <div className="container">
           <div className="row gy-4">
-            {galleryImages.map((img, index) => (
+            {galleries.map((img, index) => (
               <div className="col-md-6 col-xl-4" key={index}>
                 <div className="gallery-card">
                   <div className="gallery-img">
@@ -100,7 +92,7 @@ const Gallery = () => {
 
           {/* Image */}
           <img
-            src={galleryImages[currentIndex]}
+            src={galleries[currentIndex]}
             alt="popup"
             className="popup-img"
             onClick={(e) => e.stopPropagation()}

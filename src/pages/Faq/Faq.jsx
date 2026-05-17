@@ -334,7 +334,9 @@ const Faq = () => {
       <div
         className="space"
         id="contact-sec"
-        data-bg-src="assets/img/bg/form_bg_1.jpg"
+        style={{
+          backgroundImage: "url('/assets/img/bg/form_bg_1.jpg')",
+        }}
       >
         <div className="container">
           <div className="title-area text-center">
@@ -342,9 +344,17 @@ const Faq = () => {
               <div className="icon-masking me-2">
                 <span
                   className="mask-icon"
-                  data-mask-src="assets/img/theme-img/title_shape_2.svg"
+                  style={{
+                    WebkitMaskImage:
+                      "url('/assets/img/theme-img/title_shape_2.svg')",
+                    maskImage: "url('/assets/img/theme-img/title_shape_2.svg')",
+                  }}
                 ></span>
-                <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
               </div>
               GET A QUOTE
             </span>
@@ -352,11 +362,7 @@ const Faq = () => {
               Request A Free <span className="text-theme">Consultation</span>
             </h2>
           </div>
-          <form
-            action="https://html.themeholy.com/webteck/demo/mail.php"
-            method="POST"
-            className="quote-form ajax-contact"
-          >
+          <form className="quote-form ajax-contact">
             <div className="row">
               <div className="form-group col-md-6">
                 <input
@@ -391,17 +397,17 @@ const Faq = () => {
               <div className="form-group col-md-6">
                 <select name="subject" id="subject" className="form-select">
                   <option
-                    value=""
+                    defaultValue=""
                     disabled="disabled"
                     selected="selected"
                     hidden
                   >
                     Select Subject
                   </option>
-                  <option value="IT Consult">IT Consult</option>
-                  <option value="UI/UX Design">UI/UX Design</option>
-                  <option value="Branding Solution">Branding Solution</option>
-                  <option value="Product Marketing">Product Marketing</option>
+                  <option defaultValue="IT Consult">IT Consult</option>
+                  <option defaultValue="UI/UX Design">UI/UX Design</option>
+                  <option defaultValue="Branding Solution">Branding Solution</option>
+                  <option defaultValue="Product Marketing">Product Marketing</option>
                 </select>
                 <i className="fal fa-file-lines"></i>
               </div>

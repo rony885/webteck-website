@@ -10,25 +10,25 @@ const Loader = () => {
         <div className="animation-preloader">
           <div className="txt-loading">
             <span preloader-text="W" className="characters">
-              W
+              H
             </span>
             <span preloader-text="E" className="characters">
               E
             </span>
             <span preloader-text="B" className="characters">
-              B
+              A
             </span>
             <span preloader-text="T" className="characters">
-              T
+              L
             </span>
             <span preloader-text="E" className="characters">
-              E
+              I
             </span>
             <span preloader-text="C" className="characters">
-              C
+              X
             </span>
             <span preloader-text="K" className="characters">
-              K
+              S
             </span>
           </div>
         </div>

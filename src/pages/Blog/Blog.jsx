@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import blogsArray from "../../DataJs/blogs.js";
 
 const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    setBlogs(blogsArray);
+  }, []);
+
   return (
     <>
       <div
@@ -26,419 +33,70 @@ const Blog = () => {
       <section className="th-blog-wrapper space-top space-extra-bottom">
         <div className="container">
           <div className="row">
-            {/* <div className="col-xxl-8 col-lg-7"> */}
-            <div className="col-xxl-6 col-lg-6">
-              <div className="th-blog blog-single has-post-thumbnail">
-                <div className="blog-img">
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-1.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>21 June, 2025
-                    </Link>
+            {blogs.map((blog) => (
+              <div className="col-lg-6 mb-4" key={blog.id}>
+                <div className="th-blog blog-single has-post-thumbnail">
+                  <div className="blog-img">
                     <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
+                      <img src={blog.image} alt="Blog" className="w-100" />
                     </Link>
                   </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Unsatiable entreaties may collecting Power.
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
 
-              <div className="th-blog blog-single has-post-thumbnail">
-                <div className="blog-img">
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-3.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                  <Link
-                    to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                    className="play-btn popup-video"
-                  >
-                    <i className="fas fa-play"></i>
-                  </Link>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>24 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
-                  </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Latin derived from Cicero's 1st-century BC
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
+                  <div className="blog-content">
+                    <div className="blog-meta">
+                      <Link className="author" to="/blog">
+                        <img
+                          src="assets/img/blog/author-1-1.png"
+                          alt="avatar"
+                        />
+                        By Themeholy
+                      </Link>
 
-              <div className="th-pagination text-center">
-                <ul>
-                  <li>
-                    <Link to="/blog">1</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">2</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">3</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">
-                      <i className="far fa-arrow-right"></i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                      <Link to="/blog">
+                        <i className="fa-light fa-calendar-days"></i>
+                        {blog.date}
+                      </Link>
 
-            <div className="col-xxl-6 col-lg-6">
-              {/* <aside className="sidebar-area">
-                <div className="widget widget_search">
-                  <form className="search-form">
-                    <input type="text" placeholder="Enter Keyword" />
-                    <button type="submit">
-                      <i className="far fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-                <div className="widget widget_categories">
-                  <h3 className="widget_title">Categories</h3>
-                  <ul>
-                    <li>
-                      <Link to="/blog">IT Solution</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">SEO Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Web Development</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Cloud Solution</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Network Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">UI/UX Design</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="widget">
-                  <h3 className="widget_title">Recent Posts</h3>
-                  <div className="recent-post-wrap">
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-1.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            Unsatiable entreaties may collecting Power.
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="/blog">
-                            <i className="fal fa-calendar-days"></i>21 June,
-                            2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-2.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            Regional Manager limited time management.
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="/blog">
-                            <i className="fal fa-calendar-days"></i>22 June,
-                            2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-3.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            What’s the Holding Back It Solution Industry?
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="/blog">
-                            <i className="fal fa-calendar-days"></i>23 June,
-                            2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="widget">
-                  <h3 className="widget_title">Gallery Post</h3>
-                  <div className="sidebar-gallery">
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_1.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_1.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
+                      <Link to="/blog-details">
+                        <i className="fa-regular fa-comments"></i>
+                        Comments ({blog.comments})
                       </Link>
                     </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_2.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_2.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_3.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_3.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_4.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_4.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_5.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_5.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_6.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_6.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="widget widget_tag_cloud">
-                  <h3 className="widget_title">Popular Tags</h3>
-                  <div className="tagcloud">
-                    <Link to="/blog">Technology</Link>
-                    <Link to="/blog">Advice</Link>
-                    <Link to="/blog">Solution</Link>
-                    <Link to="/blog">Consultion</Link>
-                    <Link to="/blog">Business</Link>
-                    <Link to="/blog">Services</Link>
-                    <Link to="/blog">Start Up</Link>
-                    <Link to="/blog">Agency</Link>
-                    <Link to="/blog">Software</Link>
-                  </div>
-                </div>
-              </aside> */}
 
-               <div className="th-blog blog-single has-post-thumbnail">
-                <div className="blog-img">
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-1.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>21 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
+                    <h2 className="blog-title">
+                      <Link to="/blog-details">{blog.title}</Link>
+                    </h2>
+
+                    <p className="blog-text">
+                      {blog.description.slice(0, 60)}...
+                    </p>
+
+                    <Link to="/blog-details" className="line-btn">
+                      Read More
                     </Link>
                   </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Unsatiable entreaties may collecting Power.
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
                 </div>
               </div>
-
-              <div className="th-blog blog-single has-post-thumbnail">
-                <div className="blog-img">
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-3.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                  <Link
-                    to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                    className="play-btn popup-video"
-                  >
-                    <i className="fas fa-play"></i>
-                  </Link>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>24 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
-                  </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Latin derived from Cicero's 1st-century BC
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
-
-              <div className="th-pagination text-center">
-                <ul>
-                  <li>
-                    <Link to="/blog">1</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">2</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">3</Link>
-                  </li>
-                  <li>
-                    <Link to="/blog">
-                      <i className="far fa-arrow-right"></i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
+          </div>
+          {/* Pagination */}
+          <div className="th-pagination text-center mt-4">
+            <ul>
+              <li>
+                <Link to="/blog">1</Link>
+              </li>
+              <li>
+                <Link to="/blog">2</Link>
+              </li>
+              <li>
+                <Link to="/blog">3</Link>
+              </li>
+              <li>
+                <Link to="/blog">
+                  <i className="far fa-arrow-right"></i>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

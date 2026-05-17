@@ -85,7 +85,9 @@ const Contact = () => {
       {/* Contact Form Section */}
       <div
         className="bg-smoke space"
-        data-bg-src="assets/img/bg/contact_bg_1.png"
+        style={{
+          backgroundImage: "url('/assets/img/bg/contact_bg_1.png')",
+        }}
       >
         <div className="container">
           <div className="row">
@@ -95,10 +97,15 @@ const Contact = () => {
                   <div className="icon-masking me-2">
                     <span
                       className="mask-icon"
-                      data-mask-src="assets/img/theme-img/title_shape_2.svg"
+                      style={{
+                        WebkitMaskImage:
+                          "url('/assets/img/theme-img/title_shape_2.svg')",
+                        maskImage:
+                          "url('/assets/img/theme-img/title_shape_2.svg')",
+                      }}
                     ></span>
                     <img
-                      src="assets/img/theme-img/title_shape_2.svg"
+                      src="/assets/img/theme-img/title_shape_2.svg"
                       alt="shape"
                     />
                   </div>
@@ -138,13 +145,19 @@ const Contact = () => {
 
                   <div className="form-group col-md-6">
                     <select name="subject" className="form-select">
-                      <option value="" disabled selected hidden>
+                      <option defaultValue="" disabled selected hidden>
                         Select Subject
                       </option>
-                      <option value="Web Development">Web Development</option>
-                      <option value="Brand Marketing">Brand Marketing</option>
-                      <option value="UI/UX Designing">UI/UX Designing</option>
-                      <option value="Digital Marketing">
+                      <option defaultValue="Web Development">
+                        Web Development
+                      </option>
+                      <option defaultValue="Brand Marketing">
+                        Brand Marketing
+                      </option>
+                      <option defaultValue="UI/UX Designing">
+                        UI/UX Designing
+                      </option>
+                      <option defaultValue="Digital Marketing">
                         Digital Marketing
                       </option>
                     </select>

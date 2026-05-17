@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -6,38 +6,46 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
-const blogData = [
-  {
-    id: 1,
-    img: "assets/img/blog/blog_1_1.jpg",
-    date: "15 Jan, 2025",
-    comments: "2 Comments",
-    title: "Unsatiable entreaties may collecting Power.",
-  },
-  {
-    id: 2,
-    img: "assets/img/blog/blog_1_2.jpg",
-    date: "16 Jan, 2025",
-    comments: "3 Comments",
-    title: "Regional Manager & limited time management.",
-  },
-  {
-    id: 3,
-    img: "assets/img/blog/blog_1_3.jpg",
-    date: "17 Jan, 2025",
-    comments: "2 Comments",
-    title: "What’s the Holding Back the IT Solution Industry?",
-  },
-  {
-    id: 4,
-    img: "assets/img/blog/blog_1_4.jpg",
-    date: "19 Jan, 2025",
-    comments: "4 Comments",
-    title: "Latin derived from Cicero's 1st-century BC",
-  },
-];
+import blogsArray from "../../DataJs/blogs.js";
+
+// const blogData = [
+//   {
+//     id: 1,
+//     img: "assets/img/blog/blog_1_1.jpg",
+//     date: "15 Jan, 2025",
+//     comments: "2 Comments",
+//     title: "Unsatiable entreaties may collecting Power.",
+//   },
+//   {
+//     id: 2,
+//     img: "assets/img/blog/blog_1_2.jpg",
+//     date: "16 Jan, 2025",
+//     comments: "3 Comments",
+//     title: "Regional Manager & limited time management.",
+//   },
+//   {
+//     id: 3,
+//     img: "assets/img/blog/blog_1_3.jpg",
+//     date: "17 Jan, 2025",
+//     comments: "2 Comments",
+//     title: "What’s the Holding Back the IT Solution Industry?",
+//   },
+//   {
+//     id: 4,
+//     img: "assets/img/blog/blog_1_4.jpg",
+//     date: "19 Jan, 2025",
+//     comments: "4 Comments",
+//     title: "Latin derived from Cicero's 1st-century BC",
+//   },
+// ];
 
 const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    setBlogs(blogsArray);
+  }, []);
+
   return (
     <section
       className="bg-top-right overflow-hidden pt-3"
@@ -90,11 +98,11 @@ const Blog = () => {
             }}
             className="th-slider has-shadow"
           >
-            {blogData.map((item) => (
+            {blogs.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="blog-card">
                   <div className="blog-img">
-                    <img src={item.img} alt="blog" />
+                    <img src={item.image} alt="blog" />
                   </div>
 
                   <div className="blog-content">
@@ -108,6 +116,9 @@ const Blog = () => {
                     </div>
 
                     <h3 className="box-title">{item.title}</h3>
+                    <Link to="/blog-details" className="line-btn">
+                      Read More
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>

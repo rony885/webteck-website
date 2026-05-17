@@ -1,51 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import pricingsArray from "../../DataJs/pricing.js";
+
 const PricingInfo = () => {
-  const pricingData = [
-    {
-      id: 1,
-      title: "Silver Package",
-      price: "$199.00",
-      particleId: "price-p1",
-      unavailable: [3, 4],
-      features: [
-        "30 Days Trial Features",
-        "Unlimited Features",
-        "Multi-Language Content",
-        "Data backup and recovery",
-        "Synced To Cloud Database",
-      ],
-    },
-    {
-      id: 2,
-      title: "Gold Package",
-      price: "$299.00",
-      particleId: "price-p2",
-      unavailable: [4],
-      features: [
-        "30 Days Trial Features",
-        "Unlimited Features",
-        "Multi-Language Content",
-        "Data backup and recovery",
-        "Synced To Cloud Database",
-      ],
-    },
-    {
-      id: 3,
-      title: "Platinum Package",
-      price: "$599.00",
-      particleId: "price-p3",
-      unavailable: [],
-      features: [
-        "30 Days Trial Features",
-        "Unlimited Features",
-        "Multi-Language Content",
-        "Data backup and recovery",
-        "Synced To Cloud Database",
-      ],
-    },
-  ];
+  const [pricings, setPricings] = useState([]);
+
+  useEffect(() => {
+    setPricings(pricingsArray);
+  }, []);
 
   return (
     <>
@@ -99,7 +62,7 @@ const PricingInfo = () => {
 
           {/* Pricing Cards */}
           <div className="row gy-4 justify-content-center">
-            {pricingData.map((item) => (
+            {pricings.map((item) => (
               <div className="col-xl-4 col-md-6" key={item.id}>
                 <div className="price-card">
                   <div className="price-card_top">

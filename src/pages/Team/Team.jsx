@@ -1,7 +1,81 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import teamArray from "../../DataJs/team.js";
+
+// const teamData = [
+//   {
+//     id: 1,
+//     image: "assets/img/team/team_1_1.jpg",
+//     name: "Rayan Athels",
+//     designation: "Founder & CEO",
+//     link: "/team-details",
+//     particleId: "team-p1",
+//   },
+//   {
+//     id: 2,
+//     image: "assets/img/team/team_1_2.jpg",
+//     name: "Alex Furnandes",
+//     designation: "Project Manager",
+//     link: "/team-details",
+//     particleId: "team-p2",
+//   },
+//   {
+//     id: 3,
+//     image: "assets/img/team/team_1_3.jpg",
+//     name: "Mary Crispy",
+//     designation: "Chief Expert",
+//     link: "/team-details",
+//     particleId: "team-p3",
+//   },
+//   {
+//     id: 4,
+//     image: "assets/img/team/team_1_4.jpg",
+//     name: "Henry Joshep",
+//     designation: "Product Manager",
+//     link: "/team-details",
+//     particleId: "team-p4",
+//   },
+//   {
+//     id: 5,
+//     image: "assets/img/team/team_1_5.jpg",
+//     name: "Sanjida Carlose",
+//     designation: "IT Consultant",
+//     link: "/team-details",
+//     particleId: "team-p5",
+//   },
+//   {
+//     id: 6,
+//     image: "assets/img/team/team_1_6.jpg",
+//     name: "Marian Widjya",
+//     designation: "Head Manager",
+//     link: "/team-details",
+//     particleId: "team-p6",
+//   },
+//   {
+//     id: 7,
+//     image: "assets/img/team/team_1_7.jpg",
+//     name: "Peter Parker",
+//     designation: "Web Developer",
+//     link: "/team-details",
+//     particleId: "team-p7",
+//   },
+//   {
+//     id: 8,
+//     image: "assets/img/team/team_1_8.jpg",
+//     name: "Grayson Gabriel",
+//     designation: "UI/UX Designer",
+//     link: "/team-details",
+//     particleId: "team-p8",
+//   },
+// ];
 
 const Team = () => {
+    const [teams, setTeams] = useState([]);
+  
+    useEffect(() => {
+      setTeams(teamArray);
+    }, []);
+
   return (
     <>
       <div
@@ -114,230 +188,38 @@ const Team = () => {
             </h2>
           </div>
           <div className="row gy-40">
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_1.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p1"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
+            {teams.map((team) => {
+              return (
+                <div className="col-lg-3 col-md-6">
+                  <div className="th-team team-card">
+                    <div className="team-img">
+                      <img src={team.img} alt="Team" />
+                    </div>
+                    <div className="team-content">
+                      <div className="box-particle" id="team-p1"></div>
+                      <div className="team-social">
+                        <Link target="_blank" to="https://facebook.com/">
+                          <i className="fab fa-facebook-f"></i>
+                        </Link>
+                        <Link target="_blank" to="https://twitter.com/">
+                          <i className="fab fa-twitter"></i>
+                        </Link>
+                        <Link target="_blank" to="https://instagram.com/">
+                          <i className="fab fa-instagram"></i>
+                        </Link>
+                        <Link target="_blank" to="https://linkedin.com/">
+                          <i className="fab fa-linkedin-in"></i>
+                        </Link>
+                      </div>
+                      <h3 className="box-title">
+                        <Link to="/team-details">{team.name}</Link>
+                      </h3>
+                      <span className="team-desig">{team.designation}</span>
+                    </div>
                   </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Rayan Athels</Link>
-                  </h3>
-                  <span className="team-desig">Founder & CEO</span>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_2.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p2"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Alex Furnandes</Link>
-                  </h3>
-                  <span className="team-desig">Project Manager</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_3.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p3"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Mary Crispy</Link>
-                  </h3>
-                  <span className="team-desig">Cheif Expert</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_4.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p4"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Henry Joshep</Link>
-                  </h3>
-                  <span className="team-desig">Product Manager</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_5.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p5"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Sanjida Carlose</Link>
-                  </h3>
-                  <span className="team-desig">IT Consultant</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_6.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p6"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Marian Widjya</Link>
-                  </h3>
-                  <span className="team-desig">Head Manager</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_7.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p7"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Peter Parker</Link>
-                  </h3>
-                  <span className="team-desig">Web Developer</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="th-team team-card">
-                <div className="team-img">
-                  <img src="assets/img/team/team_1_8.jpg" alt="Team" />
-                </div>
-                <div className="team-content">
-                  <div className="box-particle" id="team-p8"></div>
-                  <div className="team-social">
-                    <Link target="_blank" to="https://facebook.com/">
-                      <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link target="_blank" to="https://twitter.com/">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link target="_blank" to="https://instagram.com/">
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link target="_blank" to="https://linkedin.com/">
-                      <i className="fab fa-linkedin-in"></i>
-                    </Link>
-                  </div>
-                  <h3 className="box-title">
-                    <Link to="/team-details">Grayson Gabriel</Link>
-                  </h3>
-                  <span className="team-desig">UI/UX Designer</span>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>

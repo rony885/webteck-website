@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -6,27 +6,14 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import testimonialsArray from "../../DataJs/testimonials.js";
+
 const Testimonial = () => {
-  const testimonials = [
-    {
-      id: 1,
-      img: "/assets/img/testimonial/testi_2_1.jpg",
-      name: "David Farnandes",
-      role: "CEO at Anaton",
-    },
-    {
-      id: 2,
-      img: "/assets/img/testimonial/testi_2_2.jpg",
-      name: "Jackline Techie",
-      role: "CEO at Kormola",
-    },
-    {
-      id: 3,
-      img: "/assets/img/testimonial/testi_2_3.jpg",
-      name: "Abraham Khalil",
-      role: "CEO at Rimasu",
-    },
-  ];
+  const [testimonials, setTestimonials] = useState([]);
+
+  useEffect(() => {
+    setTestimonials(testimonialsArray);
+  }, []);
 
   return (
     <>
