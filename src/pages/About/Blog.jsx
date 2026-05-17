@@ -40,13 +40,11 @@ const blogData = [
 const Blog = () => {
   return (
     <section
-      className="bg-top-right overflow-hidden space-bottom"
+      className="bg-top-right overflow-hidden pt-3"
+      // className="bg-top-right overflow-hidden space-bottom pt-3"
       id="blog-sec"
       style={{
-        backgroundImage: "url(assets/img/bg/blog_bg_1.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "top right",
-        backgroundRepeat: "no-repeat",
+        backgroundImage: "url(/assets/img/bg/blog_bg_1.png)",
       }}
     >
       <div className="container space-bottom">

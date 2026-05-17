@@ -26,7 +26,8 @@ const Blog = () => {
       <section className="th-blog-wrapper space-top space-extra-bottom">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-lg-7">
+            {/* <div className="col-xxl-8 col-lg-7"> */}
+            <div className="col-xxl-6 col-lg-6">
               <div className="th-blog blog-single has-post-thumbnail">
                 <div className="blog-img">
                   <Link to="/blog-details">
@@ -66,87 +67,7 @@ const Blog = () => {
                   </Link>
                 </div>
               </div>
-              <div className="th-blog blog-single has-post-thumbnail">
-                <div
-                  className="blog-img th-carousel"
-                  data-arrows="true"
-                  data-slide-show="1"
-                  data-fade="true"
-                >
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-2.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                  <Link to="/blog-details">
-                    <img
-                      src="assets/img/blog/blog-s-1-4.jpg"
-                      alt="Blog Imagee"
-                    />
-                  </Link>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>22 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
-                  </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Regional Manager limited time management.
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
-              <div className="th-blog blog-single">
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>24 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
-                  </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      What’s the Holding Back It Solution Industry?
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
+
               <div className="th-blog blog-single has-post-thumbnail">
                 <div className="blog-img">
                   <Link to="/blog-details">
@@ -192,43 +113,7 @@ const Blog = () => {
                   </Link>
                 </div>
               </div>
-              <div className="th-blog blog-single has-post-thumbnail">
-                <div className="blog-audio">
-                  <iframe
-                    title="Tell Me U Luv Me (with Trippie Redd) by Juice WRLD"
-                    src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F830279092&amp;show_artwork=true&amp;maxwidth=751&amp;maxheight=1000&amp;dnt=1"
-                  ></iframe>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <Link className="author" to="/blog">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
-                      By Themeholy
-                    </Link>
-                    <Link to="/blog">
-                      <i className="fa-light fa-calendar-days"></i>25 June, 2025
-                    </Link>
-                    <Link to="/blog-details">
-                      <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
-                  </div>
-                  <h2 className="blog-title">
-                    <Link to="/blog-details">
-                      Regional Manager limited time management.
-                    </Link>
-                  </h2>
-                  <p className="blog-text">
-                    Progressively plagiarize quality metrics for impactful data.
-                    Assertively. Holisticly leverage existing magnetic
-                    functionalities. Assertively orchestrate high-quality
-                    customer service vis-Link-vis intuitive interfaces.
-                    Conveniently enhance highly efficient infomediaries.
-                  </p>
-                  <Link to="/blog-details" className="line-btn">
-                    Read More
-                  </Link>
-                </div>
-              </div>
+
               <div className="th-pagination text-center">
                 <ul>
                   <li>
@@ -248,8 +133,9 @@ const Blog = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xxl-4 col-lg-5">
-              <aside className="sidebar-area">
+
+            <div className="col-xxl-6 col-lg-6">
+              {/* <aside className="sidebar-area">
                 <div className="widget widget_search">
                   <form className="search-form">
                     <input type="text" placeholder="Enter Keyword" />
@@ -446,7 +332,112 @@ const Blog = () => {
                     <Link to="/blog">Software</Link>
                   </div>
                 </div>
-              </aside>
+              </aside> */}
+
+               <div className="th-blog blog-single has-post-thumbnail">
+                <div className="blog-img">
+                  <Link to="/blog-details">
+                    <img
+                      src="assets/img/blog/blog-s-1-1.jpg"
+                      alt="Blog Imagee"
+                    />
+                  </Link>
+                </div>
+                <div className="blog-content">
+                  <div className="blog-meta">
+                    <Link className="author" to="/blog">
+                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
+                      By Themeholy
+                    </Link>
+                    <Link to="/blog">
+                      <i className="fa-light fa-calendar-days"></i>21 June, 2025
+                    </Link>
+                    <Link to="/blog-details">
+                      <i className="fa-regular fa-comments"></i>Comments (3)
+                    </Link>
+                  </div>
+                  <h2 className="blog-title">
+                    <Link to="/blog-details">
+                      Unsatiable entreaties may collecting Power.
+                    </Link>
+                  </h2>
+                  <p className="blog-text">
+                    Progressively plagiarize quality metrics for impactful data.
+                    Assertively. Holisticly leverage existing magnetic
+                    functionalities. Assertively orchestrate high-quality
+                    customer service vis-Link-vis intuitive interfaces.
+                    Conveniently enhance highly efficient infomediaries.
+                  </p>
+                  <Link to="/blog-details" className="line-btn">
+                    Read More
+                  </Link>
+                </div>
+              </div>
+
+              <div className="th-blog blog-single has-post-thumbnail">
+                <div className="blog-img">
+                  <Link to="/blog-details">
+                    <img
+                      src="assets/img/blog/blog-s-1-3.jpg"
+                      alt="Blog Imagee"
+                    />
+                  </Link>
+                  <Link
+                    to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                    className="play-btn popup-video"
+                  >
+                    <i className="fas fa-play"></i>
+                  </Link>
+                </div>
+                <div className="blog-content">
+                  <div className="blog-meta">
+                    <Link className="author" to="/blog">
+                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
+                      By Themeholy
+                    </Link>
+                    <Link to="/blog">
+                      <i className="fa-light fa-calendar-days"></i>24 June, 2025
+                    </Link>
+                    <Link to="/blog-details">
+                      <i className="fa-regular fa-comments"></i>Comments (3)
+                    </Link>
+                  </div>
+                  <h2 className="blog-title">
+                    <Link to="/blog-details">
+                      Latin derived from Cicero's 1st-century BC
+                    </Link>
+                  </h2>
+                  <p className="blog-text">
+                    Progressively plagiarize quality metrics for impactful data.
+                    Assertively. Holisticly leverage existing magnetic
+                    functionalities. Assertively orchestrate high-quality
+                    customer service vis-Link-vis intuitive interfaces.
+                    Conveniently enhance highly efficient infomediaries.
+                  </p>
+                  <Link to="/blog-details" className="line-btn">
+                    Read More
+                  </Link>
+                </div>
+              </div>
+
+              <div className="th-pagination text-center">
+                <ul>
+                  <li>
+                    <Link to="/blog">1</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">2</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">3</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">
+                      <i className="far fa-arrow-right"></i>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

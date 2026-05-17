@@ -11,12 +11,12 @@ const About = () => {
   return (
     <div>
       <AboutInfo />
-      <Team />
       <Counter />
       <Choose />
       <Testimonial />
-      <Blog />
-      <Brand />
+      {/* <Blog /> */}
+      {/* <Brand /> */}
+      <Team />
     </div>
   );
 };

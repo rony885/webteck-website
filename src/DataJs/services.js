@@ -59,20 +59,9 @@ const services = [
     link: "/service-details",
     bgShape: "/assets/img/bg/service_card_bg.png",
   },
+
   {
     id: 6,
-    number: "06",
-    img: "/assets/img/service/service_box_1.jpg",
-    // image: "/assets/img/icon/service_card_6.svg",
-    icon: "assets/img/icon/service_box_1.svg",
-    title: "Machine Learning",
-    description:
-      "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
-    link: "/service-details",
-    bgShape: "/assets/img/bg/service_card_bg.png",
-  },
-  {
-    id: 7,
     number: "07",
     img: "/assets/img/service/service_box_1.jpg",
     // image: "/assets/img/icon/service_card_7.svg",
@@ -83,30 +72,39 @@ const services = [
     link: "/service-details",
     bgShape: "/assets/img/bg/service_card_bg.png",
   },
-  {
-    id: 8,
-    number: "08",
-    img: "/assets/img/service/service_box_1.jpg",
-    // image: "/assets/img/icon/service_card_8.svg",
-    icon: "assets/img/icon/service_box_1.svg",
-    title: "Cloud Computing",
-    description:
-      "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
-    link: "/service-details",
-    bgShape: "/assets/img/bg/service_card_bg.png",
-  },
-  {
-    id: 9,
-    number: "09",
-    img: "/assets/img/service/service_box_1.jpg",
-    // image: "/assets/img/icon/service_card_9.svg",
-    icon: "assets/img/icon/service_box_1.svg",
-    title: "Backup & Recovery",
-    description:
-      "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
-    link: "/service-details",
-    bgShape: "/assets/img/bg/service_card_bg.png",
-  },
+  // {
+  //   id: 7,
+  //   number: "08",
+  //   img: "/assets/img/service/service_box_1.jpg",
+  //   icon: "assets/img/icon/service_box_1.svg",
+  //   title: "Cloud Computing",
+  //   description:
+  //     "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
+  //   link: "/service-details",
+  //   bgShape: "/assets/img/bg/service_card_bg.png",
+  // },
+  // {
+  //   id: 8,
+  //   number: "09",
+  //   img: "/assets/img/service/service_box_1.jpg",
+  //   icon: "assets/img/icon/service_box_1.svg",
+  //   title: "Backup & Recovery",
+  //   description:
+  //     "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
+  //   link: "/service-details",
+  //   bgShape: "/assets/img/bg/service_card_bg.png",
+  // },
+  // {
+  //   id: 9,
+  //   number: "06",
+  //   img: "/assets/img/service/service_box_1.jpg",
+  //   icon: "assets/img/icon/service_box_1.svg",
+  //   title: "Machine Learning",
+  //   description:
+  //     "Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.",
+  //   link: "/service-details",
+  //   bgShape: "/assets/img/bg/service_card_bg.png",
+  // },
 ];
 
 export default services;

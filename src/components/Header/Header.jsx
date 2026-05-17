@@ -66,7 +66,7 @@ const Header = ({ toggleMenu }) => {
             <div className="container">
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
-                  <div className="header-logo">
+                  <div className="header-logo py-0">
                     <Link className="icon-masking" to="/">
                       <span
                         // data-mask-src="assets/img/logo.svg"
@@ -75,7 +75,12 @@ const Header = ({ toggleMenu }) => {
                         }}
                         className="mask-icon"
                       ></span>
-                      <img src="/assets/img/logo.svg" alt="Webteck" />
+                      <img
+                        // src="/assets/img/logo.svg"
+                        src="/assets/img/logo11.png"
+                        alt="Webteck"
+                        // style={{ width: "196px", height: "46px" }}
+                      />
                     </Link>
                   </div>
                 </div>

@@ -35,12 +35,14 @@ const Mobilemenu = ({ menuOpen, closeMenu }) => {
               <span
                 className="mask-icon bg-mask"
                 style={{
-                  maskImage: 'url("/assets/img/logo.svg")',
-                  WebkitMaskImage: 'url("/assets/img/logo.svg")',
+                  // maskImage: 'url("/assets/img/logo.svg")',
+                  // WebkitMaskImage: 'url("/assets/img/logo.svg")',
+                  maskImage: 'url("/assets/img/logo11.png")',
+                  WebkitMaskImage: 'url("/assets/img/logo11.png")',
                 }}
               ></span>
 
-              <img src="/assets/img/logo.svg" alt="Webteck" />
+              <img src="/assets/img/logo11.png" alt="Webteck" />
             </Link>
           </div>
 

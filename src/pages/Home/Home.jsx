@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Pricing from "./Pricing";
 import Brand from "./Brand";
 import FrequentlyQuestion from "./FrequentlyQuestion";
+import Blog from "../About/Blog";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Pricing />
       <Brand />
       <FrequentlyQuestion />
+      <Blog />
     </div>
   );
 };
