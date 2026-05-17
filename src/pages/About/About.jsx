@@ -4,8 +4,8 @@ import Team from "./Team";
 import Counter from "./Counter";
 import Choose from "./Choose";
 import Testimonial from "./Testimonial";
-import Blog from "./Blog";
-import Brand from "./Brand";
+// import Blog from "./Blog";
+// import Brand from "./Brand";
 
 const About = () => {
   return (
