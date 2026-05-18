@@ -8,6 +8,7 @@ const BlogDetails = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+           padding: "60px 0",
         }}
       >
         <div className="container">
@@ -22,26 +23,31 @@ const BlogDetails = () => {
           </div>
         </div>
       </div>
+
       <section className="th-blog-wrapper blog-details space-top space-extra-bottom">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-lg-7">
+            <div className="col-xxl-12 col-lg-12">
               <div className="th-blog blog-single">
                 <div className="blog-img">
-                  <img src="assets/img/blog/blog-s-1-1.jpg" alt="Blog Imagee" />
+                  <img
+                    src="/assets/img/blog/blog-s-1-1.jpg"
+                    alt="Blog Imagee"
+                    style={{ width: "100%" }}
+                  />
                 </div>
                 <div className="blog-content">
                   <div className="blog-meta">
-                    <Link className="author" to="blog.html">
-                      <img src="assets/img/blog/author-1-1.png" alt="avater" />
+                    <Link className="author" to="/blog">
+                      <img src="/assets/img/blog/author-1-1.png" alt="avater" />
                       By Themeholy
                     </Link>
-                    <Link to="blog.html">
+                    <Link to="/blog">
                       <i className="fa-light fa-calendar-days"></i>21 June, 2025
                     </Link>
-                    <Link to="/blog-details">
+                    {/* <Link to="/blog-details">
                       <i className="fa-regular fa-comments"></i>Comments (3)
-                    </Link>
+                    </Link> */}
                   </div>
                   <h2 className="blog-title">
                     Unsatiable entreaties may collecting Power.
@@ -144,373 +150,7 @@ const BlogDetails = () => {
                     magnetic channels without enabled value.
                   </p>
                 </div>
-                <div className="share-links clearfix">
-                  <div className="row justify-content-between">
-                    <div className="col-sm-auto">
-                      <span className="share-links-title">Tags:</span>
-                      <div className="tagcloud">
-                        <Link to="blog.html">Education</Link>
-                        <Link to="blog.html">Online</Link>
-                      </div>
-                    </div>
-                    <div className="col-sm-auto text-xl-end">
-                      <span className="share-links-title">Share:</span>
-                      <ul className="social-links">
-                        <li>
-                          <Link to="https://facebook.com/" target="_blank">
-                            <i className="fab fa-facebook-f"></i>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="https://twitter.com/" target="_blank">
-                            <i className="fab fa-twitter"></i>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="https://linkedin.com/" target="_blank">
-                            <i className="fab fa-linkedin-in"></i>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="https://instagram.com/" target="_blank">
-                            <i className="fab fa-instagram"></i>
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <div className="th-comments-wrap">
-                <h2 className="blog-inner-title h3">
-                  <i className="far fa-comments"></i> Comments (03)
-                </h2>
-                <ul className="comment-list">
-                  <li className="th-comment-item">
-                    <div className="th-post-comment">
-                      <div className="comment-avater">
-                        <img
-                          src="assets/img/blog/comment-author-1.jpg"
-                          alt="Comment Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <span className="commented-on">
-                          <i className="fal fa-calendar-alt"></i>14 March, 2024
-                        </span>
-                        <h3 className="name">David Malan</h3>
-                        <p className="text">
-                          Collaboratively empower multifunctional e-commerce for
-                          prospective applications. Seamlessly productivate plug
-                          and play markets.
-                        </p>
-                        <div className="reply_and_edit">
-                          <Link to="/blog-details" className="reply-btn">
-                            <i className="fas fa-reply"></i>Reply
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="children">
-                      <li className="th-comment-item">
-                        <div className="th-post-comment">
-                          <div className="comment-avater">
-                            <img
-                              src="assets/img/blog/comment-author-2.jpg"
-                              alt="Comment Author"
-                            />
-                          </div>
-                          <div className="comment-content">
-                            <span className="commented-on">
-                              <i className="fal fa-calendar-alt"></i>15 March, 2024
-                            </span>
-                            <h3 className="name">Tara sing</h3>
-                            <p className="text">
-                              Competently provide access to fully researched
-                              methods of empowerment without sticky models.
-                            </p>
-                            <div className="reply_and_edit">
-                              <Link to="/blog-details" className="reply-btn">
-                                <i className="fas fa-reply"></i>Reply
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="th-comment-item">
-                    <div className="th-post-comment">
-                      <div className="comment-avater">
-                        <img
-                          src="assets/img/blog/comment-author-3.jpg"
-                          alt="Comment Author"
-                        />
-                      </div>
-                      <div className="comment-content">
-                        <span className="commented-on">
-                          <i className="fal fa-calendar-alt"></i>16 March, 2024
-                        </span>
-                        <h3 className="name">Anadi Juila</h3>
-                        <p className="text">
-                          Collaboratively empower multifunctional e-commerce for
-                          prospective applications. Seamlessly productivate plug
-                          and play markets.
-                        </p>
-                        <div className="reply_and_edit">
-                          <Link to="/blog-details" className="reply-btn">
-                            <i className="fas fa-reply"></i>Reply
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="th-comment-form">
-                <div className="form-title">
-                  <h3 className="blog-inner-title mb-2">
-                    <i className="fa-solid fa-reply"></i> Leave Link Comment
-                  </h3>
-                  <p className="form-text">
-                    Your email address will not be published. Required fields
-                    are marked *
-                  </p>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 form-group">
-                    <input
-                      type="text"
-                      placeholder="Your Name*"
-                      className="form-control"
-                    />
-                    <i className="fal fa-user"></i>
-                  </div>
-                  <div className="col-md-6 form-group">
-                    <input
-                      type="text"
-                      placeholder="Your Email*"
-                      className="form-control"
-                    />
-                    <i className="fal fa-envelope"></i>
-                  </div>
-                  <div className="col-12 form-group">
-                    <input
-                      type="text"
-                      placeholder="Website"
-                      className="form-control"
-                    />
-                    <i className="fal fa-globe"></i>
-                  </div>
-                  <div className="col-12 form-group">
-                    <textarea
-                      placeholder="Write Link Comment*"
-                      className="form-control"
-                    ></textarea>
-                    <i className="fal fa-pencil"></i>
-                  </div>
-                  <div className="col-12 form-group mb-0">
-                    <button className="th-btn">Post Comment</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xxl-4 col-lg-5">
-              <aside className="sidebar-area">
-                <div className="widget widget_search">
-                  <form className="search-form">
-                    <input type="text" placeholder="Enter Keyword" />
-                    <button type="submit">
-                      <i className="far fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-                <div className="widget widget_categories">
-                  <h3 className="widget_title">Categories</h3>
-                  <ul>
-                    <li>
-                      <Link to="blog.html">IT Solution</Link>
-                    </li>
-                    <li>
-                      <Link to="blog.html">SEO Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="blog.html">Web Development</Link>
-                    </li>
-                    <li>
-                      <Link to="blog.html">Cloud Solution</Link>
-                    </li>
-                    <li>
-                      <Link to="blog.html">Network Marketing</Link>
-                    </li>
-                    <li>
-                      <Link to="blog.html">UI/UX Design</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="widget">
-                  <h3 className="widget_title">Gallery Post</h3>
-                  <div className="sidebar-gallery">
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_1.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_1.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_2.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_2.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_3.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_3.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_4.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_4.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_5.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_5.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                    <div className="gallery-thumb">
-                      <img
-                        src="assets/img/widget/gallery_1_6.jpg"
-                        alt="Gallery Imagee"
-                      />
-                      <Link
-                        to="assets/img/widget/gallery_1_6.jpg"
-                        className="gallery-btn popup-image"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="widget">
-                  <h3 className="widget_title">Recent Posts</h3>
-                  <div className="recent-post-wrap">
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-1.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            Unsatiable entreaties may collecting Power.
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="blog.html">
-                            <i className="fal fa-calendar-days"></i>21 June, 2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-2.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            Regional Manager limited time management.
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="blog.html">
-                            <i className="fal fa-calendar-days"></i>22 June, 2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="recent-post">
-                      <div className="media-img">
-                        <Link to="/blog-details">
-                          <img
-                            src="assets/img/blog/recent-post-1-3.jpg"
-                            alt="Blog Imagee"
-                          />
-                        </Link>
-                      </div>
-                      <div className="media-body">
-                        <h4 className="post-title">
-                          <Link className="text-inherit" to="/blog-details">
-                            What’s the Holding Back It Solution Industry?
-                          </Link>
-                        </h4>
-                        <div className="recent-post-meta">
-                          <Link to="blog.html">
-                            <i className="fal fa-calendar-days"></i>23 June, 2025
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="widget widget_tag_cloud">
-                  <h3 className="widget_title">Popular Tags</h3>
-                  <div className="tagcloud">
-                    <Link to="blog.html">Technology</Link>
-                    <Link to="blog.html">Advice</Link>
-                    <Link to="blog.html">Solution</Link>
-                    <Link to="blog.html">Consultion</Link>
-                    <Link to="blog.html">Business</Link>
-                    <Link to="blog.html">Services</Link>
-                    <Link to="blog.html">Start Up</Link>
-                    <Link to="blog.html">Agency</Link>
-                    <Link to="blog.html">Software</Link>
-                  </div>
-                </div>
-              </aside>
             </div>
           </div>
         </div>

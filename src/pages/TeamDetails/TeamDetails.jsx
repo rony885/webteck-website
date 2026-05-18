@@ -8,6 +8,7 @@ const TeamDetails = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -79,8 +80,8 @@ const TeamDetails = () => {
                   </div>
                   <div className="media-body">
                     <p className="contact-feature_label">Phone</p>
-                    <Link to="tel:+19088006987" className="contact-feature_link">
-                      +(190)-8800-6987
+                    <Link to="tel:01000000000" className="contact-feature_link">
+                      01000000000
                     </Link>
                   </div>
                 </div>
@@ -108,7 +109,7 @@ const TeamDetails = () => {
                   </div>
                 </div>
               </div>
-              <Link to="about.html" className="th-btn">
+              <Link to="/about" className="th-btn">
                 GET IN TOUCH<i className="fa-regular fa-arrow-right ms-2"></i>
               </Link>
             </div>
@@ -169,12 +170,12 @@ const TeamDetails = () => {
                 <div className="checklist">
                   <ul>
                     <li>
-                      <i className="fas fa-badge-check"></i> Experienced Attorneys
-                      Professional.
+                      <i className="fas fa-badge-check"></i> Experienced
+                      Attorneys Professional.
                     </li>
                     <li>
-                      <i className="fas fa-badge-check"></i> Experienced Attorneys
-                      Approach.
+                      <i className="fas fa-badge-check"></i> Experienced
+                      Attorneys Approach.
                     </li>
                   </ul>
                 </div>
@@ -185,8 +186,8 @@ const TeamDetails = () => {
                       Difference.
                     </li>
                     <li>
-                      <i className="fas fa-badge-check"></i> Committed To Helping
-                      Our Clients.
+                      <i className="fas fa-badge-check"></i> Committed To
+                      Helping Our Clients.
                     </li>
                   </ul>
                 </div>
@@ -209,17 +210,23 @@ const TeamDetails = () => {
                 <div className="experience-box">
                   <span className="experience-box_num">2nd</span>
                   <h6 className="experience-box_title">Softwer Developer</h6>
-                  <p className="experience-box_text">2010 - 2015 (Lazmi Trade)</p>
+                  <p className="experience-box_text">
+                    2010 - 2015 (Lazmi Trade)
+                  </p>
                 </div>
                 <div className="experience-box">
                   <span className="experience-box_num">3rd</span>
                   <h6 className="experience-box_title">Junior Inovator</h6>
-                  <p className="experience-box_text">2006 - 2009 (Onium Plan)</p>
+                  <p className="experience-box_text">
+                    2006 - 2009 (Onium Plan)
+                  </p>
                 </div>
                 <div className="experience-box">
                   <span className="experience-box_num">4th</span>
                   <h6 className="experience-box_title">Junior Developer</h6>
-                  <p className="experience-box_text">2000 - 2005 (Grages.Ltd)</p>
+                  <p className="experience-box_text">
+                    2000 - 2005 (Grages.Ltd)
+                  </p>
                 </div>
               </div>
             </div>

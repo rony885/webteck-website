@@ -15,6 +15,7 @@ const Blog = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+           padding: "60px 0",
         }}
       >
         <div className="container">
@@ -32,6 +33,31 @@ const Blog = () => {
 
       <section className="th-blog-wrapper space-top space-extra-bottom">
         <div className="container">
+          <div className="title-area text-center">
+            <span className="sub-title">
+              <div className="icon-masking me-2">
+                <span
+                  className="mask-icon"
+                  style={{
+                    WebkitMaskImage:
+                      "url(/assets/img/theme-img/title_shape_2.svg)",
+                    maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
+                  }}
+                ></span>
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
+              </div>
+              OUR BLOG
+            </span>
+
+            <h2 className="sec-title">
+              Latest <span className="text-theme fw-normal">Articles</span>
+            </h2>
+          </div>
+
           <div className="row">
             {blogs.map((blog) => (
               <div className="col-lg-6 mb-4" key={blog.id}>
@@ -57,10 +83,10 @@ const Blog = () => {
                         {blog.date}
                       </Link>
 
-                      <Link to="/blog-details">
+                      {/* <Link to="/blog-details">
                         <i className="fa-regular fa-comments"></i>
                         Comments ({blog.comments})
-                      </Link>
+                      </Link> */}
                     </div>
 
                     <h2 className="blog-title">
@@ -80,7 +106,7 @@ const Blog = () => {
             ))}
           </div>
           {/* Pagination */}
-          <div className="th-pagination text-center mt-4">
+          {/* <div className="th-pagination text-center mt-4">
             <ul>
               <li>
                 <Link to="/blog">1</Link>
@@ -97,7 +123,7 @@ const Blog = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

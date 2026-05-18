@@ -28,11 +28,13 @@ const Header = ({ toggleMenu }) => {
                     </li>
                     <li>
                       <i className="fas fa-phone"></i>
-                      <Link to="tel:+1539873657">+153-987-3657</Link>
+                      <Link to="tel:01767567797">01767567797</Link>
                     </li>
                     <li>
                       <i className="fas fa-envelope"></i>
-                      <Link to="mailto:info@webteck.com">info@webteck.com</Link>
+                      <Link to="mailto:info@healixsoft.com">
+                        info@healixsoft.com
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -40,20 +42,40 @@ const Header = ({ toggleMenu }) => {
               <div className="col-auto">
                 <div className="header-social">
                   <span className="social-title">Follow Us On : </span>
-                  <Link to="https://www.facebook.com/">
+                  <Link
+                    to="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-facebook-f"></i>
                   </Link>
-                  <Link to="https://www.whatsapp.com/">
+                  <Link
+                    to="https://www.whatsapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-whatsapp"></i>
                   </Link>
 
-                  <Link to="https://www.linkedin.com/">
+                  <Link
+                    to="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-linkedin-in"></i>
                   </Link>
-                  <Link to="https://www.instagram.com/">
+                  <Link
+                    to="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-instagram"></i>
                   </Link>
-                  <Link to="https://www.youtube.com/">
+                  <Link
+                    to="https://www.youtube.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-youtube"></i>
                   </Link>
                 </div>
@@ -71,13 +93,13 @@ const Header = ({ toggleMenu }) => {
                       <span
                         // data-mask-src="assets/img/logo.svg"
                         style={{
-                          backgroundImage: `url(/assets/img/logo.svg)`,
+                          backgroundImage: `url(/assets/img/logo1.png)`,
                         }}
                         className="mask-icon"
                       ></span>
                       <img
                         // src="/assets/img/logo.svg"
-                        src="/assets/img/logo11.png"
+                        src="/assets/img/logo1.png"
                         alt="Webteck"
                         // style={{ width: "196px", height: "46px" }}
                       />
@@ -169,9 +191,9 @@ const Header = ({ toggleMenu }) => {
                             <NavLink to="/team">Team</NavLink>
                           </li>
 
-                          <li>
+                          {/* <li>
                             <NavLink to="/team-details">Team Details</NavLink>
-                          </li>
+                          </li> */}
 
                           <li>
                             <NavLink to="/gallery">Gallery</NavLink>
@@ -182,7 +204,7 @@ const Header = ({ toggleMenu }) => {
                           </li>
 
                           <li>
-                            <NavLink to="/faq">Faq Page</NavLink>
+                            <NavLink to="/faq">Faq</NavLink>
                           </li>
                         </ul>
                       </li>

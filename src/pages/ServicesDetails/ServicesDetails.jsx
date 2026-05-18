@@ -8,6 +8,7 @@ const ServicesDetails = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -30,7 +31,7 @@ const ServicesDetails = () => {
               <div className="page-single">
                 <div className="page-img">
                   <img
-                    src="assets/img/service/service_details.jpg"
+                    src="/assets/img/service/service_details.jpg"
                     alt="Service Imagee"
                   />
                 </div>
@@ -58,7 +59,7 @@ const ServicesDetails = () => {
                       <div className="th-video">
                         <img
                           className="w-100"
-                          src="assets/img/service/service_inner_1.jpg"
+                          src="/assets/img/service/service_inner_1.jpg"
                           alt="service"
                         />
                         <Link
@@ -109,7 +110,7 @@ const ServicesDetails = () => {
                     <div className="service-feature">
                       <div className="service-feature_icon">
                         <img
-                          src="assets/img/icon/service_feature_1.svg"
+                          src="/assets/img/icon/service_feature_1.svg"
                           alt="icon"
                         />
                       </div>
@@ -126,7 +127,7 @@ const ServicesDetails = () => {
                     <div className="service-feature">
                       <div className="service-feature_icon">
                         <img
-                          src="assets/img/icon/service_feature_2.svg"
+                          src="/assets/img/icon/service_feature_2.svg"
                           alt="icon"
                         />
                       </div>
@@ -245,22 +246,22 @@ const ServicesDetails = () => {
                   <div className="menu-all-pages-container">
                     <ul className="menu">
                       <li>
-                        <Link to="service-details.html">Web Development</Link>
+                        <Link to="/service-details">Web Development</Link>
                       </li>
                       <li>
-                        <Link to="service-details.html">UI/UX Design</Link>
+                        <Link to="/service-details">UI/UX Design</Link>
                       </li>
                       <li>
-                        <Link to="service-details.html">Digital Marketing</Link>
+                        <Link to="/service-details">Digital Marketing</Link>
                       </li>
                       <li>
-                        <Link to="service-details.html">Business Analysis</Link>
+                        <Link to="/service-details">Business Analysis</Link>
                       </li>
                       <li>
-                        <Link to="service-details.html">Softwer Services</Link>
+                        <Link to="/service-details">Softwer Services</Link>
                       </li>
                       <li>
-                        <Link to="service-details.html">Mechine Learning</Link>
+                        <Link to="/service-details">Mechine Learning</Link>
                       </li>
                     </ul>
                   </div>
@@ -269,10 +270,10 @@ const ServicesDetails = () => {
                 <div className="widget widget_download d-none">
                   <h4 className="widget_title">Download Brochure</h4>
                   <div className="download-widget-wrap">
-                    <Link to="service-details.html" className="th-btn">
+                    <Link to="/service-details" className="th-btn">
                       <i className="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF
                     </Link>
-                    <Link to="service-details.html" className="th-btn style5">
+                    <Link to="/service-details" className="th-btn style5">
                       <i className="fa-light fa-file-lines me-2"></i>DOWNLOAD
                       DOC
                     </Link>

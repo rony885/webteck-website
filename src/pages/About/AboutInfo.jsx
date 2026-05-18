@@ -1,6 +1,5 @@
-
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutInfo = () => {
   return (
@@ -8,10 +7,9 @@ const AboutInfo = () => {
       <div
         className="breadcumb-wrapper"
         style={{
-          backgroundImage: `url(assets/img/bg/breadcumb-bg.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundImage: `url(/assets/img/bg/breadcumb-bg.jpg)`,
+          // padding: "160px 0",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -19,7 +17,7 @@ const AboutInfo = () => {
             <h1 className="breadcumb-title">About Us</h1>
             <ul className="breadcumb-menu">
               <li>
-                <a href="index-2.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>About Us</li>
             </ul>
@@ -30,6 +28,30 @@ const AboutInfo = () => {
       {/* About Section */}
       <div className="overflow-hidden space" id="about-sec">
         <div className="container">
+          <div className="title-area text-center">
+            <span className="sub-title">
+              <div className="icon-masking me-2">
+                <span
+                  className="mask-icon"
+                  style={{
+                    WebkitMaskImage:
+                      "url(/assets/img/theme-img/title_shape_2.svg)",
+                    maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
+                  }}
+                ></span>
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
+              </div>
+              ABOUT US
+            </span>
+
+            <h2 className="sec-title">
+              Know More <span className="text-theme fw-normal">About Us</span>
+            </h2>
+          </div>
           <div className="row align-items-center">
             {/* Left Image */}
             <div className="col-xl-6 mb-30 mb-xl-0">
@@ -59,10 +81,10 @@ const AboutInfo = () => {
                     <div className="icon-masking me-2">
                       <span
                         className="mask-icon"
-                        data-mask-src="assets/img/theme-img/title_shape_1.svg"
+                        data-mask-src="/assets/img/theme-img/title_shape_1.svg"
                       ></span>
                       <img
-                        src="assets/img/theme-img/title_shape_1.svg"
+                        src="/assets/img/theme-img/title_shape_1.svg"
                         alt="shape"
                       />
                     </div>
@@ -87,7 +109,7 @@ const AboutInfo = () => {
                   <div className="about-feature">
                     <div className="about-feature_icon">
                       <img
-                        src="assets/img/icon/about_feature_1_1.svg"
+                        src="/assets/img/icon/about_feature_1_1.svg"
                         alt="Icon"
                       />
                     </div>
@@ -102,7 +124,7 @@ const AboutInfo = () => {
                   <div className="about-feature">
                     <div className="about-feature_icon">
                       <img
-                        src="assets/img/icon/about_feature_1_2.svg"
+                        src="/assets/img/icon/about_feature_1_2.svg"
                         alt="Icon"
                       />
                     </div>
@@ -115,10 +137,10 @@ const AboutInfo = () => {
 
                 {/* Button Group */}
                 <div className="btn-group">
-                  <a href="about.html" className="th-btn">
+                  <Link to="about.html" className="th-btn">
                     DISCOVER MORE
                     <i className="fa-regular fa-arrow-right ms-2"></i>
-                  </a>
+                  </Link>
 
                   <div className="call-btn">
                     <div className="play-btn">
@@ -126,9 +148,9 @@ const AboutInfo = () => {
                     </div>
                     <div className="media-body">
                       <span className="btn-text">Call Us On:</span>
-                      <a href="tel:+19088000393" className="btn-title">
+                      <Link to="tel:+19088000393" className="btn-title">
                         +190-8800-0393
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

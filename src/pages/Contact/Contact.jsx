@@ -10,6 +10,7 @@ const Contact = () => {
         // data-bg-src="assets/img/bg/breadcumb-bg.jpg"
         style={{
           backgroundImage: `url(/assets/img/bg/breadcumb-bg.jpg)`,
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -17,7 +18,7 @@ const Contact = () => {
             <h1 className="breadcumb-title">Contact Us</h1>
             <ul className="breadcumb-menu">
               <li>
-                <Link to="index-2.html">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>Contact Us</li>
             </ul>
@@ -53,8 +54,8 @@ const Contact = () => {
                 <div className="media-body">
                   <h4 className="box-title">Call Us Anytime</h4>
                   <span className="contact-info_text">
-                    <Link to="tel:+65485965789">(+65) - 48596 - 5789</Link>
-                    <Link to="tel:+65485965789">+65-48596-5789</Link>
+                    <Link to="tel:01767567797">01767567797</Link>
+                    <Link to="tel:01000000000">01000000000</Link>
                   </span>
                 </div>
               </div>
@@ -185,7 +186,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-btn text-xl-start text-center col-12">
-                    <button type="submit" className="th-btn">
+                    <button type="submit" className="th-btn" disable>
                       Send Message
                       <i className="fa-regular fa-arrow-right ms-2"></i>
                     </button>

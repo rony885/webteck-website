@@ -41,6 +41,7 @@ const Gallery = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+           padding: "60px 0",
         }}
       >
         <div className="container">
@@ -60,6 +61,30 @@ const Gallery = () => {
 
       <div className="space-top space-extra-bottom">
         <div className="container">
+          <div className="title-area text-center">
+            <span className="sub-title">
+              <div className="icon-masking me-2">
+                <span
+                  className="mask-icon"
+                  style={{
+                    WebkitMaskImage:
+                      "url(/assets/img/theme-img/title_shape_2.svg)",
+                    maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
+                  }}
+                ></span>
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
+              </div>
+              OUR GALLERY
+            </span>
+
+            <h2 className="sec-title">
+              Photo <span className="text-theme fw-normal">Showcase</span>
+            </h2>
+          </div>
           <div className="row gy-4">
             {galleries.map((img, index) => (
               <div className="col-md-6 col-xl-4" key={index}>

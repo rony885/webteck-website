@@ -8,6 +8,7 @@ const PortfolioDetails = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+           padding: "60px 0",
         }}
       >
         <div className="container">
@@ -195,7 +196,7 @@ const PortfolioDetails = () => {
                   <div className="widget-banner">
                     <span className="text">CONTACT US NOW</span>
                     <h2 className="title">You Need Help?</h2>
-                    <Link to="contact.html" className="th-btn style3">
+                    <Link to="/contact" className="th-btn style3">
                       GET A QUOTE<i className="fas fa-arrow-right ms-2"></i>
                     </Link>
                   </div>

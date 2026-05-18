@@ -17,13 +17,13 @@ const Footer = () => {
                     <span
                       className="mask-icon"
                       style={{
-                        WebkitMaskImage: "url(/assets/img/logo11.png)",
-                        maskImage: "url(/assets/img/logo11.png)",
+                        WebkitMaskImage: "url(/assets/img/logo1.png)",
+                        maskImage: "url(/assets/img/logo1.png)",
                       }}
                     ></span>
 
                     {/* <img src="/assets/img/logo-white.svg" alt="logo" /> */}
-                    <img src="/assets/img/logo11.png" alt="logo" />
+                    <img src="/assets/img/logo1.png" alt="logo" />
                   </Link>
                 </div>
               </div>
@@ -43,10 +43,10 @@ const Footer = () => {
                       </span>
 
                       <Link
-                        to="tel:+19088000393"
+                        to="tel:01767567797"
                         className="footer-contact_link"
                       >
-                        +190-8800-0393
+                        01767567797
                       </Link>
                     </div>
                   </div>
@@ -61,10 +61,10 @@ const Footer = () => {
                       <span className="footer-contact_text">Mail Us On:</span>
 
                       <Link
-                        to="mailto:info@webteck.com"
+                        to="mailto:info@healixsoft.com"
                         className="footer-contact_link"
                       >
-                        info@webteck.com
+                        info@healixsoft.com
                       </Link>
                     </div>
                   </div>
@@ -113,23 +113,43 @@ const Footer = () => {
 
                   {/* Social Icons */}
                   <div className="th-social">
-                    <Link to="https://www.facebook.com/">
+                    <Link
+                      to="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
 
-                    <Link to="https://www.whatsapp.com/">
+                    <Link
+                      to="https://www.whatsapp.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-whatsapp"></i>
                     </Link>
 
-                    <Link to="https://www.linkedin.com/">
+                    <Link
+                      to="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
 
-                    <Link to="https://www.instagram.com/">
+                    <Link
+                      to="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
 
-                    <Link to="https://www.youtube.com/">
+                    <Link
+                      to="https://www.youtube.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i className="fab fa-youtube"></i>
                     </Link>
                   </div>
@@ -137,12 +157,11 @@ const Footer = () => {
               </div>
 
               {/* Contact Us */}
-              <div className="col-md-6 col-xl-auto">
+              {/* <div className="col-md-6 col-xl-auto">
                 <div className="widget footer-widget">
                   <h3 className="widget_title">Contact Us</h3>
 
                   <div className="th-widget-contact">
-                    {/* Phone */}
                     <div className="contact-feature">
                       <div className="icon-btn">
                         <i className="fa-solid fa-phone"></i>
@@ -152,15 +171,14 @@ const Footer = () => {
                         <p className="contact-feature_label">Phone Number</p>
 
                         <Link
-                          to="tel:+19088000393"
+                          to="tel:01767567797"
                           className="contact-feature_link text-white"
                         >
-                          +190-8800-0393
+                          01767567797
                         </Link>
                       </div>
                     </div>
 
-                    {/* Email */}
                     <div className="contact-feature">
                       <div className="icon-btn">
                         <i className="fa-solid fa-envelope"></i>
@@ -170,15 +188,14 @@ const Footer = () => {
                         <p className="contact-feature_label">Email address</p>
 
                         <Link
-                          to="mailto:info@webteck.com"
+                          to="mailto:info@healixsoft.com"
                           className="contact-feature_link text-white"
                         >
-                          info@webteck.com
+                          info@healixsoft.com
                         </Link>
                       </div>
                     </div>
 
-                    {/* Address */}
                     <div className="contact-feature">
                       <div className="icon-btn">
                         <i className="fa-solid fa-location-dot"></i>
@@ -199,7 +216,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Quick Links */}
               <div className="col-md-6 col-xl-auto">
@@ -207,10 +224,6 @@ const Footer = () => {
                   <h3 className="widget_title">Quick Links</h3>
 
                   <ul className="menu">
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-
                     <li>
                       <Link to="/about">About Us</Link>
                     </li>
@@ -225,6 +238,28 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="/contact">Contact</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Essential Links */}
+              <div className="col-md-6 col-xl-auto">
+                <div className="widget widget_nav_menu footer-widget">
+                  <h3 className="widget_title">Essential Links</h3>
+
+                  <ul className="menu">
+                    <li>
+                      <Link to="/team">Team</Link>
+                    </li>
+                    <li>
+                      <Link to="/gallery">Gallery</Link>
+                    </li>
+                    <li>
+                      <Link to="/pricing">Pricing</Link>
+                    </li>
+                    <li>
+                      <Link to="/faq">Faq</Link>
                     </li>
                   </ul>
                 </div>
@@ -279,10 +314,6 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link to="/terms">Terms & Condition</Link>
-                    </li>
-
-                    <li>
-                      <Link to="/careers">Careers</Link>
                     </li>
 
                     <li>

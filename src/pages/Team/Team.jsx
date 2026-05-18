@@ -2,79 +2,29 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import teamArray from "../../DataJs/team.js";
 
-// const teamData = [
-//   {
-//     id: 1,
-//     image: "assets/img/team/team_1_1.jpg",
-//     name: "Rayan Athels",
-//     designation: "Founder & CEO",
-//     link: "/team-details",
-//     particleId: "team-p1",
-//   },
-//   {
-//     id: 2,
-//     image: "assets/img/team/team_1_2.jpg",
-//     name: "Alex Furnandes",
-//     designation: "Project Manager",
-//     link: "/team-details",
-//     particleId: "team-p2",
-//   },
-//   {
-//     id: 3,
-//     image: "assets/img/team/team_1_3.jpg",
-//     name: "Mary Crispy",
-//     designation: "Chief Expert",
-//     link: "/team-details",
-//     particleId: "team-p3",
-//   },
-//   {
-//     id: 4,
-//     image: "assets/img/team/team_1_4.jpg",
-//     name: "Henry Joshep",
-//     designation: "Product Manager",
-//     link: "/team-details",
-//     particleId: "team-p4",
-//   },
-//   {
-//     id: 5,
-//     image: "assets/img/team/team_1_5.jpg",
-//     name: "Sanjida Carlose",
-//     designation: "IT Consultant",
-//     link: "/team-details",
-//     particleId: "team-p5",
-//   },
-//   {
-//     id: 6,
-//     image: "assets/img/team/team_1_6.jpg",
-//     name: "Marian Widjya",
-//     designation: "Head Manager",
-//     link: "/team-details",
-//     particleId: "team-p6",
-//   },
-//   {
-//     id: 7,
-//     image: "assets/img/team/team_1_7.jpg",
-//     name: "Peter Parker",
-//     designation: "Web Developer",
-//     link: "/team-details",
-//     particleId: "team-p7",
-//   },
-//   {
-//     id: 8,
-//     image: "assets/img/team/team_1_8.jpg",
-//     name: "Grayson Gabriel",
-//     designation: "UI/UX Designer",
-//     link: "/team-details",
-//     particleId: "team-p8",
-//   },
-// ];
+const teamData = [
+  {
+    id: 1,
+    name: "Rachna Sheth",
+    designation: "CEO, of Webteck Company",
+    image: "/assets/img/team/team_featured.jpg",
+    bio: `Enthusiastically parallel task 2.0 niches wherea end-to-end
+        strategic theme area. Dramatically harness e-business ROI and
+        granular service. Quickly target enabled internal organic
+        sources after cross-unit methods of empowerment. Passionately
+        deliver innovative solutions to improve business growth.`,
+    phone: "01767567797",
+    email: "info@healixsoft.com",
+    officeTime: "10:00AM - 4:00PM",
+  },
+];
 
 const Team = () => {
-    const [teams, setTeams] = useState([]);
-  
-    useEffect(() => {
-      setTeams(teamArray);
-    }, []);
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    setTeams(teamArray);
+  }, []);
 
   return (
     <>
@@ -82,6 +32,7 @@ const Team = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -99,70 +50,96 @@ const Team = () => {
 
       <section className="space-top">
         <div className="container">
-          <div className="row gy-40 align-items-center">
-            <div className="col-xl-5">
-              <div className="team-featured-img">
-                <img src="assets/img/team/team_featured.jpg" alt="Team" />
+          <div className="title-area text-center">
+            <span className="sub-title">
+              <div className="icon-masking me-2">
+                <span
+                  className="mask-icon"
+                  style={{
+                    WebkitMaskImage:
+                      "url(/assets/img/theme-img/title_shape_2.svg)",
+                    maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
+                  }}
+                ></span>
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
               </div>
-            </div>
-            <div className="col-xl-7">
-              <div className="team-featured">
-                <h2 className="team-title">Rachna Sheth</h2>
-                <p className="team-desig">CEO, of Webteck Company</p>
-                <p className="team-bio">
-                  Enthusiastically parallel task 2.0 niches wherea end-to-end
-                  strategic theme area. Dramatically harness e-business ROI and
-                  granular service. Quickly target enabled internal organic
-                  sources after cross-unit methods of empowerment. Seamlessly
-                  e-enable intuitive applications before end-to-end
-                  applications. Uniquely matrix seamless supply chains for
-                  resource-leveling.
-                </p>
-                <div className="team-contact-wrap">
-                  <div className="team-contact">
-                    <div className="icon-btn">
-                      <i className="fa-solid fa-phone"></i>
-                    </div>
-                    <div className="media-body">
-                      <h6 className="team-contact_label">Phone Number</h6>
-                      <Link className="team-contact_link" to="tel:+19356542587">
-                        +1 935-654-2587
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="team-contact">
-                    <div className="icon-btn">
-                      <i className="fa-solid fa-envelope"></i>
-                    </div>
-                    <div className="media-body">
-                      <h6 className="team-contact_label">Email Address</h6>
-                      <Link
-                        className="team-contact_link"
-                        to="mailto:info@rachna.com"
-                      >
-                        info@rachna.com
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="team-contact">
-                    <div className="icon-btn">
-                      <i className="fa-solid fa-phone"></i>
-                    </div>
-                    <div className="media-body">
-                      <h6 className="team-contact_label">Phone Number</h6>
-                      <span className="team-contact_link">
-                        10:00AM - 4:00PM
-                      </span>
-                    </div>
+              OUR TEAM
+            </span>
+
+            <h2 className="sec-title">
+              Meet Our Expert <span className="text-theme fw-normal">Team</span>
+            </h2>
+          </div>
+
+          {teamData.map((tem, index) => {
+            return (
+              <div key={index} className="row gy-40 align-items-center">
+                <div className="col-xl-5">
+                  <div className="team-featured-img">
+                    <img src={tem.image} alt="Team" />
                   </div>
                 </div>
-                <Link to="/about" className="th-btn">
-                  MAKE AN APPOINTMENT
-                  <i className="fa-regular fa-arrow-right ms-2"></i>
-                </Link>
+                <div className="col-xl-7">
+                  <div className="team-featured">
+                    <h2 className="team-title">{tem.name}</h2>
+                    <p className="team-desig"> {tem.designation}</p>
+                    <p className="team-bio" style={{ textAlign: "justify" }}>
+                      {tem.bio}
+                    </p>
+                    <div className="team-contact-wrap">
+                      <div className="team-contact">
+                        <div className="icon-btn">
+                          <i className="fa-solid fa-phone"></i>
+                        </div>
+                        <div className="media-body">
+                          <h6 className="team-contact_label">Phone Number</h6>
+                          <Link
+                            className="team-contact_link"
+                            to="tel:01767567797"
+                          >
+                            01767567797
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="team-contact">
+                        <div className="icon-btn">
+                          <i className="fa-solid fa-envelope"></i>
+                        </div>
+                        <div className="media-body">
+                          <h6 className="team-contact_label">Email Address</h6>
+                          <Link
+                            className="team-contact_link"
+                            to="mailto:info@healixsoft.com"
+                          >
+                            info@healixsoft.com
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="team-contact">
+                        <div className="icon-btn">
+                          <i className="fa-solid fa-phone"></i>
+                        </div>
+                        <div className="media-body">
+                          <h6 className="team-contact_label">Phone Number</h6>
+                          <span className="team-contact_link">
+                            10:00AM - 4:00PM
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <Link to="mailto:info@healixsoft.com" className="th-btn">
+                      Get In Touch
+                      <i className="fa-regular fa-arrow-right ms-2"></i>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 
@@ -179,7 +156,10 @@ const Team = () => {
                     maskImage: "url(/assets/img/theme-img/title_shape_1.svg)",
                   }}
                 ></div>
-                <img src="assets/img/theme-img/title_shape_1.svg" alt="shape" />
+                <img
+                  src="/assets/img/theme-img/title_shape_1.svg"
+                  alt="shape"
+                />
               </div>
               ALL MEMBERS
             </span>

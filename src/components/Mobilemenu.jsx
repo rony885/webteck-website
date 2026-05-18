@@ -37,12 +37,12 @@ const Mobilemenu = ({ menuOpen, closeMenu }) => {
                 style={{
                   // maskImage: 'url("/assets/img/logo.svg")',
                   // WebkitMaskImage: 'url("/assets/img/logo.svg")',
-                  maskImage: 'url("/assets/img/logo11.png")',
-                  WebkitMaskImage: 'url("/assets/img/logo11.png")',
+                  maskImage: 'url("/assets/img/logo1.png")',
+                  WebkitMaskImage: 'url("/assets/img/logo1.png")',
                 }}
               ></span>
 
-              <img src="/assets/img/logo11.png" alt="Webteck" />
+              <img src="/assets/img/logo1.png" alt="Webteck" />
             </Link>
           </div>
 
@@ -161,6 +161,48 @@ const Mobilemenu = ({ menuOpen, closeMenu }) => {
               </li>
             </ul>
           </div>
+
+          <div className="th-social">
+            <Link
+              to="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </Link>
+
+            <Link
+              to="https://www.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-whatsapp"></i>
+            </Link>
+
+            <Link
+              to="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </Link>
+
+            <Link
+              to="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </Link>
+
+            <Link
+              to="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-youtube"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -174,6 +216,10 @@ const Wrapper = styled.section`
 
   .th-mobile-menu a:hover {
     color: #684df4;
+  }
+
+  .th-social a {
+    border: 1px solid #684df4 !important;
   }
 `;
 

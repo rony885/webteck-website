@@ -66,6 +66,7 @@ const Portfolio = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
+           padding: "60px 0",
         }}
       >
         <div className="container">
@@ -84,6 +85,31 @@ const Portfolio = () => {
 
       <section className="space">
         <div className="container">
+          <div className="title-area text-center">
+            <span className="sub-title">
+              <div className="icon-masking me-2">
+                <span
+                  className="mask-icon"
+                  style={{
+                    WebkitMaskImage:
+                      "url(/assets/img/theme-img/title_shape_2.svg)",
+                    maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
+                  }}
+                ></span>
+
+                <img
+                  src="/assets/img/theme-img/title_shape_2.svg"
+                  alt="shape"
+                />
+              </div>
+              OUR PORTFOLIO
+            </span>
+
+            <h2 className="sec-title">
+              Recent <span className="text-theme fw-normal">Works</span>
+            </h2>
+          </div>
+
           <div className="row gy-4">
             {projectData.map((project) => (
               <div className="col-lg-4 col-md-6" key={project.id}>
