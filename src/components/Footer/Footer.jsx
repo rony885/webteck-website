@@ -86,7 +86,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        54 Flemington, USA
+                        Gaital, Kishoreganj.
                       </Link>
                     </div>
                   </div>

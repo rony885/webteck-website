@@ -70,10 +70,20 @@ const ServicesInfo = () => {
                       <span className="dots"></span>
                     </div>
                     <h3 className="box-title">
-                      <Link to="/service-details">{service.title}</Link>
+                     <Link to={`/services/service-details/${service.id}`}>
+                        {service.title}
+                      </Link>
                     </h3>
-                    <p className="service-card_text">{service.description}</p>
-                    <Link to="/service-details" className="th-btn">
+                    <p
+                      className="service-card_text"
+                      style={{ textAlign: "justify" }}
+                    >
+                      {service.description[0]}
+                    </p>
+                    <Link
+                    to={`/services/service-details/${service.id}`}
+                      className="th-btn"
+                    >
                       Read More
                       <i className="fa-regular fa-arrow-right ms-2"></i>
                     </Link>

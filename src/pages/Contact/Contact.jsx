@@ -38,9 +38,9 @@ const Contact = () => {
                 <div className="media-body">
                   <h4 className="box-title">Our Office Address</h4>
                   <span className="contact-info_text">
-                    Burnsville, MN 55337 Streat,
+                    Pukurpar Bazar, Gaital,
                     <br />
-                    United States
+                    Kishoreganj.
                   </span>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                       type="text"
                       className="form-control"
                       name="name"
-                      placeholder="Your Name"
+                      placeholder="Enter Name"
                     />
                     <i className="fal fa-user"></i>
                   </div>
@@ -139,30 +139,19 @@ const Contact = () => {
                       type="email"
                       className="form-control"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="Enter Email"
                     />
                     <i className="fal fa-envelope"></i>
                   </div>
 
                   <div className="form-group col-md-6">
-                    <select name="subject" className="form-select">
-                      <option defaultValue="" disabled selected hidden>
-                        Select Subject
-                      </option>
-                      <option defaultValue="Web Development">
-                        Web Development
-                      </option>
-                      <option defaultValue="Brand Marketing">
-                        Brand Marketing
-                      </option>
-                      <option defaultValue="UI/UX Designing">
-                        UI/UX Designing
-                      </option>
-                      <option defaultValue="Digital Marketing">
-                        Digital Marketing
-                      </option>
-                    </select>
-                    <i className="fal fa-chevron-down"></i>
+                    <input
+                      type="subject"
+                      className="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                    <i className="fal fa-tag"></i>
                   </div>
 
                   <div className="form-group col-md-6">
@@ -186,7 +175,7 @@ const Contact = () => {
                   </div>
 
                   <div className="form-btn text-xl-start text-center col-12">
-                    <button type="submit" className="th-btn" disable>
+                    <button type="submit" className="th-btn" disabled>
                       Send Message
                       <i className="fa-regular fa-arrow-right ms-2"></i>
                     </button>

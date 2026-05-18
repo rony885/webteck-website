@@ -23,8 +23,8 @@ const Header = ({ toggleMenu }) => {
                 <div className="header-links">
                   <ul>
                     <li>
-                      <i className="fas fa-map-location"></i>54 NJ-12,
-                      Flemington, United States
+                      <i className="fas fa-map-location"></i>North side of
+                      Circuit House, Pukurpar Bazar, Gaital, Kishoreganj.
                     </li>
                     <li>
                       <i className="fas fa-phone"></i>

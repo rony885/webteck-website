@@ -1,7 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+
+import servicesArray from "../../DataJs/services.js";
 
 const ServicesDetails = () => {
+  const [serviceDetails, setServiceDetails] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    setServiceDetails(servicesArray);
+  }, []);
+
+  const findServiceDetails = serviceDetails.find(
+    (serviceItem) => serviceItem.id === parseInt(id),
+  );
+
   return (
     <>
       <div
@@ -31,39 +44,38 @@ const ServicesDetails = () => {
               <div className="page-single">
                 <div className="page-img">
                   <img
-                    src="/assets/img/service/service_details.jpg"
+                    // src="/assets/img/service/service_details.jpg"
+                    src={findServiceDetails && findServiceDetails.img}
                     alt="Service Imagee"
+                    style={{ width: "789px", height: "500px" }}
                   />
                 </div>
                 <div className="page-content">
-                  <h2 className="h3 page-title">Web Development</h2>
-                  <p>
-                    Globally optimize highly efficient solution whereas
-                    open-source application. Completely strategize quality
-                    internal or "organic" sources for virtual e-business.
-                    Phosfluorescently re-engineer enterprise markets via
-                    value-added networks. Seamlessly restore inexpensive
-                    e-markets vis-Link-vis corporate intellectual capital.
-                    Holisticly reinvent compelling niche markets via scalable
-                    strategic.
-                  </p>
+                  <h2 className="h3 page-title">
+                    {findServiceDetails && findServiceDetails.title}
+                  </h2>
+                  <p>{findServiceDetails?.description?.[0]}</p>
+
                   <p className="mb-30">
-                    Authoritatively scale business meta-services before
-                    client-based technologies. Collaboratively strategize
-                    synergistic scenarios rather than flexible action items.
-                    Continually deliver market positioning convergence and
-                    mission-critical infrastructures.
+                    {findServiceDetails?.description?.[1]}
                   </p>
                   <div className="row">
                     <div className="col-md-6 mb-30">
                       <div className="th-video">
                         <img
                           className="w-100"
-                          src="/assets/img/service/service_inner_1.jpg"
+                          src={
+                            findServiceDetails &&
+                            findServiceDetails.videoSection.image
+                          }
                           alt="service"
                         />
                         <Link
-                          to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                          // to="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                          to={
+                            findServiceDetails &&
+                            findServiceDetails.videoSection.videoUrl
+                          }
                           className="play-btn popup-video"
                         >
                           <i className="fas fa-play"></i>
@@ -71,77 +83,45 @@ const ServicesDetails = () => {
                       </div>
                     </div>
                     <div className="col-md-6 mb-30">
-                      <h3 className="h4 mb-20">We Serve The Best Work</h3>
+                      <h3 className="h4 mb-20">
+                        {findServiceDetails &&
+                          findServiceDetails.checklistTitle}
+                      </h3>
                       <div className="checklist style3">
                         <ul>
-                          <li>
-                            <i className="fas fa-octagon-check"></i> Up am
-                            intention on dependent questions
-                          </li>
-                          <li>
-                            <i className="fas fa-octagon-check"></i> Surrounded
-                            affronting favourable
-                          </li>
-                          <li>
-                            <i className="fas fa-octagon-check"></i> Sed ut
-                            perspiciatis unde omnis iste natus
-                          </li>
-                          <li>
-                            <i className="fas fa-octagon-check"></i> Special
-                            Careness Risk Free
-                          </li>
-                          <li>
-                            <i className="fas fa-octagon-check"></i> Bibend
-                            auctor nisi elit volume are beguiled
-                          </li>
+                          {findServiceDetails?.checklist?.map((item, index) => (
+                            <li key={index}>
+                              <i className="fas fa-octagon-check"></i> {item}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
                   </div>
                   <p className="mb-4">
-                    Credibly brand accurate data after user friendly ROI.
-                    Professionally negotiate inexpensive markets and team driven
-                    scenarios. Interactively seize wireless e-tailers after
-                    resource maximizing content. Collaboratively leverage
-                    existing.
+                    {findServiceDetails && findServiceDetails.extraDescription}
                   </p>
-                  <h3 className="h4 mb-20">Benefits With Our Service</h3>
+                  <h3 className="h4 mb-20">
+                    {findServiceDetails && findServiceDetails.benefitsTitle}
+                  </h3>
                   <div className="service-feature-wrap">
-                    <div className="service-feature">
-                      <div className="service-feature_icon">
-                        <img
-                          src="/assets/img/icon/service_feature_1.svg"
-                          alt="icon"
-                        />
+                    {findServiceDetails?.features?.map((feature, index) => (
+                      <div className="service-feature" key={index}>
+                        <div className="service-feature_icon">
+                          <img src={feature.icon} alt="icon" />
+                        </div>
+
+                        <div className="media-body">
+                          <h4 className="service-feature_title">
+                            {feature.title}
+                          </h4>
+
+                          <p className="service-feature_text">{feature.text}</p>
+                        </div>
                       </div>
-                      <div className="media-body">
-                        <h4 className="service-feature_title">
-                          Flexible Solutions
-                        </h4>
-                        <p className="service-feature_text">
-                          Completely grow multimedia based content before global
-                          scenarios.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="service-feature">
-                      <div className="service-feature_icon">
-                        <img
-                          src="/assets/img/icon/service_feature_2.svg"
-                          alt="icon"
-                        />
-                      </div>
-                      <div className="media-body">
-                        <h4 className="service-feature_title">
-                          24/7 Unlimited Support
-                        </h4>
-                        <p className="service-feature_text">
-                          Completely grow multimedia based content before global
-                          scenarios.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
+
                   <h3 className="h4 mt-35 mb-4">Questions About Service</h3>
                   <div className="accordion-area accordion" id="faqAccordion">
                     <div className="accordion-card style2 active">
@@ -244,6 +224,9 @@ const ServicesDetails = () => {
                 <div className="widget widget_nav_menu">
                   <h3 className="widget_title">All Services</h3>
                   <div className="menu-all-pages-container">
+                    <li>
+                      <Link to="#">All</Link>
+                    </li>
                     <ul className="menu">
                       <li>
                         <Link to="/service-details">Web Development</Link>

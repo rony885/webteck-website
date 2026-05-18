@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -76,36 +74,42 @@ const Service = () => {
               1200: { slidesPerView: 4 },
             }}
           >
-            {services && services.map((service) => (
-              <SwiperSlide key={service.id}>
-                <div className="service-box">
-                  <div className="service-box_img">
-                    <img src={service.img} alt="service" />
-                  </div>
-
-                  <div className="service-box_content">
-                    <div className="service-box_icon">
-                      <img src={service.icon} alt="icon" />
+            {services &&
+              services.map((service) => (
+                <SwiperSlide key={service.id}>
+                  <div className="service-box">
+                    <div className="service-box_img">
+                      <img src={service.img} alt="service" />
                     </div>
 
-                    <h3 className="box-title">
-                      <Link to="#">{service.title}</Link>
-                    </h3>
+                    <div className="service-box_content">
+                      <div className="service-box_icon">
+                        <img src={service.icon} alt="icon" />
+                      </div>
 
-                    <p className="service-box_text">{service.description}</p>
+                      <h3 className="box-title">
+                        <Link to="#">{service.title}</Link>
+                      </h3>
 
-                    <Link to="/service-details" className="link-btn">
-                      Read More
-                      <i className="fas fa-arrow-right ms-2"></i>
-                    </Link>
+                      <p
+                        className="service-box_text"
+                        style={{ textAlign: "justify" }}
+                      >
+                        {service.description[0]}
+                      </p>
 
-                    <div className="bg-shape">
-                      <img src="/assets/img/bg/service_box_bg.png" alt="bg" />
+                      <Link to="/service-details" className="link-btn">
+                        Read More
+                        <i className="fas fa-arrow-right ms-2"></i>
+                      </Link>
+
+                      <div className="bg-shape">
+                        <img src="/assets/img/bg/service_box_bg.png" alt="bg" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>

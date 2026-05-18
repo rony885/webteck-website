@@ -103,7 +103,6 @@
 
 // export default App;
 
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./App.css";
@@ -116,6 +115,7 @@ import Header from "./components/Header/Header";
 import Mobilemenu from "./components/Mobilemenu";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Top from "./components/Top";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -154,10 +154,7 @@ function App() {
       <div className="App">
         <Sidebarmenu />
         <PopupSearchBox />
-        <Mobilemenu
-          closeMenu={closeMenu}
-          menuOpen={menuOpen}
-        />
+        <Mobilemenu closeMenu={closeMenu} menuOpen={menuOpen} />
         <Header toggleMenu={toggleMenu} />
 
         <Routes>
@@ -166,32 +163,20 @@ function App() {
 
           <Route path="/services" element={<Services />} />
           <Route
-            path="/service-details"
+            path="/services/service-details/:id"
             element={<ServicesDetails />}
           />
 
-          <Route
-            path="/portfolio"
-            element={<Portfolio />}
-          />
-          <Route
-            path="/portfolio-details"
-            element={<PortfolioDetails />}
-          />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio-details" element={<PortfolioDetails />} />
 
           <Route path="/blog" element={<Blog />} />
-          <Route
-            path="/blog-details"
-            element={<BlogDetails />}
-          />
+          <Route path="/blog-details" element={<BlogDetails />} />
 
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/team" element={<Team />} />
-          <Route
-            path="/team-details"
-            element={<TeamDetails />}
-          />
+          <Route path="/team-details" element={<TeamDetails />} />
 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/pricing" element={<Pricing />} />
@@ -201,6 +186,7 @@ function App() {
 
         <Footer />
         <ScrollToTop />
+        <Top />
       </div>
     </BrowserRouter>
   );
