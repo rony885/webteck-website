@@ -8,7 +8,7 @@ const Faq = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
-           padding: "60px 0",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -371,7 +371,7 @@ const Faq = () => {
                   className="form-control"
                   name="name"
                   id="name"
-                  placeholder="Enter Your Name"
+                  placeholder="Enter Name"
                 />
                 <i className="fal fa-user"></i>
               </div>
@@ -381,7 +381,7 @@ const Faq = () => {
                   className="form-control"
                   name="email"
                   id="email"
-                  placeholder="Enter Your Email"
+                  placeholder="Enter Email"
                 />
                 <i className="fal fa-envelope"></i>
               </div>
@@ -396,21 +396,14 @@ const Faq = () => {
                 <i className="fal fa-phone"></i>
               </div>
               <div className="form-group col-md-6">
-                <select name="subject" id="subject" className="form-select">
-                  <option
-                    defaultValue=""
-                    disabled="disabled"
-                    selected="selected"
-                    hidden
-                  >
-                    Select Subject
-                  </option>
-                  <option defaultValue="IT Consult">IT Consult</option>
-                  <option defaultValue="UI/UX Design">UI/UX Design</option>
-                  <option defaultValue="Branding Solution">Branding Solution</option>
-                  <option defaultValue="Product Marketing">Product Marketing</option>
-                </select>
-                <i className="fal fa-file-lines"></i>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                />
+                <i className="fal fa-tag"></i>
               </div>
               <div className="form-group col-12">
                 <textarea
@@ -424,7 +417,7 @@ const Faq = () => {
                 <i className="fal fa-pencil"></i>
               </div>
               <div className="form-btn text-center col-12">
-                <button className="th-btn">
+                <button className="th-btn" disabled>
                   Send Message<i className="fa-regular fa-arrow-right ms-2"></i>
                 </button>
               </div>

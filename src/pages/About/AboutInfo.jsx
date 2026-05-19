@@ -137,7 +137,7 @@ const AboutInfo = () => {
 
                 {/* Button Group */}
                 <div className="btn-group">
-                  <Link to="about.html" className="th-btn">
+                  <Link to="/about" className="th-btn">
                     DISCOVER MORE
                     <i className="fa-regular fa-arrow-right ms-2"></i>
                   </Link>

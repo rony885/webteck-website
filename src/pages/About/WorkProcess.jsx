@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const WorkProcess = () => {
   return (
     <>
-      <section className="position-relative space">
+      {/* <section className="position-relative space">
         <div
           className="th-bg-img"
           style={{
@@ -46,7 +45,8 @@ const WorkProcess = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
       <section
         className="bg-smoke"
         id="process-sec"
@@ -74,6 +74,7 @@ const WorkProcess = () => {
               How to work <span className="text-theme">it!</span>
             </h2>
           </div>
+
           <div className="process-card-area">
             <div className="process-line">
               <img src="/assets/img/bg/process_line.svg" alt="line" />

@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import Choose from "./Choose";
 import Testimonial from "./Testimonial";
 import WorkProcess from "./WorkProcess";
+
 // import Blog from "./Blog";
 // import Brand from "./Brand";
 
@@ -13,7 +14,8 @@ const About = () => {
     <div>
       <AboutInfo />
       <Counter />
-      <WorkProcess />
+      {/* <WorkProcess /> */}
+      <WorkProcess/>
       <Choose />
       <Testimonial />
       {/* <Blog /> */}

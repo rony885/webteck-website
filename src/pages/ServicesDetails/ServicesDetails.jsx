@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
+import styled from "styled-components";
 
 import servicesArray from "../../DataJs/services.js";
 
@@ -16,7 +17,7 @@ const ServicesDetails = () => {
   );
 
   return (
-    <>
+    <Wrapper>
       <div
         className="breadcumb-wrapper"
         style={{
@@ -224,12 +225,9 @@ const ServicesDetails = () => {
                 <div className="widget widget_nav_menu">
                   <h3 className="widget_title">All Services</h3>
                   <div className="menu-all-pages-container">
-                    <li>
-                      <Link to="#">All</Link>
-                    </li>
-                    <ul className="menu">
+                    {/* <ul className="menu">
                       <li>
-                        <Link to="/service-details">Web Development</Link>
+                        <Link to={`/service-details/${service.id}`}>Web Development</Link>
                       </li>
                       <li>
                         <Link to="/service-details">UI/UX Design</Link>
@@ -246,6 +244,29 @@ const ServicesDetails = () => {
                       <li>
                         <Link to="/service-details">Mechine Learning</Link>
                       </li>
+                    </ul> */}
+                    {/* <ul className="menu">
+                      {servicesArray.map((service) => (
+                        <li key={service.id}>
+                          <Link to={`/services/service-details/${service.id}`}>
+                            {service.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul> */}
+                    <ul className="menu">
+                      {servicesArray.map((service) => (
+                        <li key={service.id}>
+                          <NavLink
+                            to={`/services/service-details/${service.id}`}
+                            className={({ isActive }) =>
+                              isActive ? "active" : ""
+                            }
+                          >
+                            {service.title}
+                          </NavLink>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -282,8 +303,15 @@ const ServicesDetails = () => {
           </div>
         </div>
       </section>
-    </>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.section`
+  .menu li a.active {
+    background: #684df4;
+    color: #fff;
+  }
+`;
 
 export default ServicesDetails;

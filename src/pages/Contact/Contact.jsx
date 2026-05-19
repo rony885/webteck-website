@@ -38,9 +38,9 @@ const Contact = () => {
                 <div className="media-body">
                   <h4 className="box-title">Our Office Address</h4>
                   <span className="contact-info_text">
-                    Pukurpar Bazar, Gaital,
+                    North side of Circuit House,
                     <br />
-                    Kishoreganj.
+                    Gaital, Kishoreganj.
                   </span>
                 </div>
               </div>

@@ -24,7 +24,7 @@ const Header = ({ toggleMenu }) => {
                   <ul>
                     <li>
                       <i className="fas fa-map-location"></i>North side of
-                      Circuit House, Pukurpar Bazar, Gaital, Kishoreganj.
+                      Circuit House, Gaital, Kishoreganj.
                     </li>
                     <li>
                       <i className="fas fa-phone"></i>
