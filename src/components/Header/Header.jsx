@@ -160,27 +160,6 @@ const Header = ({ toggleMenu }) => {
                         </NavLink>
                       </li>
 
-                      {/* <li className="menu-item-has-children">
-                        <Link to="#">Pages</Link>
-                        <ul className="sub-menu">
-                          <li>
-                            <Link to="/team">Team</Link>
-                          </li>
-                          <li>
-                            <Link to="/team-details">Team Details</Link>
-                          </li>
-
-                          <li>
-                            <Link to="/gallery">Gallery</Link>
-                          </li>
-                          <li>
-                            <Link to="/pricing">Pricing</Link>
-                          </li>
-                          <li>
-                            <Link to="/faq">Faq Page</Link>
-                          </li>
-                        </ul>
-                      </li> */}
                       <li className="menu-item-has-children">
                         <Link to="#" className={isPagesActive ? "active" : ""}>
                           Pages
@@ -190,10 +169,6 @@ const Header = ({ toggleMenu }) => {
                           <li>
                             <NavLink to="/team">Team</NavLink>
                           </li>
-
-                          {/* <li>
-                            <NavLink to="/team-details">Team Details</NavLink>
-                          </li> */}
 
                           <li>
                             <NavLink to="/gallery">Gallery</NavLink>

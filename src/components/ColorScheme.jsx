@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ColorScheme = () => {
   return (
@@ -29,12 +30,9 @@ const ColorScheme = () => {
           <i className="fa-solid fa-droplet"></i>
         </button>
       </div>
-      <a
-        href="https://themeforest.net/user/themeholy"
-        className="th-btn text-center w-100"
-      >
+      <Link to="#" className="th-btn text-center w-100">
         <i className="fa fa-shopping-cart me-2"></i> Purchase
-      </a>
+      </Link>
     </div>
   );
 };
