@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      {/* Breadcrumb */}
       <div
         className="breadcumb-wrapper"
-        // data-bg-src="assets/img/bg/breadcumb-bg.jpg"
         style={{
           backgroundImage: `url(/assets/img/bg/breadcumb-bg.jpg)`,
           padding: "60px 0",

@@ -1,5 +1,32 @@
 import React from "react";
 
+const counterData = [
+  {
+    id: 1,
+    icon: "assets/img/icon/counter_1_1.svg",
+    number: 986,
+    text: "Finished Project",
+  },
+  {
+    id: 2,
+    icon: "assets/img/icon/counter_1_2.svg",
+    number: 896,
+    text: "Happy Clients",
+  },
+  {
+    id: 3,
+    icon: "assets/img/icon/counter_1_3.svg",
+    number: 396,
+    text: "Skilled Experts",
+  },
+  {
+    id: 4,
+    icon: "assets/img/icon/counter_1_4.svg",
+    number: 496,
+    text: "Honorable Awards",
+  },
+];
+
 const Counter = () => {
   return (
     <div
@@ -10,65 +37,22 @@ const Counter = () => {
     >
       <div className="container py-2">
         <div className="row gy-40 justify-content-between">
-          {/* Item 1 */}
-          <div className="col-6 col-lg-auto">
-            <div className="counter-card">
-              <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_1.svg" alt="Icon" />
-              </div>
-              <div className="media-body">
-                <h2 className="counter-card_number">
-                  <span className="counter-number">986</span>+
-                </h2>
-                <p className="counter-card_text">Finished Project</p>
-              </div>
-            </div>
-          </div>
+          {counterData.map((item) => (
+            <div key={item.id} className="col-6 col-lg-auto">
+              <div className="counter-card">
+                <div className="counter-card_icon">
+                  <img src={item.icon} alt="Icon" />
+                </div>
 
-          {/* Item 2 */}
-          <div className="col-6 col-lg-auto">
-            <div className="counter-card">
-              <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_2.svg" alt="Icon" />
-              </div>
-              <div className="media-body">
-                <h2 className="counter-card_number">
-                  <span className="counter-number">896</span>+
-                </h2>
-                <p className="counter-card_text">Happy Clients</p>
+                <div className="media-body">
+                  <h2 className="counter-card_number">
+                    <span className="counter-number">{item.number}</span>+
+                  </h2>
+                  <p className="counter-card_text">{item.text}</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Item 3 */}
-          <div className="col-6 col-lg-auto">
-            <div className="counter-card">
-              <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_3.svg" alt="Icon" />
-              </div>
-              <div className="media-body">
-                <h2 className="counter-card_number">
-                  <span className="counter-number">396</span>+
-                </h2>
-                <p className="counter-card_text">Skilled Experts</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Item 4 */}
-          <div className="col-6 col-lg-auto">
-            <div className="counter-card">
-              <div className="counter-card_icon">
-                <img src="assets/img/icon/counter_1_4.svg" alt="Icon" />
-              </div>
-              <div className="media-body">
-                <h2 className="counter-card_number">
-                  <span className="counter-number">496</span>+
-                </h2>
-                <p className="counter-card_text">Honorable Awards</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

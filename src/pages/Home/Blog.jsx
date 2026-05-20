@@ -51,7 +51,7 @@ const Blog = () => {
       className="bg-top-right overflow-hidden space"
       id="blog-sec"
       style={{
-        backgroundImage: "url(assets/img/bg/blog_bg_1.png)",
+        backgroundImage: "url(/assets/img/bg/blog_bg_1.png)",
       }}
     >
       <div className="container">
@@ -67,7 +67,7 @@ const Blog = () => {
                   maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
                 }}
               ></span>
-              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+              <img src="/assets/img/theme-img/title_shape_2.svg" alt="shape" />
             </div>
             NEWS & ARTICLES
           </span>
@@ -105,7 +105,7 @@ const Blog = () => {
                 <SwiperSlide key={item.id}>
                   <div className="blog-card">
                     <div className="blog-img">
-                      <img src={item.img} alt="blog" />
+                      <img src={item.image} alt="blog" />
                     </div>
 
                     <div className="blog-content">
@@ -113,9 +113,9 @@ const Blog = () => {
                         <span>
                           <i className="fal fa-calendar-days"></i> {item.date}
                         </span>
-                        {/* <span>
-                        <i className="fal fa-comments"></i> {item.comments}
-                      </span> */}
+                        <span>
+                          {/* <i className="fal fa-comments"></i> {item.comments} */}
+                        </span>
                       </div>
 
                       <h3 className="box-title">
@@ -124,8 +124,11 @@ const Blog = () => {
                         </Link>
                       </h3>
 
-                      <p className="blog-text">
-                        {item.description[0].split(" ").slice(0, 15).join(" ")}
+                      <p className="blog-text" style={{ textAlign: "justify" }}>
+                        {item.description?.[0]
+                          ?.split(" ")
+                          .slice(0, 15)
+                          .join(" ")}
                         ...
                       </p>
 
