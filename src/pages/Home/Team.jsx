@@ -70,7 +70,7 @@ const Team = () => {
             }}
           >
             {teams &&
-                teams.slice(0, 5).map((team) => (
+              teams.slice(0, 5).map((team) => (
                 <SwiperSlide key={team.id}>
                   <div className="th-team team-box">
                     <div className="team-img">
@@ -102,7 +102,7 @@ const Team = () => {
                       <div className="box-particle"></div>
 
                       <h3 className="box-title">
-                        <Link to="#">{team.name}</Link>
+                        <Link to="/team-details">{team.name}</Link>
                       </h3>
 
                       <span className="team-desig">{team.designation}</span>

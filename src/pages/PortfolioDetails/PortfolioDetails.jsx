@@ -8,17 +8,17 @@ const PortfolioDetails = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
-           padding: "60px 0",
+          padding: "60px 0",
         }}
       >
         <div className="container">
           <div className="breadcumb-content">
-            <h1 className="breadcumb-title">Project Details</h1>
+            <h1 className="breadcumb-title">Portfolio Details</h1>
             <ul className="breadcumb-menu">
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>Project Details</li>
+              <li>Portfolio Details</li>
             </ul>
           </div>
         </div>
@@ -31,7 +31,7 @@ const PortfolioDetails = () => {
               <div className="page-single">
                 <div className="page-img">
                   <img
-                    src="assets/img/project/project_details.jpg"
+                    src="/assets/img/project/project_details.jpg"
                     alt="Project Imagee"
                   />
                 </div>
@@ -59,7 +59,7 @@ const PortfolioDetails = () => {
                       <div className="col-md-5">
                         <img
                           className="w-100 rounded-3"
-                          src="assets/img/project/project_inner_1.jpg"
+                          src="/assets/img/project/project_inner_1.jpg"
                           alt="project"
                         />
                       </div>
@@ -67,28 +67,28 @@ const PortfolioDetails = () => {
                         <div className="checklist">
                           <ul>
                             <li>
-                              <i className="fas fa-badge-check"></i> It is Link long
-                              established fact that reader will
+                              <i className="fas fa-badge-check"></i> It is Link
+                              long established fact that reader will
                             </li>
                             <li>
-                              <i className="fas fa-badge-check"></i> There are many
-                              variations of passages
+                              <i className="fas fa-badge-check"></i> There are
+                              many variations of passages
                             </li>
                             <li>
-                              <i className="fas fa-badge-check"></i> All the Lorem
-                              Ipsum generators
+                              <i className="fas fa-badge-check"></i> All the
+                              Lorem Ipsum generators
                             </li>
                             <li>
                               <i className="fas fa-badge-check"></i> Asearch for
                               'lorem ipsum' will uncover many
                             </li>
                             <li>
-                              <i className="fas fa-badge-check"></i> injected humour
-                              words which
+                              <i className="fas fa-badge-check"></i> injected
+                              humour words which
                             </li>
                             <li>
-                              <i className="fas fa-badge-check"></i> There are many
-                              variations of passages of
+                              <i className="fas fa-badge-check"></i> There are
+                              many variations of passages of
                             </li>
                           </ul>
                         </div>
@@ -110,14 +110,14 @@ const PortfolioDetails = () => {
                       <div className="col-md-6">
                         <img
                           className="w-100 rounded-3"
-                          src="assets/img/project/project_inner_2.jpg"
+                          src="/assets/img/project/project_inner_2.jpg"
                           alt="project"
                         />
                       </div>
                       <div className="col-md-6">
                         <img
                           className="w-100 rounded-3"
-                          src="assets/img/project/project_inner_3.jpg"
+                          src="/assets/img/project/project_inner_3.jpg"
                           alt="project"
                         />
                       </div>
@@ -151,7 +151,7 @@ const PortfolioDetails = () => {
                       </div>
                       <div className="media-body">
                         <p className="contact-feature_label">Category:</p>
-                        <Link to="project.html" className="contact-feature_link">
+                        <Link to="/Portfolio" className="contact-feature_link">
                           IT Technology
                         </Link>
                       </div>
@@ -162,7 +162,9 @@ const PortfolioDetails = () => {
                       </div>
                       <div className="media-body">
                         <p className="contact-feature_label">Date</p>
-                        <span className="contact-feature_link">20 Sep, 2024</span>
+                        <span className="contact-feature_link">
+                          20 Sep, 2024
+                        </span>
                       </div>
                     </div>
                     <div className="contact-feature">
@@ -171,7 +173,7 @@ const PortfolioDetails = () => {
                       </div>
                       <div className="media-body">
                         <p className="contact-feature_label">Address:</p>
-                        <Link to="project.html" className="contact-feature_link">
+                        <Link to="/Portfolio" className="contact-feature_link">
                           55 Main Address, USA
                         </Link>
                       </div>
@@ -181,17 +183,20 @@ const PortfolioDetails = () => {
                 <div className="widget widget_download">
                   <h4 className="widget_title">Download Brochure</h4>
                   <div className="download-widget-wrap">
-                    <Link to="service-details.html" className="th-btn">
+                    <Link to="/service-details" className="th-btn">
                       <i className="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF
                     </Link>
-                    <Link to="service-details.html" className="th-btn style5">
-                      <i className="fa-light fa-file-lines me-2"></i>DOWNLOAD DOC
+                    <Link to="/service-details" className="th-btn style5">
+                      <i className="fa-light fa-file-lines me-2"></i>DOWNLOAD
+                      DOC
                     </Link>
                   </div>
                 </div>
                 <div
                   className="widget widget_banner"
-                  data-bg-src="assets/img/bg/widget_banner.jpg"
+                  style={{
+                    backgroundImage: "url(/assets/img/bg/widget_banner.jpg)",
+                  }}
                 >
                   <div className="widget-banner">
                     <span className="text">CONTACT US NOW</span>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import blogsArray from "../../DataJs/blogs.js";
 
 const Blog = () => {
@@ -15,7 +16,7 @@ const Blog = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
-           padding: "60px 0",
+          padding: "60px 0",
         }}
       >
         <div className="container">
@@ -63,7 +64,7 @@ const Blog = () => {
               <div className="col-lg-6 mb-4" key={blog.id}>
                 <div className="th-blog blog-single has-post-thumbnail">
                   <div className="blog-img">
-                    <Link to="/blog-details">
+                    <Link to={`/blog/blog-details/${blog.id}`}>
                       <img src={blog.image} alt="Blog" className="w-100" />
                     </Link>
                   </div>
@@ -71,11 +72,8 @@ const Blog = () => {
                   <div className="blog-content">
                     <div className="blog-meta">
                       <Link className="author" to="/blog">
-                        <img
-                          src="assets/img/blog/author-1-1.png"
-                          alt="avatar"
-                        />
-                        By Themeholy
+                        <img src={blog.authorImage} alt="avatar" />
+                        By {blog.author}
                       </Link>
 
                       <Link to="/blog">
@@ -83,21 +81,25 @@ const Blog = () => {
                         {blog.date}
                       </Link>
 
-                      {/* <Link to="/blog-details">
+                      {/* <Link to={`/blog/blog-details/${blog.id}`}>
                         <i className="fa-regular fa-comments"></i>
                         Comments ({blog.comments})
                       </Link> */}
                     </div>
 
                     <h2 className="blog-title">
-                      <Link to="/blog-details">{blog.title}</Link>
+                      <Link to={`/blog/blog-details/${blog.id}`}>
+                        {blog.title}
+                      </Link>
                     </h2>
 
                     <p className="blog-text">
-                      {blog.description.slice(0, 60)}...
+                      {blog.description[0].split(" ").slice(0, 15).join(" ")}...
                     </p>
-
-                    <Link to="/blog-details" className="line-btn">
+                    <Link
+                      to={`/blog/blog-details/${blog.id}`}
+                      className="line-btn"
+                    >
                       Read More
                     </Link>
                   </div>

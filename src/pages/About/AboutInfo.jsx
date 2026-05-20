@@ -28,7 +28,7 @@ const AboutInfo = () => {
       {/* About Section */}
       <div className="overflow-hidden space" id="about-sec">
         <div className="container">
-          <div className="title-area text-center">
+          {/* <div className="title-area text-center">
             <span className="sub-title">
               <div className="icon-masking me-2">
                 <span
@@ -51,7 +51,7 @@ const AboutInfo = () => {
             <h2 className="sec-title">
               Know More <span className="text-theme fw-normal">About Us</span>
             </h2>
-          </div>
+          </div> */}
           <div className="row align-items-center">
             {/* Left Image */}
             <div className="col-xl-6 mb-30 mb-xl-0">
@@ -81,8 +81,14 @@ const AboutInfo = () => {
                     <div className="icon-masking me-2">
                       <span
                         className="mask-icon"
-                        data-mask-src="/assets/img/theme-img/title_shape_1.svg"
+                        style={{
+                          WebkitMaskImage:
+                            "url(/assets/img/theme-img/title_shape_1.svg)",
+                          maskImage:
+                            "url(/assets/img/theme-img/title_shape_1.svg)",
+                        }}
                       ></span>
+
                       <img
                         src="/assets/img/theme-img/title_shape_1.svg"
                         alt="shape"

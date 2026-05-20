@@ -98,7 +98,10 @@ const Service = () => {
                         {service.description[0]}
                       </p>
 
-                      <Link to="/service-details" className="link-btn">
+                      <Link
+                        to={`/services/service-details/${service.id}`}
+                        className="link-btn"
+                      >
                         Read More
                         <i className="fas fa-arrow-right ms-2"></i>
                       </Link>

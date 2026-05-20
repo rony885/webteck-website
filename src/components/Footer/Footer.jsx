@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Wrapper>
       <footer className="footer-wrapper footer-layout1">
@@ -305,7 +307,8 @@ const Footer = () => {
               <div className="col-lg-6">
                 <p className="copyright-text">
                   Copyright <i className="fal fa-copyright"></i>
-                  2025 <Link to="#">Themeholy</Link>. All Rights Reserved.
+                  {currentYear} <Link to="#">Healixsoft</Link>. All Rights
+                  Reserved.
                 </p>
               </div>
 

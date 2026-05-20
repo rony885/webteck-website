@@ -1,43 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+
+import blogsArray from "../../DataJs/blogs.js";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
-const blogs = [
-  {
-    id: 1,
-    img: "/assets/img/blog/blog_1_1.jpg",
-    date: "15 Jan, 2025",
-    comments: "2 Comments",
-    title: "Unsatiable entreaties may collecting Power.",
-  },
-  {
-    id: 2,
-    img: "/assets/img/blog/blog_1_2.jpg",
-    date: "16 Jan, 2025",
-    comments: "3 Comments",
-    title: "Regional Manager & limited time management.",
-  },
-  {
-    id: 3,
-    img: "/assets/img/blog/blog_1_3.jpg",
-    date: "17 Jan, 2025",
-    comments: "2 Comments",
-    title: "What’s the Holding Back the It Solution Industry?",
-  },
-  {
-    id: 4,
-    img: "/assets/img/blog/blog_1_4.jpg",
-    date: "19 Jan, 2025",
-    comments: "4 Comments",
-    title: "Latin derived from Cicero's 1st-century BC",
-  },
-];
+// const blogs = [
+//   {
+//     id: 1,
+//     img: "/assets/img/blog/blog_1_1.jpg",
+//     date: "15 Jan, 2025",
+//     comments: "2 Comments",
+//     title: "Unsatiable entreaties may collecting Power.",
+//   },
+//   {
+//     id: 2,
+//     img: "/assets/img/blog/blog_1_2.jpg",
+//     date: "16 Jan, 2025",
+//     comments: "3 Comments",
+//     title: "Regional Manager & limited time management.",
+//   },
+//   {
+//     id: 3,
+//     img: "/assets/img/blog/blog_1_3.jpg",
+//     date: "17 Jan, 2025",
+//     comments: "2 Comments",
+//     title: "What’s the Holding Back the It Solution Industry?",
+//   },
+//   {
+//     id: 4,
+//     img: "/assets/img/blog/blog_1_4.jpg",
+//     date: "19 Jan, 2025",
+//     comments: "4 Comments",
+//     title: "Latin derived from Cicero's 1st-century BC",
+//   },
+// ];
 
 const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    setBlogs(blogsArray);
+  }, []);
+
   return (
     <section
       className="bg-top-right overflow-hidden space"
@@ -92,50 +100,53 @@ const Blog = () => {
               1200: { slidesPerView: 3 },
             }}
           >
-            {blogs.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="blog-card">
-                  <div className="blog-img">
-                    <img src={item.img} alt="blog" />
-                  </div>
+            {blogs &&
+              blogs.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="blog-card">
+                    <div className="blog-img">
+                      <img src={item.img} alt="blog" />
+                    </div>
 
-                  <div className="blog-content">
-                    <div className="blog-meta">
-                      <span>
-                        <i className="fal fa-calendar-days"></i> {item.date}
-                      </span>
-                      <span>
+                    <div className="blog-content">
+                      <div className="blog-meta">
+                        <span>
+                          <i className="fal fa-calendar-days"></i> {item.date}
+                        </span>
+                        {/* <span>
                         <i className="fal fa-comments"></i> {item.comments}
-                      </span>
-                    </div>
+                      </span> */}
+                      </div>
 
-                    <h3 className="box-title">
-                      <Link to="#">{item.title}</Link>
-                    </h3>
+                      <h3 className="box-title">
+                        <Link to={`/blog/blog-details/${item.id}`}>
+                          {item.title}
+                        </Link>
+                      </h3>
 
-                    <p className="blog-text">
-                      Progressively plagiarize quality metrics for impactful
-                      data. Assertively. Holisticly leverage existing magnetic.
-                    </p>
+                      <p className="blog-text">
+                        {item.description[0].split(" ").slice(0, 15).join(" ")}
+                        ...
+                      </p>
 
-                    <div className="blog-bottom">
-                      <Link to="#" className="author">
-                        <img
-                          src="assets/img/blog/author-1-1.png"
-                          alt="author"
-                        />
-                        By Themeholy
-                      </Link>
+                      <div className="blog-bottom">
+                        <Link to="#" className="author">
+                          <img src={item.authorImage} alt="author" />
+                          By {item.author}
+                        </Link>
 
-                      <Link to="#" className="line-btn">
-                        Read More
-                        <i className="fas fa-arrow-right"></i>
-                      </Link>
+                        <Link
+                          to={`/blog/blog-details/${item.id}`}
+                          className="line-btn"
+                        >
+                          Read More
+                          <i className="fas fa-arrow-right"></i>
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
 
           {/* Navigation Buttons */}

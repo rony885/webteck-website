@@ -98,31 +98,32 @@ const Blog = () => {
             }}
             className="th-slider has-shadow"
           >
-            {blogs.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="blog-card">
-                  <div className="blog-img">
-                    <img src={item.image} alt="blog" />
-                  </div>
-
-                  <div className="blog-content">
-                    <div className="blog-meta">
-                      <Link to="#">
-                        <i className="fal fa-calendar-days"></i> {item.date}
-                      </Link>
-                      <Link to="#">
-                        <i className="fal fa-comments"></i> {item.comments}
-                      </Link>
+            {blogs &&
+              blogs.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <div className="blog-card">
+                    <div className="blog-img">
+                      <img src={item.image} alt="blog" />
                     </div>
 
-                    <h3 className="box-title">{item.title}</h3>
-                    <Link to="/blog-details" className="line-btn">
-                      Read More
-                    </Link>
+                    <div className="blog-content">
+                      <div className="blog-meta">
+                        <Link to="#">
+                          <i className="fal fa-calendar-days"></i> {item.date}
+                        </Link>
+                        <Link to="#">
+                          <i className="fal fa-comments"></i> {item.comments}
+                        </Link>
+                      </div>
+
+                      <h3 className="box-title">{item.title}</h3>
+                      <Link to="/blog-details" className="line-btn">
+                        Read More
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
 
           {/* NAVIGATION BUTTONS */}

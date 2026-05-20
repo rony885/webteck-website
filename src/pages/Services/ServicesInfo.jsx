@@ -60,17 +60,20 @@ const ServicesInfo = () => {
           </div>
 
           <div className="row gy-4">
-            {services.map((service) => {
+            {services.map((service, index) => {
               return (
                 <div key={service.id} className="col-md-6 col-xl-4">
                   <div className="service-card">
-                    <div className="service-card_number">01</div>
+                    {/* <div className="service-card_number">01</div> */}
+                    <div className="service-card_number">
+                      {String(index + 1).padStart(2, "0")}
+                    </div>
                     <div className="shape-icon">
                       <img src={service.icon} alt="Icon" />
                       <span className="dots"></span>
                     </div>
                     <h3 className="box-title">
-                     <Link to={`/services/service-details/${service.id}`}>
+                      <Link to={`/services/service-details/${service.id}`}>
                         {service.title}
                       </Link>
                     </h3>
@@ -81,7 +84,7 @@ const ServicesInfo = () => {
                       {service.description[0]}
                     </p>
                     <Link
-                    to={`/services/service-details/${service.id}`}
+                      to={`/services/service-details/${service.id}`}
                       className="th-btn"
                     >
                       Read More
