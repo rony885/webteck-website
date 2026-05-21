@@ -1,7 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import teamArray from "../../DataJs/team.js";
 
 const TeamDetails = () => {
+  const [teamDetails, setTeamDetails] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    setTeamDetails(teamArray);
+  }, []);
+
+  const findTeamDetails = teamDetails.find(
+    (teamItem) => teamItem.id === parseInt(id),
+  );
+
   return (
     <>
       <div
@@ -114,85 +126,64 @@ const TeamDetails = () => {
               </Link>
             </div>
           </div>
+
           <div className="row mt-5 pt-10">
             <div className="col-xl-6 mb-xl-0">
-              <h4 className="border-title">Personal Biography</h4>
+              <h4 className="border-title">
+                {findTeamDetails && findTeamDetails.biography.title}
+              </h4>
               <p className="mb-40">
-                Conveniently innovate professional initiatives whereas virtual
-                information. Compellingly network resource maximizing materials
-                without premier benefits. Phosfluorescently synthesize wireless
-                solutions with robust e-business. Monotonectally implement
-                functionalized ideas with technically sound process
-                improvements. Dramatically disseminate vertical systems after.
+                {findTeamDetails && findTeamDetails.biography.description}
               </p>
-              <h5 className="border-title">Professional Skills</h5>
+              <h5 className="border-title">
+                {findTeamDetails && findTeamDetails.professionalSkills.title}
+              </h5>
               <p className="mb-40">
-                Credibly scale plug-and-play customer service after high-payoff
-                idea. Monotonectall incentivize installed base intellectual
-                capital whereas flexible process improvement. Conveniently.
-                Distinctively negotiate front-end customer service rather.
-                Process tonectall incentivize installed base intellectual
-                flexible.
+                {findTeamDetails &&
+                  findTeamDetails.professionalSkills.description}
               </p>
-              <div className="skill-feature style2">
-                <h5 className="skill-feature_title">Team Experience</h5>
-                <div className="progress">
-                  <div className="progress-bar" style={{ width: "95%" }}>
-                    <div className="progress-value">95%</div>
+              {(findTeamDetails?.professionalSkills?.skills || []).map(
+                (skill) => (
+                  <div key={skill.id} className="skill-feature style2">
+                    <h5 className="skill-feature_title">{skill.title}</h5>
+
+                    <div className="progress">
+                      <div
+                        className="progress-bar"
+                        style={{ width: `${skill.percentage}%` }}
+                      >
+                        <div className="progress-value">
+                          {skill.percentage}%
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="skill-feature style2">
-                <h5 className="skill-feature_title">Project Success</h5>
-                <div className="progress">
-                  <div className="progress-bar" style={{ width: "90%" }}>
-                    <div className="progress-value">90%</div>
-                  </div>
-                </div>
-              </div>
-              <div className="skill-feature style2">
-                <h5 className="skill-feature_title">Positive Review</h5>
-                <div className="progress">
-                  <div className="progress-bar" style={{ width: "85%" }}>
-                    <div className="progress-value">85%</div>
-                  </div>
-                </div>
-              </div>
+                ),
+              )}
             </div>
             <div className="col-xl-6 mt-5 mt-xl-0">
-              <h4 className="border-title">Activities</h4>
+              <h4 className="border-title">
+                {findTeamDetails && findTeamDetails.activities.title}
+              </h4>
               <p className="mb-20">
-                Energistically myocardinate parallel market with co effective
-                channel. Competently e-enable proactive relationships with
-                stand-alone infomediaries.
+                {findTeamDetails && findTeamDetails.activities.description}
               </p>
               <div className="two-column mb-40">
                 <div className="checklist">
                   <ul>
-                    <li>
-                      <i className="fas fa-badge-check"></i> Experienced
-                      Attorneys Professional.
-                    </li>
-                    <li>
-                      <i className="fas fa-badge-check"></i> Experienced
-                      Attorneys Approach.
-                    </li>
-                  </ul>
-                </div>
-                <div className="checklist">
-                  <ul>
-                    <li>
-                      <i className="fas fa-badge-check"></i> Independence Makes
-                      Difference.
-                    </li>
-                    <li>
-                      <i className="fas fa-badge-check"></i> Committed To
-                      Helping Our Clients.
-                    </li>
+                    {findTeamDetails?.activities?.checklist?.map(
+                      (item, index) => (
+                        <li key={index}>
+                          <i className="fas fa-badge-check"></i> {item}
+                        </li>
+                      ),
+                    )}
                   </ul>
                 </div>
               </div>
-              <h5 className="border-title">Educational Qualification</h5>
+              <h5 className="border-title">
+                {findTeamDetails && findTeamDetails.education.title}
+              </h5>
               <p className="mb-40">
                 Credibly scale plug-and-play customer service after high-payoff
                 idea. Monotonectall incentivize installed base intellectual

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import teamArray from "../../DataJs/team.js";
 
 const teamData = [
@@ -192,7 +193,7 @@ const Team = () => {
                         </Link>
                       </div>
                       <h3 className="box-title">
-                        <Link to="/team-details">{team.name}</Link>
+                        <Link to={`/team-details/${team.id}`}>{team.name}</Link>
                       </h3>
                       <span className="team-desig">{team.designation}</span>
                     </div>

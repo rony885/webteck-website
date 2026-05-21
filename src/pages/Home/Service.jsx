@@ -95,7 +95,7 @@ const Service = () => {
                         className="service-box_text"
                         style={{ textAlign: "justify" }}
                       >
-                        {service.description[0]}
+                        {service.description[0].slice(0, 110)}...
                       </p>
 
                       <Link
