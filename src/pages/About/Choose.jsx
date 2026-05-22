@@ -1,5 +1,19 @@
 import React from "react";
 
+const chooseData = {
+  subtitle: "WHY CHOOSE US",
+  title: "We Deal With The Aspects Professional",
+  highlight: "IT Services",
+  description:
+    "Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic.",
+
+  image: "/assets/img/normal/why_1_1.jpg",
+  checklist: [
+    ["Big Data Analysis", "24/7 Online Support", "Business Improvement"],
+    ["High Quality Security", "24/7 Support Team", "Easy Solutions"],
+  ],
+};
+
 const Choose = () => {
   return (
     <div
@@ -10,45 +24,40 @@ const Choose = () => {
     >
       <div className="container">
         <div className="row align-items-center flex-row-reverse">
-          {/* Image Section */}
           <div className="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
             <div className="img-box2">
               <div className="img1">
-                <img src="/assets/img/normal/why_1_1.jpg" alt="Why" />
+                <img src={chooseData.image} alt="Why Choose Us" />
               </div>
             </div>
           </div>
 
-          {/* Content Section */}
           <div className="col-xxl-5 col-xl-6">
             <div className="title-area mb-35">
               <span className="sub-title">
                 <div className="icon-masking me-2">
                   <span
                     className="mask-icon"
-                    data-mask-src="assets/img/theme-img/title_shape_1.svg"
+                    data-mask-src="/assets/img/theme-img/title_shape_1.svg"
                   ></span>
+
                   <img
-                    src="assets/img/theme-img/title_shape_1.svg"
+                    src="/assets/img/theme-img/title_shape_1.svg"
                     alt="shape"
                   />
                 </div>
-                WHY CHOOSE US
+
+                {chooseData.subtitle}
               </span>
 
               <h2 className="sec-title">
-                We Deal With The Aspects Professional{" "}
-                <span className="text-theme">IT Services</span>
+                {chooseData.title}{" "}
+                <span className="text-theme">{chooseData.highlight}</span>
               </h2>
             </div>
 
-            <p className="mt-n2 mb-30">
-              Collaboratively envisioneer user friendly supply chains and cross
-              unit imperative. Authoritativel fabricate competitive resource and
-              holistic.
-            </p>
+            <p className="mt-n2 mb-30">{chooseData.description}</p>
 
-            {/* Checklist */}
             <div className="two-column">
               <div className="checklist style2">
                 <ul>
@@ -79,7 +88,6 @@ const Choose = () => {
               </div>
             </div>
           </div>
-          {/* End Content */}
         </div>
       </div>
     </div>

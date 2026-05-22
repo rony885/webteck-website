@@ -3,25 +3,25 @@ import React from "react";
 const counterData = [
   {
     id: 1,
-    icon: "assets/img/icon/counter_1_1.svg",
+    icon: "/assets/img/icon/counter_1_1.svg",
     number: 986,
     text: "Finished Project",
   },
   {
     id: 2,
-    icon: "assets/img/icon/counter_1_2.svg",
+    icon: "/assets/img/icon/counter_1_2.svg",
     number: 896,
     text: "Happy Clients",
   },
   {
     id: 3,
-    icon: "assets/img/icon/counter_1_3.svg",
+    icon: "/assets/img/icon/counter_1_3.svg",
     number: 396,
     text: "Skilled Experts",
   },
   {
     id: 4,
-    icon: "assets/img/icon/counter_1_4.svg",
+    icon: "/assets/img/icon/counter_1_4.svg",
     number: 496,
     text: "Honorable Awards",
   },
@@ -32,7 +32,7 @@ const Counter = () => {
     <div
       className="bg-theme space-extra"
       style={{
-        backgroundImage: `url(assets/img/bg/counter_bg_1.png)`,
+        backgroundImage: `url(/assets/img/bg/counter_bg_1.png)`,
       }}
     >
       <div className="container py-2">

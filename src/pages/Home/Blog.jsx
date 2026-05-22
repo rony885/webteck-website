@@ -8,37 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
-// const blogs = [
-//   {
-//     id: 1,
-//     img: "/assets/img/blog/blog_1_1.jpg",
-//     date: "15 Jan, 2025",
-//     comments: "2 Comments",
-//     title: "Unsatiable entreaties may collecting Power.",
-//   },
-//   {
-//     id: 2,
-//     img: "/assets/img/blog/blog_1_2.jpg",
-//     date: "16 Jan, 2025",
-//     comments: "3 Comments",
-//     title: "Regional Manager & limited time management.",
-//   },
-//   {
-//     id: 3,
-//     img: "/assets/img/blog/blog_1_3.jpg",
-//     date: "17 Jan, 2025",
-//     comments: "2 Comments",
-//     title: "What’s the Holding Back the It Solution Industry?",
-//   },
-//   {
-//     id: 4,
-//     img: "/assets/img/blog/blog_1_4.jpg",
-//     date: "19 Jan, 2025",
-//     comments: "4 Comments",
-//     title: "Latin derived from Cicero's 1st-century BC",
-//   },
-// ];
-
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 

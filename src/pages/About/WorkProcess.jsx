@@ -1,5 +1,36 @@
 import React from "react";
 
+const processData = [
+  {
+    id: 1,
+    number: "01",
+    icon: "/assets/img/icon/process_card_1.svg",
+    title: "Select Link project",
+    text: "Continua scale empowered metrics with cost effective innovation.",
+  },
+  {
+    id: 2,
+    number: "02",
+    icon: "/assets/img/icon/process_card_2.svg",
+    title: "Project analysis",
+    text: "Continua scale empowered metrics with cost effective innovation.",
+  },
+  {
+    id: 3,
+    number: "03",
+    icon: "/assets/img/icon/process_card_3.svg",
+    title: "Plan Execute",
+    text: "Continua scale empowered metrics with cost effective innovation.",
+  },
+  {
+    id: 4,
+    number: "04",
+    icon: "/assets/img/icon/process_card_4.svg",
+    title: "Deliver result",
+    text: "Continua scale empowered metrics with cost effective innovation.",
+  },
+];
+
 const WorkProcess = () => {
   return (
     <section
@@ -21,10 +52,11 @@ const WorkProcess = () => {
                   maskImage: "url(/assets/img/theme-img/title_shape_2.svg)",
                 }}
               ></span>
-              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+              <img src="/assets/img/theme-img/title_shape_2.svg" alt="shape" />
             </div>
             WORK PROCESS
           </span>
+
           <h2 className="sec-title">
             How to work <span className="text-theme">it!</span>
           </h2>
@@ -34,59 +66,26 @@ const WorkProcess = () => {
           <div className="process-line">
             <img src="/assets/img/bg/process_line.svg" alt="line" />
           </div>
+
           <div className="row gy-40">
-            <div className="col-sm-6 col-xl-3 process-card-wrap">
-              <div className="process-card">
-                <div className="process-card_number">01</div>
-                <div className="process-card_icon">
-                  <img src="/assets/img/icon/process_card_1.svg" alt="icon" />
+            {processData.map((process) => (
+              <div
+                key={process.id}
+                className="col-sm-6 col-xl-3 process-card-wrap"
+              >
+                <div className="process-card">
+                  <div className="process-card_number">{process.number}</div>
+
+                  <div className="process-card_icon">
+                    <img src={process.icon} alt={process.title} />
+                  </div>
+
+                  <h2 className="box-title">{process.title}</h2>
+
+                  <p className="process-card_text">{process.text}</p>
                 </div>
-                <h2 className="box-title">Select Link project</h2>
-                <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
-                </p>
               </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 process-card-wrap">
-              <div className="process-card">
-                <div className="process-card_number">02</div>
-                <div className="process-card_icon">
-                  <img src="assets/img/icon/process_card_2.svg" alt="icon" />
-                </div>
-                <h2 className="box-title">Project analysis</h2>
-                <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 process-card-wrap">
-              <div className="process-card">
-                <div className="process-card_number">03</div>
-                <div className="process-card_icon">
-                  <img src="/assets/img/icon/process_card_3.svg" alt="icon" />
-                </div>
-                <h2 className="box-title">Plan Execute</h2>
-                <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 process-card-wrap">
-              <div className="process-card">
-                <div className="process-card_number">04</div>
-                <div className="process-card_icon">
-                  <img src="/assets/img/icon/process_card_4.svg" alt="icon" />
-                </div>
-                <h2 className="box-title">Deliver result</h2>
-                <p className="process-card_text">
-                  Continua scale empowered metrics with cost effective
-                  innovation.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

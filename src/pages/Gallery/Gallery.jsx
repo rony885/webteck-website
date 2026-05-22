@@ -41,7 +41,7 @@ const Gallery = () => {
         className="breadcumb-wrapper"
         style={{
           backgroundImage: "url(/assets/img/bg/breadcumb-bg.jpg)",
-           padding: "60px 0",
+          padding: "60px 0",
         }}
       >
         <div className="container">

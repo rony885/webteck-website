@@ -86,7 +86,7 @@ const Team = () => {
                             <i className="fab fa-facebook-f"></i>
                           </Link>
                           <Link to="#">
-                            <i className="fab fa-twitter"></i>
+                            <i className="fab fa-whatsapp"></i>
                           </Link>
                           <Link to="#">
                             <i className="fab fa-instagram"></i>
@@ -102,7 +102,9 @@ const Team = () => {
                       <div className="box-particle"></div>
 
                       <h3 className="box-title">
-                        <Link to="/team-details">{team.name}</Link>
+                        <Link to={`/team/team-details/${team.id}`}>
+                          {team.name}
+                        </Link>
                       </h3>
 
                       <span className="team-desig">{team.designation}</span>

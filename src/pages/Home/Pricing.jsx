@@ -105,7 +105,7 @@ const Pricing = () => {
                 }}
               ></span>
 
-              <img src="assets/img/theme-img/title_shape_2.svg" alt="shape" />
+              <img src="/assets/img/theme-img/title_shape_2.svg" alt="shape" />
             </div>
             OUR PRICING
           </span>

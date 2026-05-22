@@ -30,7 +30,7 @@ const FrequentlyQuestion = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-9">
-            {/* Title */}
+       
             <div className="title-area text-center text-xl-start">
               <span className="sub-title d-flex align-items-center justify-content-center justify-content-xl-start">
                 <div className="icon-masking me-2">
@@ -44,7 +44,7 @@ const FrequentlyQuestion = () => {
                   ></span>
 
                   <img
-                    src="assets/img/theme-img/title_shape_2.svg"
+                    src="/assets/img/theme-img/title_shape_2.svg"
                     alt="shape"
                   />
                 </div>

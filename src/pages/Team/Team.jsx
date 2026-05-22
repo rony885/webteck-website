@@ -182,8 +182,8 @@ const Team = () => {
                         <Link target="_blank" to="https://facebook.com/">
                           <i className="fab fa-facebook-f"></i>
                         </Link>
-                        <Link target="_blank" to="https://twitter.com/">
-                          <i className="fab fa-twitter"></i>
+                        <Link target="_blank" to="https://whatsapp.com/">
+                          <i className="fab fa-whatsapp"></i>
                         </Link>
                         <Link target="_blank" to="https://instagram.com/">
                           <i className="fab fa-instagram"></i>
@@ -193,7 +193,9 @@ const Team = () => {
                         </Link>
                       </div>
                       <h3 className="box-title">
-                        <Link to={`/team-details/${team.id}`}>{team.name}</Link>
+                        <Link to={`/team/team-details/${team.id}`}>
+                          {team.name}
+                        </Link>
                       </h3>
                       <span className="team-desig">{team.designation}</span>
                     </div>

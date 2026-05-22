@@ -1,12 +1,9 @@
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
     <section className="position-relative space">
-      {/* Background */}
       <div
         className="th-bg-img"
         style={{
@@ -16,7 +13,6 @@ const Contact = () => {
         <img src="/assets/img/bg/bg_overlay_1.png" alt="overlay" />
       </div>
 
-      {/* Content */}
       <div className="container z-index-common">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-9 text-center">

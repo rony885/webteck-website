@@ -2,6 +2,27 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import teamArray from "../../DataJs/team.js";
 
+const teamInfo = [
+  {
+    id: 1,
+    name: "Rayan Athels",
+    designation: "UI/UX Designer",
+    image: "/assets/img/team/team_details.jpg",
+    description:
+      "Continually utilize 24/365 bandwidth before real-time interfaces. Credibly grow team core competencies with pandemic commerce. Objectively initiate pandemic users with deliver bricks clicks meta services for bricks-and-clicks innovation streamline front end aradigms expedite granular human capital rather than intuitive testing.",
+    experience: "More Than 10 Years",
+    phone: "01000000000",
+    email: "info@webteck.com",
+    fax: "+265478962",
+    socialLinks: {
+      facebook: "https://facebook.com/",
+      twitter: "https://twitter.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/",
+    },
+  },
+];
+
 const TeamDetails = () => {
   const [teamDetails, setTeamDetails] = useState([]);
   const { id } = useParams();
@@ -37,7 +58,7 @@ const TeamDetails = () => {
       </div>
       <section className="space">
         <div className="container">
-          <div className="about-card">
+          {/* <div className="about-card">
             <div className="about-card_img">
               <img
                 className="w-100"
@@ -125,7 +146,111 @@ const TeamDetails = () => {
                 GET IN TOUCH<i className="fa-regular fa-arrow-right ms-2"></i>
               </Link>
             </div>
-          </div>
+          </div> */}
+          {teamInfo.map((team) => (
+            <div className="about-card" key={team.id}>
+              <div className="about-card_img">
+                <img className="w-100" src={team.image} alt={team.name} />
+              </div>
+
+              <div className="about-card_box">
+                <div className="about-card_top">
+                  <div className="media-body">
+                    <h2 className="about-card_title">{team.name}</h2>
+
+                    <p className="about-card_desig">{team.designation}</p>
+                  </div>
+
+                  <div className="header-social">
+                    <Link target="_blank" to={team.socialLinks.facebook}>
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+
+                    <Link target="_blank" to={team.socialLinks.twitter}>
+                      <i className="fab fa-twitter"></i>
+                    </Link>
+
+                    <Link target="_blank" to={team.socialLinks.instagram}>
+                      <i className="fab fa-instagram"></i>
+                    </Link>
+
+                    <Link target="_blank" to={team.socialLinks.linkedin}>
+                      <i className="fab fa-linkedin-in"></i>
+                    </Link>
+                  </div>
+                </div>
+
+                <p className="about-card_text">{team.description}</p>
+
+                <div className="team-info-wrap">
+                  <div className="contact-feature">
+                    <div className="icon-btn">
+                      <i className="fa-solid fa-user"></i>
+                    </div>
+
+                    <div className="media-body">
+                      <p className="contact-feature_label">Experience</p>
+
+                      <span className="contact-feature_link">
+                        {team.experience}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="contact-feature">
+                    <div className="icon-btn">
+                      <i className="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div className="media-body">
+                      <p className="contact-feature_label">Phone</p>
+
+                      <Link
+                        to={`tel:${team.phone}`}
+                        className="contact-feature_link"
+                      >
+                        {team.phone}
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="contact-feature">
+                    <div className="icon-btn">
+                      <i className="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div className="media-body">
+                      <p className="contact-feature_label">Email</p>
+
+                      <Link
+                        to={`mailto:${team.email}`}
+                        className="contact-feature_link"
+                      >
+                        {team.email}
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="contact-feature">
+                    <div className="icon-btn">
+                      <i className="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <div className="media-body">
+                      <p className="contact-feature_label">Fax</p>
+
+                      <span className="contact-feature_link">{team.fax}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <Link to="/about" className="th-btn">
+                  GET IN TOUCH
+                  <i className="fa-regular fa-arrow-right ms-2"></i>
+                </Link>
+              </div>
+            </div>
+          ))}
 
           <div className="row mt-5 pt-10">
             <div className="col-xl-6 mb-xl-0">
@@ -185,40 +310,16 @@ const TeamDetails = () => {
                 {findTeamDetails && findTeamDetails.education.title}
               </h5>
               <p className="mb-40">
-                Credibly scale plug-and-play customer service after high-payoff
-                idea. Monotonectall incentivize installed base intellectual
-                capital whereas flexible process improvement. Conveniently.
-                Distinctively negotiate front-end customer service rather.
+                {findTeamDetails && findTeamDetails.education.description}
               </p>
               <div className="experience-box-wrap">
-                <div className="experience-box">
-                  <span className="experience-box_num">1st</span>
-                  <h6 className="experience-box_title">IT Consultant</h6>
-                  <p className="experience-box_text">
-                    2016 - Present (Webteck.Inc)
-                  </p>
-                </div>
-                <div className="experience-box">
-                  <span className="experience-box_num">2nd</span>
-                  <h6 className="experience-box_title">Softwer Developer</h6>
-                  <p className="experience-box_text">
-                    2010 - 2015 (Lazmi Trade)
-                  </p>
-                </div>
-                <div className="experience-box">
-                  <span className="experience-box_num">3rd</span>
-                  <h6 className="experience-box_title">Junior Inovator</h6>
-                  <p className="experience-box_text">
-                    2006 - 2009 (Onium Plan)
-                  </p>
-                </div>
-                <div className="experience-box">
-                  <span className="experience-box_num">4th</span>
-                  <h6 className="experience-box_title">Junior Developer</h6>
-                  <p className="experience-box_text">
-                    2000 - 2005 (Grages.Ltd)
-                  </p>
-                </div>
+                {findTeamDetails?.education?.experiences?.map((exp) => (
+                  <div className="experience-box" key={exp.id}>
+                    <span className="experience-box_num">{exp.order}</span>
+                    <h6 className="experience-box_title">{exp.title}</h6>
+                    <p className="experience-box_text">{exp.duration}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

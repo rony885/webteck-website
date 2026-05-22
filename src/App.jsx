@@ -176,7 +176,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/team" element={<Team />} />
-          <Route path="/team-details/:id" element={<TeamDetails />} />
+          <Route path="/team/team-details/:id" element={<TeamDetails />} />
 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/pricing" element={<Pricing />} />
