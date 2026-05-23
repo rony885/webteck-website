@@ -306,8 +306,8 @@ const Footer = () => {
             <div className="row justify-content-between align-items-center">
               <div className="col-lg-6">
                 <p className="copyright-text">
-                  Copyright <i className="fal fa-copyright"></i>
-                  {currentYear} <Link to="#">Healixsoft</Link>. All Rights
+                  Copyright <i className="fal fa-copyright"></i>&nbsp;
+                  {currentYear} <Link to="#">HEALIXSOFT</Link>. All Rights
                   Reserved.
                 </p>
               </div>
